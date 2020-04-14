@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { DATA } from '../data.js';
-import { Card, CardImg,  CardTitle, CardBody, CardSubtitle, CardText, CardLink } from 'reactstrap';
+import { Card, CardImg,  CardTitle, CardBody, CardSubtitle, CardText, CardLink, Collapse } from 'reactstrap';
+import { Fade, Stagger } from 'react-animation-components';
 
 // Render Items Component pass certis and projects in them
 // Render Individual Items in Details Component
@@ -12,21 +12,41 @@ import { Card, CardImg,  CardTitle, CardBody, CardSubtitle, CardText, CardLink }
   // </Media>
 // </Media>
 
-function RenderItems(props){
-  return(
-      <>
+class RenderItems extends Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      isCertiOpen: false
+    }
+    this.toggleCertificate = this.toggleCertificate.bind(this);
+  }
+
+  toggleCertificate(){
+    this.setState(prevState=>{
+      return {
+        isCertiOpen: !(prevState.isCertiOpen)
+      }
+    });
+  }
+
+  render(){
+    return(
+        <>
         <Card className="m-5">
-          <CardLink href={props.item.href} >
-          <CardImg top width="20%"  src={props.item.src} alt={props.item.name} />
-          <CardBody>
-            <CardTitle>{props.item.name}</CardTitle>
-            <CardSubtitle>{props.item.issuer}</CardSubtitle>
-            <CardText>{props.item.details}</CardText>
+          <CardBody onClick={this.toggleCertificate}>
+            <CardTitle>{this.props.item.name}</CardTitle>
+            <CardSubtitle>{this.props.item.issuer}</CardSubtitle>
+            <CardText>{this.props.item.details}</CardText>
           </CardBody>
-          </CardLink>
+          <Collapse  isOpen={this.state.isCertiOpen} >
+            <CardLink href={this.props.item.href} target="_blank">
+              <CardImg top width="20%"  src={this.props.item.src} alt={this.props.item.name} />
+            </CardLink>
+          </Collapse>
         </Card>
-      </>
-    );
+        </>
+      );
+    }
 }
 
 export default RenderItems;

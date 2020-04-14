@@ -5,8 +5,7 @@ import Certificate from './Certificate';
 import Home from './Home';
 import Project from './Project';
 import Contact from './Contact';
-import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
-import { TransitionGroup, CSSTransition } from 'react-transition-group'
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 class Main extends Component{
 
