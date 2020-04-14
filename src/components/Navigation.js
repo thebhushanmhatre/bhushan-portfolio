@@ -18,19 +18,19 @@ class Navigation extends Component {
 
   render(){
     return(
-      <Navbar className="text-light container" expand="md">
+      <Navbar id="navbar" className="text-light container" expand="lg">
         <NavbarToggler onClick={this.toggleNav}>
           <span className="fa fa-angle-double-down fa-md" />
         </NavbarToggler>
           <NavbarBrand className="mr-auto" href="/">
-            <img src="assets/images/logo.png" height="30" width="30" alt="bhushan"/> Bhushan Mhatre
+            <img id="logo" src="assets/images/logo.png" height="40" width="40" alt="bhushan"/> Bhushan Mhatre
           </NavbarBrand>
           <Collapse isOpen={this.state.isNavOpen} navbar>
-            <Nav>
-              <NavItem><NavLink href='/workexp'><span className="fa fa-server fa-md"> Experience</span></NavLink></NavItem>
-              <NavItem><NavLink href='/certificate'><span className="fa fa-trophy fa-md"> Certificates</span></NavLink></NavItem>
-              <NavItem><NavLink href='/project'><span className="fa fa-code fa-md"> Projects</span></NavLink></NavItem>
-              <NavItem><NavLink href='/contact'><span className="fa fa-phone fa-md"> Contact</span></NavLink></NavItem>
+            <Nav className="ml-auto">
+              <NavItem><NavLink href='/workexp'><span className="fa fa-server fa-lg"> Work-Experience</span></NavLink></NavItem>
+              <NavItem><NavLink href='/certificate'><span className="fa fa-trophy fa-lg"> Certificates</span></NavLink></NavItem>
+              <NavItem><NavLink href='/project'><span className="fa fa-code fa-lg"> Projects</span></NavLink></NavItem>
+              <NavItem><NavLink href='/contact'><span className="fa fa-phone fa-lg"> Contact</span></NavLink></NavItem>
             </Nav>
           </Collapse>
       </Navbar>
