@@ -1,4 +1,4 @@
-DATA = {
+export const DATA = {
   "projects":[
     {
       "href":"https://codepen.io/thebhushanmhatre/full/LaJqvy",
