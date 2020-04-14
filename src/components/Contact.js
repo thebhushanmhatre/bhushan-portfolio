@@ -11,7 +11,13 @@ class Contact extends Component{
 
   render(){
     return(
-      <div className="container">
+      <div className="container text-center">
+        <img src="assets/images/logo.svg" />
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <h1>Contact Page</h1>
         <h3>Page Under Construction</h3>
         <h1><span className="fa fa-spinner fa-lg mt-5"></span></h1>

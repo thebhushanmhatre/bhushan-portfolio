@@ -3,7 +3,7 @@ import { DATA } from '../data.js';
 import RenderItems from './RenderItems';
 
 class Certificate extends Component{
-    constructor(props){
+  constructor(props){
     super(props);
     this.state = {
       certificates: DATA.certificates

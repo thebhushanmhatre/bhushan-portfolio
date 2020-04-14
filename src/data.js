@@ -1,8 +1,17 @@
 export const DATA = {
   "projects":[
     {
+      "href":"https://book-flights-bhushan.herokuapp.com/",
+      "src":"assets/images/projects/bookflight.png",
+      "tech": "Ruby on Rails",
+      "name":"Flight Booking App",
+      "visible":true,
+      "target":"_blank"
+    },
+    {
       "href":"https://codepen.io/thebhushanmhatre/full/yZQmVw",
       "src":"assets/images/projects/quotes.jpg",
+      "tech": "Javascript",
       "name":"Random Quote Machine",
       "visible":true,
       "target":"_blank"
@@ -10,6 +19,7 @@ export const DATA = {
     {
       "href":"https://codepen.io/thebhushanmhatre/full/LaJqvy",
       "src":"assets/images/projects/clock.jpg",
+      "tech": "Javascript",
       "name":"Pomodoro Clock",
       "visible":true,
       "target":"_blank"
@@ -17,6 +27,7 @@ export const DATA = {
     {
       "href":"https://codepen.io/thebhushanmhatre/full/BbPrwa",
       "src":"assets/images/projects/calculator.jpg",
+      "tech": "Javascript",
       "name":"Simple Calculator",
       "visible":true,
       "target":"_blank"
@@ -24,6 +35,7 @@ export const DATA = {
     {
       "href":"https://codepen.io/thebhushanmhatre/full/QYeKBy",
       "src":"assets/images/projects/drum.jpg",
+      "tech": "Javascript",
       "name":"Drum Machine",
       "visible":true,
       "target":"_blank"
@@ -31,6 +43,7 @@ export const DATA = {
     {
       "href":"https://codepen.io/thebhushanmhatre/full/KJbZrY",
       "src":"assets/images/projects/bookmark.jpg",
+      "tech": "Javascript",
       "name":"Bookmark App",
       "visible":true,
       "target":"_blank"
@@ -38,6 +51,7 @@ export const DATA = {
     {
       "href":"",
       "src":"assets/images/projects/todoapp.jpg",
+      "tech": "React Javascript",
       "name":"To Do List App",
       "visible":false,
       "target":""
@@ -45,6 +59,7 @@ export const DATA = {
     {
       "href":"https://codepen.io/thebhushanmhatre/full/aXPoNw",
       "src":"assets/images/projects/weights.jpg",
+      "tech": "Javascript",
       "name":"Weights on Other Planets",
       "visible":true,
       "target":"_blank"
@@ -52,6 +67,7 @@ export const DATA = {
     {
       "href":"https://codepen.io/thebhushanmhatre/full/BMXLob",
       "src":"assets/images/projects/markdown.jpg",
+      "tech": "Javascript",
       "name":"Markdown Previewer",
       "visible":true,
       "target":"_blank"
@@ -59,6 +75,7 @@ export const DATA = {
     {
       "href":"",
       "src":"assets/images/projects/senti.jpg",
+      "tech": "Python, Machine Learning",
       "name":"Sentiment Analysis",
       "visible":false,
       "target":""
@@ -66,6 +83,7 @@ export const DATA = {
     {
       "href":"https://www.kaggle.com/thebhushanmhatre/my-firsttry-on-kaggle/",
       "src":"assets/images/projects/titanic.jpg",
+      "tech": "Javascript",
       "name":"Predictive Data Analysis on Titanic Dataset",
       "visible":true,
       "target":"_blank"
@@ -73,6 +91,7 @@ export const DATA = {
     {
       "href":"",
       "src":"assets/images/projects/radar.jpg",
+      "tech": "Electronics",
       "name":"Arduino Radar",
       "visible":false,
       "target":""
@@ -80,6 +99,7 @@ export const DATA = {
     {
       "href":"",
       "src":"assets/images/projects/robarm.jpg",
+      "tech": "Electronics",
       "name":"Haptic Robotic Arm",
       "visible":false,
       "target":""
@@ -367,5 +387,26 @@ export const DATA = {
       "href":"https://www.instagram.com/thebhushanmhatre/",
       "name":"instagram"
     }
+  ],
+  "education":[
+  {
+    "href":"https://en.wikipedia.org/wiki/Veermata_Jijabai_Technological_Institute",
+    "name": "Veermata Jijabai Techological Institute (V.J.T.I.)",
+    "src": "assets/images/vjti_logo.png",
+    "year": "2019",
+    "branch": "B.Tech., Electronics and Telecommunications"
+  },
+  {
+    "href":"http://www.patkarvardecollege.edu.in/index.php",
+    "name": "Patkar College of Science",
+    "src": "assets/images/patkar_logo.png",
+    "year": "2015"
+  },
+  {
+    "href":"https://en.wikipedia.org/wiki/Saint_Francis_D%27Assisi_High_School",
+    "name": "St. Francis D'Assisi High School (S.F.H.S.)",
+    "src": "assets/images/sfhs_logo.jpg",
+    "year": "2013"
+  }
   ]
 }
