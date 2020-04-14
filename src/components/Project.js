@@ -11,7 +11,7 @@ class Project extends Component{
   }
 
   render(){
-    const projects = this.state.projects.map(item=>
+    const projects = this.state.projects.filter(item=>item.visible).map(item=>
       <RenderItems item={item} />
     )
 

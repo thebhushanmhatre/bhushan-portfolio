@@ -32,14 +32,14 @@ class RenderItems extends Component{
   render(){
     return(
         <>
-        <Card className="m-5">
+        <Card className="m-2">
           <CardBody onClick={this.toggleCertificate}>
             <CardTitle>{this.props.item.name}</CardTitle>
-            <CardSubtitle>{this.props.item.issuer}</CardSubtitle>
-            <CardText>{this.props.item.details}</CardText>
+            <CardSubtitle>{this.props.item.institute}</CardSubtitle>
+            <CardText>{this.props.item.issuer}</CardText>
           </CardBody>
           <Collapse  isOpen={this.state.isCertiOpen} >
-            <CardLink href={this.props.item.href} target="_blank">
+            <CardLink href={this.props.item.href} target={this.props.target}>
               <CardImg top width="20%"  src={this.props.item.src} alt={this.props.item.name} />
             </CardLink>
           </Collapse>

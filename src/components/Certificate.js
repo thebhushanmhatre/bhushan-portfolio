@@ -18,7 +18,7 @@ class Certificate extends Component{
     return(
       <div className="container">
         <h3>My Certificates</h3>
-          {certis}
+        <div>{certis}</div>
       </div>
     );
   }

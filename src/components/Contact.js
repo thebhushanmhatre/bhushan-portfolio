@@ -10,10 +10,12 @@ class Contact extends Component{
   }
 
   render(){
-    console.log(this.state);
-    
     return(
-      <h1>Contact</h1>
+      <div className="container">
+        <h1>Contact Page</h1>
+        <h3>Page Under Construction</h3>
+        <h1><span className="fa fa-spinner fa-lg mt-5"></span></h1>
+      </div>
     );
   }
 }

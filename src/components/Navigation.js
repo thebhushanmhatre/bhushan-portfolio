@@ -18,7 +18,7 @@ class Navigation extends Component {
 
   render(){
     return(
-      <Navbar id="navbar" className="text-light container" expand="lg">
+      <Navbar id="navbar" className="text-light container mb-3" expand="lg">
         <NavbarToggler onClick={this.toggleNav}>
           <span className="fa fa-angle-double-down fa-md" />
         </NavbarToggler>

@@ -1,64 +1,88 @@
 export const DATA = {
   "projects":[
     {
+      "href":"https://codepen.io/thebhushanmhatre/full/yZQmVw",
+      "src":"assets/images/projects/quotes.jpg",
+      "name":"Random Quote Machine",
+      "visible":true,
+      "target":"_blank"
+    },
+    {
       "href":"https://codepen.io/thebhushanmhatre/full/LaJqvy",
       "src":"assets/images/projects/clock.jpg",
-      "name":"Pomodoro Clock"
+      "name":"Pomodoro Clock",
+      "visible":true,
+      "target":"_blank"
     },
     {
       "href":"https://codepen.io/thebhushanmhatre/full/BbPrwa",
       "src":"assets/images/projects/calculator.jpg",
-      "name":"Simple Calculator"
-    },
-    {
-      "href":"https://codepen.io/thebhushanmhatre/full/KJbZrY",
-      "src":"assets/images/projects/bookmark.jpg",
-      "name":"Bookmark App"
+      "name":"Simple Calculator",
+      "visible":true,
+      "target":"_blank"
     },
     {
       "href":"https://codepen.io/thebhushanmhatre/full/QYeKBy",
       "src":"assets/images/projects/drum.jpg",
-      "name":"Drum Machine"
+      "name":"Drum Machine",
+      "visible":true,
+      "target":"_blank"
+    },
+    {
+      "href":"https://codepen.io/thebhushanmhatre/full/KJbZrY",
+      "src":"assets/images/projects/bookmark.jpg",
+      "name":"Bookmark App",
+      "visible":true,
+      "target":"_blank"
     },
     {
       "href":"",
       "src":"assets/images/projects/todoapp.jpg",
-      "name":"To Do List App"
-    },
-    {
-      "href":"https://codepen.io/thebhushanmhatre/full/yZQmVw",
-      "src":"assets/images/projects/.jpg",
-      "name":"Random Quote Machine"
+      "name":"To Do List App",
+      "visible":false,
+      "target":""
     },
     {
       "href":"https://codepen.io/thebhushanmhatre/full/aXPoNw",
       "src":"assets/images/projects/weights.jpg",
-      "name":"Weights on Other Planets"
+      "name":"Weights on Other Planets",
+      "visible":true,
+      "target":"_blank"
     },
     {
       "href":"https://codepen.io/thebhushanmhatre/full/BMXLob",
       "src":"assets/images/projects/markdown.jpg",
-      "name":"Markdown Previewer"
+      "name":"Markdown Previewer",
+      "visible":true,
+      "target":"_blank"
     },
     {
       "href":"",
       "src":"assets/images/projects/senti.jpg",
-      "name":"Sentiment Analysis"
+      "name":"Sentiment Analysis",
+      "visible":false,
+      "target":""
     },
     {
       "href":"https://www.kaggle.com/thebhushanmhatre/my-firsttry-on-kaggle/",
       "src":"assets/images/projects/titanic.jpg",
-      "name":"Predictive Data Analysis on Titanic Dataset"
+      "name":"Predictive Data Analysis on Titanic Dataset",
+      "visible":true,
+      "target":"_blank"
     },
     {
       "href":"",
       "src":"assets/images/projects/radar.jpg",
-      "name":"Arduino Radar"
+      "name":"Arduino Radar",
+      "visible":false,
+      "target":""
     },
     {
       "href":"",
       "src":"assets/images/projects/robarm.jpg",
-      "name":"Haptic Robotic Arm"
+      "name":"Haptic Robotic Arm",
+      "visible":false,
+      "target":""
     }
   ],
   "certificates":[
@@ -66,49 +90,65 @@ export const DATA = {
       "href":"https://www.coursera.org/account/accomplishments/certificate/B4LJHAVNG9B8",
       "src":"assets/images/certificates/react_coursera_hongkong.png",
       "name":"Front-End Web Development with React",
-      "issuer": "Coursera-The Hong Kong University of Science and Technology",
+      "issuer": "Coursera",
+      "institute": "The Hong Kong University of Science and Technology",
       "credentialID": "B4LJHAVNG9B8",
-      "visible":true
+      "professor": "Jogesh K. Muppala",
+      "visible":true,
+      "target":"_blank"
     },
     {
       "href":"https://www.coursera.org/account/accomplishments/certificate/WXBNNV2ZFS9Y",
       "src":"assets/images/certificates/bootstrap_coursera_hongkong.png",
       "name":"Front-End Web UI Frameworks and Tools: Bootstrap 4",
-      "issuer": "Coursera-The Hong Kong University of Science and Technology",
+      "issuer": "Coursera",
+      "institute": "The Hong Kong University of Science and Technology",
       "credentialID": "WXBNNV2ZFS9Y",
-      "visible":true
+      "professor": "Jogesh K. Muppala",
+      "visible":true,
+      "target":"_blank"
     },
     {
       "href":"https://www.coursera.org/account/accomplishments/certificate/C969LNUBGSZN",
       "src":"assets/images/certificates/js_interactivity_coursera.png",
       "name":"Interactivity with JavaScript",
-      "issuer": "Coursera-University of Michigan",
+      "issuer": "Coursera",
+      "institute": "University of Michigan",
       "credentialID": "C969LNUBGSZN",
-      "visible":false
+      "professor": "Kalmin Haznis",
+      "visible":false,
+      "target":""
     },
     {
       "href":"https://www.coursera.org/account/accomplishments/certificate/V7JY5BJW7RZJ",
       "src":"assets/images/certificates/ror_intro.png",
       "name":"Ruby on Rails: An Introduction",
-      "issuer": "Coursera-Johns Hopkins University",
+      "issuer": "Coursera",
+      "institute": "Johns Hopkins University",
       "credentialID": "V7JY5BJW7RZJ",
-      "visible":true
+      "professor": "Kalmin Haznis",
+      "visible":true,
+      "target":"_blank"
     },
     {
       "href":"https://www.linkedin.com/learning/ruby-on-rails-5-essential-training",
       "src":"assets/images/certificates/ror_essential_linkedin.png",
       "name":"Ruby on Rails 5 Essential Training",
       "issuer": "Linkedin",
-      "credentialID": "",
-      "visible":false
+      "credentialID": "Kevin Skoglund",
+      "professor": "",
+      "visible":false,
+      "target":""
     },
     {
       "href":"https://www.linkedin.com/learning/learning-sinatra",
       "src":"assets/images/certificates/sinatra_linkedin.png",
       "name":"Learning Sinatra",
       "issuer": "Linkedin",
-      "credentialID": "",
-      "visible":true
+      "credentialID": "Kevin Skoglund",
+      "professor": "",
+      "visible":true,
+      "target":"_blank"
     },
     {
       "href":"https://www.linkedin.com/learning/learning-react-js-4",
@@ -116,7 +156,9 @@ export const DATA = {
       "name":"Learning React.js",
       "issuer": "Linkedin",
       "credentialID": "",
-      "visible":false
+      "professor": "",
+      "visible":false,
+      "target":""
     },
     {
       "href":"http://www.linkedin.com/learning/designing-restful-apis",
@@ -124,7 +166,9 @@ export const DATA = {
       "name":"Designing Restful APIs",
       "issuer": "Linkedin",
       "credentialID": "",
-      "visible":false
+      "professor": "",
+      "visible":false,
+      "target":""
     },
     {
       "href":"http://www.linkedin.com/learning/programming-foundations-databases-2",
@@ -132,7 +176,9 @@ export const DATA = {
       "name":"Programming Foundataions Database",
       "issuer": "Linkedin",
       "credentialID": "",
-      "visible":false
+      "professor": "",
+      "visible":false,
+      "target":""
     },
     {
       "href":"http://www.linkedin.com/learning/game-development-foundations-game-related-math",
@@ -140,7 +186,9 @@ export const DATA = {
       "name":"Game Development Foundations: Game related Math",
       "issuer": "Linkedin",
       "credentialID": "",
-      "visible":true
+      "professor": "Jesse Freeman",
+      "visible":true,
+      "target":"_blank"
     },
     {
       "href":"https://www.freecodecamp.org/certification/thebhushanmhatre/front-end-libraries",
@@ -148,7 +196,9 @@ export const DATA = {
       "name":"Front End Libraries Developer Certification",
       "issuer": "Freecodecamp",
       "credentialID": "",
-      "visible":true
+      "professor": "",
+      "visible":true,
+      "target":"_blank"
     },
     {
       "href":"https://www.freecodecamp.org/certification/thebhushanmhatre/javascript-algorithms-and-data-structures",
@@ -156,7 +206,9 @@ export const DATA = {
       "name":"JavaScript Algorithms and Data Structures Developer Certification",
       "issuer": "Freecodecamp",
       "credentialID": "",
-      "visible":true
+      "professor": "",
+      "visible":true,
+      "target":"_blank"
     },
     {
       "href":"https://www.freecodecamp.org/certification/thebhushanmhatre/responsive-web-design",
@@ -164,63 +216,86 @@ export const DATA = {
       "name":"Responsive Web Design Developer Certification",
       "issuer": "Freecodecamp",
       "credentialID": "",
-      "visible":true
+      "professor": "",
+      "visible":true,
+      "target":"_blank"
     },
     {
       "href":"https://courses.cognitiveclass.ai/certificates/e57bfb7f88a44359bee8b2f1fe82fd94",
       "src":"assets/images/certificates/dltf.jpg",
       "name":"Deep Learning with TensorFlow",
-      "issuer": "Cognitive Class by IBM",
+      "institute": "Cognitive Class",
+      "issuer": "IBM",
       "credentialID": "",
-      "visible":false
+      "professor": "",
+      "visible":false,
+      "target":""
     },
     {
       "href":"https://courses.cognitiveclass.ai/certificates/261026b4c71042f880a1415cb6eb92ff",
       "src":"assets/images/certificates/dlfund.jpg",
       "name":"Deep Learning Fundamentals",
-      "issuer": "Cognitive Class by IBM",
+      "institute": "Cognitive Class",
+      "issuer": "IBM",
       "credentialID": "",
-      "visible":false
+      "professor": "",
+      "visible":false,
+      "target":""
     },
     {
       "href":"https://courses.cognitiveclass.ai/certificates/04f14479b9c441248df1beced7644d83",
       "src":"assets/images/certificates/da.jpg",
       "name":"Data Analysis with Python",
-      "issuer": "Cognitive Class by IBM",
+      "institute": "Cognitive Class",
+      "issuer": "IBM",
       "credentialID": "",
-      "visible":true
+      "professor": "",
+      "visible":true,
+      "target":"_blank"
     },
     {
       "href":"https://courses.cognitiveclass.ai/certificates/8127fd9abca148c4bc8344c34c9d6438",
       "src":"assets/images/certificates/dataviz.jpg",
       "name":"Data Visualization with Python",
-      "issuer": "Cognitive Class by IBM",
+      "institute": "Cognitive Class",
+      "issuer": "IBM",
       "credentialID": "",
-      "visible":true
+      "professor": "",
+      "visible":true,
+      "target":"_blank"
     },
     {
       "href":"https://courses.cognitiveclass.ai/certificates/dc8e9f0115c945f6bd908b2376d6f43a",
       "src":"assets/images/certificates/sql.jpg",
       "name":"SQL and Relational Databases",
-      "issuer": "Cognitive Class by IBM",
+      "institute": "Cognitive Class",
+      "issuer": "IBM",
       "credentialID": "",
-      "visible":false
+      "professor": "",
+      "visible":false,
+      "target":""
     },
     {
       "href":"https://courses.cognitiveclass.ai/certificates/04f14479b9c441248df1beced7644d83",
       "src":"assets/images/certificates/git.jpg",
       "name":"Introduction to Git",
-      "issuer": "Cognitive Class by IBM",
+      "institute": "Cognitive Class",
+      "issuer": "IBM",
       "credentialID": "",
-      "visible":false
+      "professor": "",
+      "visible":false,
+      "target":""
     },
     {
       "href":"https://courses.cognitiveclass.ai/certificates/04f14479b9c441248df1beced7644d83",
       "src":"assets/images/certificates/shell.jpg",
       "name":"Introduction to Shell",
-      "issuer": "Cognitive Class by IBM",
+      "institute": "Cognitive Class",
+      "issuer": "IBM",
       "credentialID": "",
-      "visible":false
+      "professor": "",
+      "visible":false,
+      "target":""
     },
     {
       "href":"https://www.datacamp.com/statement-of-accomplishment/course/e50869d51065721fca64b1821866f0044e244786",
@@ -228,7 +303,9 @@ export const DATA = {
       "name":"Introduction to Python",
       "issuer": "DataCamp",
       "credentialID": "",
-      "visible":false
+      "professor": "",
+      "visible":false,
+      "target":""
     },
     {
       "href":"https://www.datacamp.com/statement-of-accomplishment/course/543dd80cf86a37eec1cd98342d449d43f847c37e",
@@ -236,7 +313,9 @@ export const DATA = {
       "name":"Introduction to R",
       "issuer": "DataCamp",
       "credentialID": "",
-      "visible":false
+      "professor": "",
+      "visible":false,
+      "target":""
     },
     {
       "href":"https://du5jhqks4kn0y.cloudfront.net/5a74215418bd2c006c7aa953/certificates/5b7000499e2546006d40555d_cerf.pdf",
@@ -244,7 +323,9 @@ export const DATA = {
       "name":"Data Structures",
       "issuer": "",
       "credentialID": "",
-      "visible":false
+      "professor": "",
+      "visible":false,
+      "target":""
     },
     {
       "href":"https://drive.google.com/file/d/1rtbMqWYD-O8ljcDBf-5Lnl9F1pRBqHxS/view?usp:sharing",
@@ -252,7 +333,9 @@ export const DATA = {
       "name":"Amcat Report",
       "issuer": "Amcat",
       "credentialID": "",
-      "visible":false
+      "professor": "",
+      "visible":false,
+      "target":""
     }
   ],
   "contacts":[
