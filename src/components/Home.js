@@ -12,7 +12,7 @@ function RenderMedia({item}) {
             <p>{item.branch}</p>
             <p> Graduated in {item.year}</p>
           </Media>
-          <Media object src={item.src} alt={item.name} width="100px" height="120px" />
+          <a href={item.href} target="_blank" rel="noopener noreferrer"><Media object src={item.src} alt={item.name} width="100px" height="120px" /></a>
         </Media>
     </div>
   );

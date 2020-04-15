@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { DATA } from '../data.js';
 import RenderItems from './RenderItems';
+import { Row } from 'reactstrap';
 
 class Certificate extends Component{
   constructor(props){
@@ -18,7 +19,7 @@ class Certificate extends Component{
     return(
       <div className="container">
         <h3>My Certificates</h3>
-        <div>{certis}</div>
+        <Row>{certis}</Row>
       </div>
     );
   }

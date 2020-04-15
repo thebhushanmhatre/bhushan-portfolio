@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardImg,  CardTitle, CardBody, CardSubtitle, CardText, CardLink, Collapse } from 'reactstrap';
+import { Card, CardImg,  CardTitle, CardBody, CardSubtitle, CardText, CardLink, Collapse, Col, Modal, ModalHeader, ModalBody} from 'reactstrap';
 
 // Render Items Component pass certis and projects in them
 // Render Individual Items in Details Component
@@ -22,21 +22,29 @@ class RenderItems extends Component{
   }
 
   render(){
-    console.log(this.props.item.target);
     return(
         <>
-        <Card className="m-2">
-          <CardBody onClick={this.toggleCertificate}>
-            <CardTitle>{this.props.item.name}</CardTitle>
-            <CardSubtitle>{this.props.item.institute}</CardSubtitle>
-            <CardText>{this.props.item.issuer || this.props.item.tech}</CardText>
-          </CardBody>
-          <Collapse  isOpen={this.state.isCertiOpen} >
-            <CardLink href={this.props.item.href} target={this.props.item.target}>
-              <CardImg top width="20%"  src={this.props.item.src} alt={this.props.item.name} />
-            </CardLink>
-          </Collapse>
-        </Card>
+          <Col sm="12" md="4">
+            <Card className="m-2">
+              <CardBody onClick={this.toggleCertificate}>
+                <CardTitle>{this.props.item.name}</CardTitle>
+                <CardSubtitle>{this.props.item.institute || this.props.item.professor}</CardSubtitle>
+                <CardText>{this.props.item.issuer || this.props.item.tech}</CardText>
+              </CardBody>
+              <Collapse  isOpen={this.state.isCertiOpen} >
+              </Collapse>
+            </Card>
+            <Modal id="modalitem" isOpen={this.state.isCertiOpen} toggle={this.toggleCertificate}  >
+              <ModalHeader toggle={this.toggleCertificate}>{this.props.item.name}</ModalHeader>
+              <ModalBody>
+              <CardBody>
+                <CardLink href={this.props.item.href} target={this.props.item.target}>
+                  <CardImg top width="20%"  src={this.props.item.src} alt={this.props.item.name} />
+                </CardLink>
+              </CardBody>
+              </ModalBody>
+            </Modal>
+          </Col>
         </>
       );
     }

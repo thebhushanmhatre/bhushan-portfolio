@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { DATA } from '../data.js';
 import RenderItems from './RenderItems';
+import { Row } from 'reactstrap';
 
 class Project extends Component{
   constructor(props){
@@ -17,8 +18,8 @@ class Project extends Component{
 
     return(
       <div className="container">
-        <h3>My Projects</h3>
-        {projects}
+        <h3 className="mb-4">My Projects</h3>
+        <Row>{projects}</Row>
       </div>
     );
   }

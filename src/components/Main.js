@@ -5,6 +5,7 @@ import Certificate from './Certificate';
 import Home from './Home';
 import Project from './Project';
 import Contact from './Contact';
+import RandomQuoteMachine from './RandomQuoteMachine';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 class Main extends Component{
@@ -23,6 +24,7 @@ class Main extends Component{
           <Route exact path="/project" component={() => <Project />} />
           <Route path="/project/:projectId" component={() => <Project />} />
           <Route exact path="/contact" component={() => <Contact />} />
+          <Route exact path="/quotes" component={() => <RandomQuoteMachine />} />
           <Redirect to="/" />
         </Switch>
       </>

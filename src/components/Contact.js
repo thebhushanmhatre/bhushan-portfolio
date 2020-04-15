@@ -12,7 +12,7 @@ class Contact extends Component{
   render(){
     return(
       <div className="container text-center">
-        <img src="assets/images/logo.svg" />
+        <img src="assets/images/logo.svg" alt="bm_logo" />
         <br/>
         <br/>
         <br/>
