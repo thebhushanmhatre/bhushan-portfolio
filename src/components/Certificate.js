@@ -1,18 +1,12 @@
 import React, { Component } from 'react';
-import { DATA } from '../data.js';
 import RenderItems from './RenderItems';
 import { Row } from 'reactstrap';
 
 class Certificate extends Component{
-  constructor(props){
-    super(props);
-    this.state = {
-      certificates: DATA.certificates
-    }
-  }
 
   render(){
-    const certis = this.state.certificates.filter(item=>item.visible).map(item=>
+
+    const certis = this.props.certificates.filter(item=>item.visible).map(item=>
       <RenderItems item={item} />
     )
 

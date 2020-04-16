@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { DATA } from '../data.js';
 import { Media } from 'reactstrap';
 
 function RenderMedia({item}) {
-  console.log(item)
   return(
     <div className="pt-4 offset-1 col-8">
         <Media className="pb-2">
@@ -19,15 +17,10 @@ function RenderMedia({item}) {
 }
 
 class Home extends Component{
-  constructor(props){
-    super(props);
-    this.state={
-      education: DATA.education
-    }
-  }
 
   render(){
-    const institutes = this.state.education.map(item=>
+    console.log("In Home.js", this.props)
+    const institutes = this.props.education.map(item=>
         <RenderMedia item={item} />
     )
     return(

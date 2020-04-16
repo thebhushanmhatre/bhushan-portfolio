@@ -1,18 +1,11 @@
 import React, { Component } from 'react';
-import { DATA } from '../data.js';
 import RenderItems from './RenderItems';
 import { Row } from 'reactstrap';
 
 class Project extends Component{
-  constructor(props){
-    super(props);
-    this.state = {
-      projects: DATA.projects
-    }
-  }
 
   render(){
-    const projects = this.state.projects.filter(item=>item.visible).map(item=>
+    const projects = this.props.projects.filter(item=>item.visible).map(item=>
       <RenderItems item={item} />
     )
 

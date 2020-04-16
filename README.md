@@ -70,7 +70,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 
-# F.Y.R.
+# For My Information
 ## Command Line Steps I followed:
 #### yarn global add create-react-app@1.5.2
 #### --create-react-app bhushan-pofolio
@@ -80,12 +80,13 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 #### yarn add font-awesome@4.7.0
 #### yarn add bootstrap-social@5.1.1
 #### yarn add react-router-dom@4.2.2
-#### yarn add react-animation-components@3.0.0
-#### yarn add react-transition-group@2.3.0
-
-Not yet performed
 #### yarn add redux@3.7.2
 #### yarn add react-redux@5.0.7
+
+
+Not yet performed or may not required
+#### yarn add react-animation-components@3.0.0
+#### yarn add react-transition-group@2.3.0
 #### yarn add react-redux-form@1.16.8
 #### yarn add redux-logger@3.0.6
 #### yarn add redux-thunk@2.2.0
