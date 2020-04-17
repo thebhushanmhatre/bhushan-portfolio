@@ -93,3 +93,6 @@ Not yet performed or may not required
 #### yarn add prop-types@15.6.0
 
 ### json-server --watch db.json -d 2000 -p 3001
+
+Redux Action are for making changes to redux store
+Refer this: https://www.coursera.org/learn/front-end-react/supplement/1eC3w/exercise-instructions-redux-actions

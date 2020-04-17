@@ -32,7 +32,7 @@ class RandomQuoteMachine extends Component{
             <span class="fa fa-pencil" >&nbsp;{this.state.author}</span>
           </div>
           <button class="btn btn-primary" id="new-quote" onClick={this.displayQuote} > New Quote </button>
-          <a href="" target="" class=" btn btn-info float-right">  <span class="fa fa-twitter"> </span> Tweet </a>
+          <button  href="" class=" btn btn-info float-right">  <span class="fa fa-twitter"> </span> Tweet </button >
         </div>
         <div className="text-center pt-5"><img src="assets/images/logo.svg" alt="bm_logo" /></div>
       </div>
