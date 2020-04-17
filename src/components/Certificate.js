@@ -7,7 +7,7 @@ class Certificate extends Component{
   render(){
 
     const certis = this.props.certificates.filter(item=>item.visible).map(item=>
-      <RenderItems item={item} />
+      <RenderItems key={item.certId} item={item} height={{minHeight: "10rem"}} />
     )
 
     return(

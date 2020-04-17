@@ -22,14 +22,18 @@ class RenderItems extends Component{
   }
 
   render(){
+    const cardSubtitle = this.props.item.institute || this.props.item.professor;
+    const cardText = this.props.item.issuer || this.props.item.tech;
+    console.log(cardSubtitle)
+    console.log(cardText)
     return(
         <>
-          <Col sm="12" md="4">
-            <Card className="m-2">
+          <Col xs="12" sm="6" md="6" lg="4" className="align-self-center">
+            <Card className="m-2" style={this.props.height}>
               <CardBody onClick={this.toggleCertificate}>
                 <CardTitle>{this.props.item.name}</CardTitle>
-                <CardSubtitle>{this.props.item.institute || this.props.item.professor}</CardSubtitle>
-                <CardText>{this.props.item.issuer || this.props.item.tech}</CardText>
+                <CardSubtitle className="pt-1">{cardSubtitle}</CardSubtitle>
+                <CardText className="pt-1">{cardText}</CardText>
               </CardBody>
               <Collapse  isOpen={this.state.isCertiOpen} >
               </Collapse>

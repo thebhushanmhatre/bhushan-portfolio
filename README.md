@@ -1,4 +1,4 @@
-# https://thebhushanmhatre.github.io/
+# https://thebhushanmhatre.herokuapp.com/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -82,9 +82,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 #### yarn add react-router-dom@4.2.2
 #### yarn add redux@3.7.2
 #### yarn add react-redux@5.0.7
+<br />
 
+## Not yet performed or may not required
+<br />
 
-Not yet performed or may not required
 #### yarn add react-animation-components@3.0.0
 #### yarn add react-transition-group@2.3.0
 #### yarn add react-redux-form@1.16.8
