@@ -20,12 +20,12 @@ export const DATA = {
     },
     {
       "projectId": 3,
-      "href": "https://codepen.io/thebhushanmhatre/full/LaJqvy",
+      "href": "/clock",//https://codepen.io/thebhushanmhatre/full/LaJqvy",
       "src": "assets/images/projects/clock.jpg",
       "tech": "Javascript",
       "name": "Pomodoro Clock",
       "visible":true,
-      "target": "_blank"
+      "target": ""
     },
     {
       "projectId": 4,

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 
 class RandomQuoteMachine extends Component{
   constructor(props){
@@ -20,17 +21,21 @@ class RandomQuoteMachine extends Component{
   }
 
   render(){
-    console.log("Inside RandomQuoteMachine: "+this.props.quotes)
     return(
       <div className="container">
+        <Breadcrumb>
+          <BreadcrumbItem><a href="/">Home</a></BreadcrumbItem>
+          <BreadcrumbItem><a href="/project">Projects</a></BreadcrumbItem>
+          <BreadcrumbItem active>Random Quote Machine</BreadcrumbItem>
+        </Breadcrumb>
         <h1 className="text-center pt-3">Random Quote Machine</h1>
-        <div class="quote-box bg-secondary text-white p-5 mt-5">
-          <div class="quote-text col-10">
+        <div class="quote-box text-dark p-1 mt-5">
+          <h3 class="col-12 col-md-10">
             <span class="fa fa-quote-left">&nbsp;&nbsp;{this.state.quote}</span>
-          </div>
-          <div class="quote-author text-right m-3">
+          </h3>
+          <h4 class="quote-author text-right m-3">
             <span class="fa fa-pencil" >&nbsp;{this.state.author}</span>
-          </div>
+          </h4>
           <button class="btn btn-primary" id="new-quote" onClick={this.displayQuote} > New Quote </button>
           <button  href="" class=" btn btn-info float-right">  <span class="fa fa-twitter"> </span> Tweet </button >
         </div>
