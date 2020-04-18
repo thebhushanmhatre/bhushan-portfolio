@@ -5,6 +5,7 @@ import Certificate from './Certificate';
 import Home from './Home';
 import Project from './Project';
 import Contact from './Contact';
+import RenderCertificate from './RenderCertificate';
 import RandomQuoteMachine from './projects/RandomQuoteMachine';
 import PomodoroClock from './projects/PomodoroClock';
 import ToDoList from './projects/ToDoList';
@@ -21,9 +22,18 @@ const mapStateToProps = state => {
   }
 }
 
+
 class Main extends Component{
 
+
   render(){
+    const CertificateWithId = ({match}) => {
+      console.log(this.props.certificates.filter((item) => item.certId === parseInt(match.params.certId,10))[0])
+      return(
+        <RenderCertificate certificate={this.props.certificates.filter((item) => item.certId === parseInt(match.params.certId,10))[0]} />
+      );
+    }
+
     return(
       <>
         <Navigation />
@@ -31,6 +41,7 @@ class Main extends Component{
           <Route exact path="/" component={()=> <Home education={this.props.education} />} />
           <Route exact path="/workexp" component={() => <WorkExperience />} />
           <Route exact path="/certificate" component={() => <Certificate certificates={this.props.certificates} />} />
+          <Route path="/certificate/:certId" component={CertificateWithId} />
           <Route exact path="/project" component={() => <Project projects={this.props.projects} />} />
           <Route exact path="/contact" component={() => <Contact contacts={this.props.contacts} />} />
           <Route exact path="/quotes" component={() => <RandomQuoteMachine quotes={this.props.quotes} />} />

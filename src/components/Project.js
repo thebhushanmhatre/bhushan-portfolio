@@ -6,7 +6,7 @@ class Project extends Component{
 
   render(){
     const projects = this.props.projects.filter(item=>item.visible).map(item=>
-      <RenderItems key={item.projectId} item={item} height={{minHeight: "5rem"}} />
+      <RenderItems key={"projectId"+item.projectId.toString()} item={item} height={{minHeight: "5rem"}} />
     )
 
     return(
