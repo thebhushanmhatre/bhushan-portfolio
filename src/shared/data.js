@@ -2,15 +2,15 @@ export const DATA = {
   "projects":[
     {
       "projectId": 1,
-      "href": "https://book-flights-bhushan.herokuapp.com/",
-      "src": "assets/images/projects/bookflight.png",
-      "tech": "Ruby on Rails",
-      "name": "Flight Booking App",
-      "visible":true,
-      "target": "_blank"
+      "href": "todolist",
+      "src": "assets/images/projects/todoapp.jpg",
+      "tech": "React Javascript",
+      "name": "To Do List App",
+      "visible": true,
+      "target": ""
     },
     {
-      "projectId": 2,
+      "projectId": 3,
       "href": "/quotes",//https://codepen.io/thebhushanmhatre/full/yZQmVw"
       "src": "assets/images/projects/quotes.jpg",
       "tech": "Javascript",
@@ -29,6 +29,15 @@ export const DATA = {
     },
     {
       "projectId": 4,
+      "href": "https://book-flights-bhushan.herokuapp.com/",
+      "src": "assets/images/projects/bookflight.jpg",
+      "tech": "Ruby on Rails",
+      "name": "Flight Booking App",
+      "visible":true,
+      "target": "_blank"
+    },
+    {
+      "projectId": 5,
       "href": "https://codepen.io/thebhushanmhatre/full/BbPrwa",
       "src": "assets/images/projects/calculator.jpg",
       "tech": "Javascript",
@@ -37,7 +46,7 @@ export const DATA = {
       "target": "_blank"
     },
     {
-      "projectId": 5,
+      "projectId": 6,
       "href": "https://codepen.io/thebhushanmhatre/full/QYeKBy",
       "src": "assets/images/projects/drum.jpg",
       "tech": "Javascript",
@@ -46,22 +55,13 @@ export const DATA = {
       "target": "_blank"
     },
     {
-      "projectId": 6,
+      "projectId": 7,
       "href": "https://codepen.io/thebhushanmhatre/full/KJbZrY",
       "src": "assets/images/projects/bookmark.jpg",
       "tech": "Javascript",
       "name": "Bookmark App",
       "visible":true,
       "target": "_blank"
-    },
-    {
-      "projectId": 7,
-      "href": "",
-      "src": "assets/images/projects/todoapp.jpg",
-      "tech": "React Javascript",
-      "name": "To Do List App",
-      "visible": false,
-      "target": ""
     },
     {
       "projectId": 8,

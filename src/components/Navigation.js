@@ -19,12 +19,12 @@ class Navigation extends Component {
   render(){
     return(
       <Navbar id="navbar" className="text-light container mb-3" expand="lg">
-        <NavbarToggler onClick={this.toggleNav}>
-          <span className="fa fa-angle-double-down fa-md" />
-        </NavbarToggler>
           <NavbarBrand className="mr-auto" href="/">
             <img id="logo" src="assets/images/logo.png" height="40" width="40" alt="bhushan"/> Bhushan Mhatre
           </NavbarBrand>
+          <NavbarToggler onClick={this.toggleNav}>
+            <span className="fa fa-angle-double-down fa-md" />
+          </NavbarToggler>
           <Collapse isOpen={this.state.isNavOpen} navbar>
             <Nav className="ml-auto">
               <NavItem><NavLink href='/workexp'><span className="fa fa-server fa-lg"> Work-Experience</span></NavLink></NavItem>

@@ -158,15 +158,15 @@ class PomodoroClock extends Component {
     return(
       <div className="container text-center">
       <Breadcrumb>
-          <BreadcrumbItem><a href="/">Home</a></BreadcrumbItem>
-          <BreadcrumbItem><a href="/project">Projects</a></BreadcrumbItem>
-          <BreadcrumbItem active>Pomodoro Clock</BreadcrumbItem>
-        </Breadcrumb>
-        <h1 style={{backgroundColor: 'skyblue', marginBottom: '20px', borderRadius: '15px'}} class="text-center p-3"> Pomodoro Clock </h1>
+        <BreadcrumbItem><a href="/">Home</a></BreadcrumbItem>
+        <BreadcrumbItem><a href="/project">Projects</a></BreadcrumbItem>
+        <BreadcrumbItem active>Pomodoro Clock</BreadcrumbItem>
+      </Breadcrumb>
+        <h2 style={{backgroundColor: 'skyblue', marginBottom: '20px', borderRadius: '15px'}} class="text-center p-3"> Pomodoro Clock </h2>
         <audio id="beep" src="https://actions.google.com/sounds/v1/alarms/medium_bell_ringing_near.ogg" type="audio/ogg"></audio>
 
-        <Row className="container mb-5 text-center">
-          <Col className="offset-1" style={{backgroundColor: 'skyblue', marginBottom: '20px', padding: '15px', borderRadius: '50px'}}>
+        <Row className="container mb-5 mt-5 text-center">
+          <Col style={{backgroundColor: 'skyblue', marginBottom: '20px', padding: '15px', borderRadius: '50px'}}>
             <button id="break-increment" onClick={this.inc_brlen}>
               <i className="fa fa-arrow-up fa-lg p-2 m-2"></i>
             </button>
@@ -176,8 +176,10 @@ class PomodoroClock extends Component {
               <i className="fa fa-arrow-down fa-lg p-2 m-2"></i>
             </button>
           </Col>
+
+          <Col className="col-1" />
           
-          <Col className="offset-1" style={{backgroundColor: 'skyblue', marginBottom: '20px', padding: '15px', borderRadius: '50px'}}>
+          <Col className="offset-sm-1" style={{backgroundColor: 'skyblue', marginBottom: '20px', padding: '15px', borderRadius: '50px'}}>
             <button id="session-increment" onClick={this.inc_sesslen}>
               <i className="fa fa-arrow-up fa-lg p-2 m-2"></i>
             </button>

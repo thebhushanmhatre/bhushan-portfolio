@@ -7,6 +7,7 @@ import Project from './Project';
 import Contact from './Contact';
 import RandomQuoteMachine from './projects/RandomQuoteMachine';
 import PomodoroClock from './projects/PomodoroClock';
+import ToDoList from './projects/ToDoList';
 import { Switch, Route, withRouter, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 
@@ -34,6 +35,7 @@ class Main extends Component{
           <Route exact path="/contact" component={() => <Contact contacts={this.props.contacts} />} />
           <Route exact path="/quotes" component={() => <RandomQuoteMachine quotes={this.props.quotes} />} />
           <Route exact path="/clock" component={() => <PomodoroClock />} />
+          <Route exact path="/todolist" component={() => <ToDoList  style={{background:'skyblue'}} />} />
           <Redirect to="/" />
         </Switch>
       </>
