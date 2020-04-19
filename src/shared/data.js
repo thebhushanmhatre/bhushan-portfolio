@@ -122,7 +122,7 @@ export const DATA = {
     {
       "certId": 1,
       "href": "https://www.coursera.org/account/accomplishments/certificate/B4LJHAVNG9B8",
-      "src": "/assets/images/certificates/react_coursera_hongkong.png",
+      "src": "/assets/images/certificates/react_coursera_hongkong.jpg",
       "name": "Front-End Web Development with React",
       "issuer": "Coursera",
       "institute": "The Hong Kong University of Science and Technology",
@@ -134,7 +134,7 @@ export const DATA = {
     {
       "certId": 2,
       "href": "https://www.coursera.org/account/accomplishments/certificate/WXBNNV2ZFS9Y",
-      "src": "/assets/images/certificates/bootstrap_coursera_hongkong.png",
+      "src": "/assets/images/certificates/bootstrap_coursera_hongkong.jpg",
       "name": "Front-End Web UI Frameworks and Tools: Bootstrap 4",
       "issuer": "Coursera",
       "institute": "The Hong Kong University of Science and Technology",
@@ -146,7 +146,7 @@ export const DATA = {
     {
       "certId": 3,
       "href": "https://www.coursera.org/account/accomplishments/certificate/C969LNUBGSZN",
-      "src": "/assets/images/certificates/js_interactivity_coursera.png",
+      "src": "/assets/images/certificates/js_interactivity_coursera.jpg",
       "name": "Interactivity with JavaScript",
       "issuer": "Coursera",
       "institute": "University of Michigan",
@@ -158,7 +158,7 @@ export const DATA = {
     {
       "certId": 4,
       "href": "https://www.coursera.org/account/accomplishments/certificate/V7JY5BJW7RZJ",
-      "src": "/assets/images/certificates/ror_intro.png",
+      "src": "/assets/images/certificates/ror_intro.jpg",
       "name": "Ruby on Rails: An Introduction",
       "issuer": "Coursera",
       "institute": "Johns Hopkins University",
@@ -170,7 +170,7 @@ export const DATA = {
     {
       "certId": 5,
       "href": "https://www.linkedin.com/learning/ruby-on-rails-5-essential-training",
-      "src": "/assets/images/certificates/ror_essential_linkedin.png",
+      "src": "/assets/images/certificates/ror_essential_linkedin.jpg",
       "name": "Ruby on Rails 5 Essential Training",
       "issuer": "Linkedin",
       "credentialID": "Kevin Skoglund",
@@ -181,7 +181,7 @@ export const DATA = {
     {
       "certId": 6,
       "href": "https://www.linkedin.com/learning/learning-sinatra",
-      "src": "/assets/images/certificates/sinatra_linkedin.png",
+      "src": "/assets/images/certificates/sinatra_linkedin.jpg",
       "name": "Learning Sinatra",
       "issuer": "Linkedin",
       "credentialID": "",
@@ -192,7 +192,7 @@ export const DATA = {
     {
       "certId": 7,
       "href": "https://www.linkedin.com/learning/learning-react-js-4",
-      "src": "/assets/images/certificates/learning_reactJS_linkedin.png",
+      "src": "/assets/images/certificates/learning_reactJS_linkedin.jpg",
       "name": "Learning React.js",
       "issuer": "Linkedin",
       "credentialID": "",
@@ -203,7 +203,7 @@ export const DATA = {
     {
       "certId": 8,
       "href": "http://www.linkedin.com/learning/designing-restful-apis",
-      "src": "/assets/images/certificates/designing_RESTful_APIs_linkedin.png",
+      "src": "/assets/images/certificates/designing_RESTful_APIs_linkedin.jpg",
       "name": "Designing Restful APIs",
       "issuer": "Linkedin",
       "credentialID": "",
@@ -214,7 +214,7 @@ export const DATA = {
     {
       "certId": 9,
       "href": "http://www.linkedin.com/learning/programming-foundations-databases-2",
-      "src": "/assets/images/certificates/prog_foundations_database_linkedin.png",
+      "src": "/assets/images/certificates/prog_foundations_database_linkedin.jpg",
       "name": "Programming Foundataions Database",
       "issuer": "Linkedin",
       "credentialID": "",
@@ -225,7 +225,7 @@ export const DATA = {
     {
       "certId": 10,
       "href": "http://www.linkedin.com/learning/game-development-foundations-game-related-math",
-      "src": "/assets/images/certificates/game_dev_found_linkedin.png",
+      "src": "/assets/images/certificates/game_dev_found_linkedin.jpg",
       "name": "JS Game Development Foundations",
       "issuer": "Linkedin",
       "credentialID": "",
@@ -429,14 +429,14 @@ export const DATA = {
     {
       "href": "https://en.wikipedia.org/wiki/Veermata_Jijabai_Technological_Institute",
       "name": "Veermata Jijabai Techological Institute (V.J.T.I.)",
-      "src": "assets/images/vjti_logo.png",
+      "src": "assets/images/vjti_logo.jpg",
       "year": "2019",
       "branch": "B.Tech., Electronics and Telecommunications"
     },
     {
       "href": "http://www.patkarvardecollege.edu.in/index.php",
       "name": "Patkar College of Science",
-      "src": "assets/images/patkar_logo.png",
+      "src": "assets/images/patkar_logo.jpg",
       "year": "2015"
     },
     {
