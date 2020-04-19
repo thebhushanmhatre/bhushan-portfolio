@@ -17,7 +17,7 @@ function RenderCertificate(props){
             <CardTitle>{props.certificate.name}</CardTitle>
             <CardSubtitle className="mb-4">{props.certificate.institute || props.certificate.issuer}</CardSubtitle>
             <CardText></CardText>
-            <CardLink href={props.certificate.href} target={props.certificate.target} className="bg-secondary text-light p-2 m-2">Verify Certficate</CardLink>
+            <CardLink href={props.certificate.href} target={props.certificate.target} className="bg-primary text-light p-2 m-2 verifyButton">Verify Certficate</CardLink>
           </CardBody>
         </Card>
       </div>

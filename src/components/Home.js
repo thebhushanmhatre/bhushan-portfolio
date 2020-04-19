@@ -3,7 +3,7 @@ import { Media } from 'reactstrap';
 
 function RenderMedia({item}) {
   return(
-    <div style={{borderLeft: '1px solid black'}} className="mb-4 pt-2 col-12 offset-md-1 col-md-9 col-lg-8">
+    <div className="mb-4 pt-2 col-12 offset-md-1 col-md-9 col-lg-8 educationMedia">
         <Media className="pb-2">
           <Media body>
             <Media heading>{item.name}</Media>

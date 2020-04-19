@@ -51,7 +51,7 @@ class ToDoList extends Component {
 				<div className="todoListMain text-center">
 					<div className="header">
 						<form  className="m-3" onSubmit={this.addItem}>
-							<input ref={a => {this.userInput = a}} placeholder="Enter Tasks . . ." />
+							<input ref={a => {this.userInput = a}} placeholder="Enter Tasks . . ." autoFocus />
 							<button className="m-1" type="submit"> ADD </button>
 						</form>
 					</div>
@@ -63,8 +63,6 @@ class ToDoList extends Component {
 }
 
 export default ToDoList;
-
-
 
 // Addding Items 	--> ToDoList
 // Displaying Items --> TodoItems.js

@@ -54,7 +54,7 @@ class RenderItems extends Component{
       );
     } else if (this.props.item.certId) {
       insideCard = (
-        <Link to={`/certificate/${this.props.item.certId}`} >
+        <Link className="certificateLink" to={`/certificate/${this.props.item.certId}`} >
           {cardBody}
         </Link>
       )
@@ -62,7 +62,7 @@ class RenderItems extends Component{
     return(
         <>
           <Col xs="12" sm="6" md="6" lg="4" className="align-self-center">
-            <Card className="m-2" style={this.props.height}>
+            <Card className="m-2 renderItemCard" style={this.props.height}>
               {insideCard}
             </Card>
             {onClickItem}

@@ -57,3 +57,31 @@ a {
 ul.theList {
   padding: 0px;
 }
+
+.certificateLink:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.certificateLink:visited {
+  color: gray;
+  text-decoration: none;
+}
+
+.renderItemCard:hover{
+  border: 1px solid green;
+  border-left: 5px solid green;
+  border-bottom: 5px solid green;
+}
+
+.verifyButton:hover{
+  border: 5px solid skyblue;
+}
+
+.educationMedia {
+  border-left: 5px solid skyblue;
+}
+
+.educationMedia:hover{
+  border-left: 5px solid green;
+}
