@@ -328,24 +328,24 @@ export const DATA = {
     },
     {
       "certId": 19,
-      "href": "https://courses.cognitiveclass.ai/certificates/04f14479b9c441248df1beced7644d83",
+      "href": "https://www.datacamp.com/statement-of-accomplishment/course/8668534e308738c8713ba0a1079a077958fe319d",
       "src": "/assets/images/certificates/git.jpg",
       "name": "Introduction to Git",
-      "institute": "Cognitive Class",
+      "institute": "DataCamp",
       "issuer": "IBM",
-      "credentialID": "",
+      "credentialID": "#6812768",
       "professor": "",
       "visible": false,
       "target": ""
     },
     {
       "certId": 20,
-      "href": "https://courses.cognitiveclass.ai/certificates/04f14479b9c441248df1beced7644d83",
+      "href": "https://www.datacamp.com/statement-of-accomplishment/course/4ade713f3d70039debfe6c8c1a430f72c6d5649f",
       "src": "/assets/images/certificates/shell.jpg",
       "name": "Introduction to Shell",
-      "institute": "Cognitive Class",
+      "institute": "DataCamp",
       "issuer": "IBM",
-      "credentialID": "",
+      "credentialID": "#6853360",
       "professor": "",
       "visible": false,
       "target": ""
@@ -356,7 +356,7 @@ export const DATA = {
       "src": "/assets/images/certificates/py.jpg",
       "name": "Introduction to Python",
       "issuer": "DataCamp",
-      "credentialID": "",
+      "credentialID": "#6798134",
       "professor": "",
       "visible": false,
       "target": ""
@@ -367,7 +367,29 @@ export const DATA = {
       "src": "/assets/images/certificates/r.jpg",
       "name": "Introduction to R",
       "issuer": "DataCamp",
-      "credentialID": "",
+      "credentialID": "#8022686",
+      "professor": "",
+      "visible": false,
+      "target": ""
+    },
+    {
+      "certId": 25,
+      "href": "https://www.datacamp.com/statement-of-accomplishment/course/92b8db3bcfdcc3e466f1ab170f46c1b76b37bbdd",
+      "src": "/assets/images/certificates/spreadsheets.jpg",
+      "name": "Introduction to Spreadsheets",
+      "issuer": "DataCamp",
+      "credentialID": "#6841333",
+      "professor": "",
+      "visible": false,
+      "target": ""
+    },
+    {
+      "certId": 26,
+      "href": "https://www.datacamp.com/statement-of-accomplishment/course/ca02b713af7854206b0be3561d5b5f4a3e39c89b",
+      "src": "/assets/images/certificates/spreadsheets.jpg",
+      "name": "Introduction to SQL",
+      "issuer": "DataCamp",
+      "credentialID": "#6804819",
       "professor": "",
       "visible": false,
       "target": ""
@@ -391,6 +413,18 @@ export const DATA = {
       "issuer": "Amcat",
       "credentialID": "",
       "professor": "",
+      "visible": false,
+      "target": ""
+    },
+    {
+      "certId": 20,
+      "href": "https://courses.cognitiveclass.ai/certificates/07f3f8eb298c478d974c38aa459ef1f8",
+      "src": "/assets/images/certificates/blockchain.jpg",
+      "name": "Blockchain Essentials",
+      "institute": "Cognitive Class",
+      "issuer": "IBM",
+      "credentialID": "",
+      "professor": "developerWorks",
       "visible": false,
       "target": ""
     }

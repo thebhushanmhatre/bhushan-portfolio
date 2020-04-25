@@ -20,7 +20,7 @@ class Navigation extends Component {
     return(
       <Navbar id="navbar" className="text-light container mb-3" expand="lg">
           <NavbarBrand className="mr-auto" href="/">
-            <img id="logo" src="assets/images/logo.png" height="40" width="40" alt="bhushan"/> Bhushan Mhatre
+            <img id="logo" src="assets/images/logo.jpg" height="40" width="40" alt="bhushan"/> Bhushan Mhatre
           </NavbarBrand>
           <NavbarToggler onClick={this.toggleNav}>
             <span className="fa fa-angle-double-down fa-md" />
