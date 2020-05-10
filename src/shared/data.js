@@ -2,6 +2,15 @@ export const DATA = {
   "projects":[
     {
       "projectId": 1,
+      "href": "https://recipe-app-bhushan.herokuapp.com/",
+      "src": "assets/images/projects/recipe-app.jpg",
+      "tech": "React Javascript, Fetch API",
+      "name": "Recipe App",
+      "visible":true,
+      "target": "_blank"
+    },
+    {
+      "projectId": 2,
       "href": "todolist",
       "src": "assets/images/projects/todoapp.jpg",
       "tech": "React Javascript",
@@ -10,7 +19,7 @@ export const DATA = {
       "target": ""
     },
     {
-      "projectId": 2,
+      "projectId": 3,
       "href": "/quotes",//https://codepen.io/thebhushanmhatre/full/yZQmVw"
       "src": "assets/images/projects/quotes.jpg",
       "tech": "Javascript",
@@ -19,7 +28,7 @@ export const DATA = {
       "target": ""
     },
     {
-      "projectId": 3,
+      "projectId": 4,
       "href": "/clock",//https://codepen.io/thebhushanmhatre/full/LaJqvy",
       "src": "assets/images/projects/clock.jpg",
       "tech": "Javascript",
@@ -28,7 +37,7 @@ export const DATA = {
       "target": ""
     },
     {
-      "projectId": 4,
+      "projectId": 5,
       "href": "https://book-flights-bhushan.herokuapp.com/",
       "src": "assets/images/projects/bookflight.jpg",
       "tech": "Ruby on Rails",
@@ -37,7 +46,7 @@ export const DATA = {
       "target": "_blank"
     },
     {
-      "projectId": 5,
+      "projectId": 6,
       "href": "https://codepen.io/thebhushanmhatre/full/BbPrwa",
       "src": "assets/images/projects/calculator.jpg",
       "tech": "Javascript",
@@ -46,7 +55,7 @@ export const DATA = {
       "target": "_blank"
     },
     {
-      "projectId": 6,
+      "projectId": 7,
       "href": "https://codepen.io/thebhushanmhatre/full/QYeKBy",
       "src": "assets/images/projects/drum.jpg",
       "tech": "Javascript",
@@ -55,7 +64,7 @@ export const DATA = {
       "target": "_blank"
     },
     {
-      "projectId": 7,
+      "projectId": 8,
       "href": "https://codepen.io/thebhushanmhatre/full/KJbZrY",
       "src": "assets/images/projects/bookmark.jpg",
       "tech": "Javascript",
@@ -64,7 +73,7 @@ export const DATA = {
       "target": "_blank"
     },
     {
-      "projectId": 8,
+      "projectId": 9,
       "href": "https://codepen.io/thebhushanmhatre/full/aXPoNw",
       "src": "assets/images/projects/weights.jpg",
       "tech": "Javascript",
@@ -73,7 +82,7 @@ export const DATA = {
       "target": "_blank"
     },
     {
-      "projectId": 9,
+      "projectId": 10,
       "href": "https://codepen.io/thebhushanmhatre/full/BMXLob",
       "src": "assets/images/projects/markdown.jpg",
       "tech": "Javascript",
@@ -82,7 +91,7 @@ export const DATA = {
       "target": "_blank"
     },
     {
-      "projectId": 10,
+      "projectId": 12,
       "href": "",
       "src": "assets/images/projects/senti.jpg",
       "tech": "Python, Machine Learning",
@@ -100,7 +109,7 @@ export const DATA = {
       "target": "_blank"
     },
     {
-      "projectId": 12,
+      "projectId": 13,
       "href": "",
       "src": "assets/images/projects/radar.jpg",
       "tech": "Electronics",
@@ -109,7 +118,7 @@ export const DATA = {
       "target": ""
     },
     {
-      "projectId": 13,
+      "projectId": 14,
       "href": "",
       "src": "assets/images/projects/robarm.jpg",
       "tech": "Electronics",
@@ -417,7 +426,7 @@ export const DATA = {
       "target": ""
     },
     {
-      "certId": 20,
+      "certId": 27,
       "href": "https://courses.cognitiveclass.ai/certificates/07f3f8eb298c478d974c38aa459ef1f8",
       "src": "/assets/images/certificates/blockchain.jpg",
       "name": "Blockchain Essentials",
@@ -427,6 +436,29 @@ export const DATA = {
       "professor": "developerWorks",
       "visible": false,
       "target": ""
+    },
+    {
+      "certId": 26,
+      "href": "http://www.linkedin.com/learning/learning-ecmascript-6",
+      "src": "/assets/images/certificates/ECMAScript6.jpg",
+      "name": "Learning ECMAScript 6",
+      "issuer": "Linkedin",
+      "credentialID": "",
+      "professor": "",
+      "visible": false,
+      "target": "_blank"
+    },
+    {
+      "certId": 28,
+      "href": "",
+      "src": "/assets/images/certificates/react_native.jpg",
+      "name": "Learning React Native",
+      "institute": "",
+      "issuer": "Linkedin",
+      "credentialID": "",
+      "professor": "",
+      "visible": true,
+      "target": "_blank"
     }
   ],
   "contacts":[
