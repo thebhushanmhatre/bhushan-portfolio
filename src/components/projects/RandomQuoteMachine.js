@@ -37,7 +37,8 @@ class RandomQuoteMachine extends Component{
             <span class="fa fa-pencil" >&nbsp;{this.state.author}</span>
           </h4>
           <button class="btn btn-primary" id="new-quote" onClick={this.displayQuote} > New Quote </button>
-          <button  href="" class=" btn btn-info float-right">  <span class="fa fa-twitter"> </span> Tweet </button >
+          <a href={"https://twitter.com/intent/tweet?text=" + this.state.quote.replace('%', '%25') + " - " + this.state.author}
+            class="btn btn-info float-right twitter-share-button" target="_blank" rel="noopener noreferrer">  <span class="fa fa-twitter"> </span> Tweet </a >
         </div>
         <div className="text-center pt-5"><img src="assets/images/logo.svg" alt="bm_logo" /></div>
       </div>

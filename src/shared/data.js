@@ -130,6 +130,18 @@ export const DATA = {
   "certificates":[
     {
       "certId": 1,
+      "href": "https://www.coursera.org/account/accomplishments/certificate/VTHK4VHWBLLP",
+      "src": "/assets/images/certificates/express_server_mongodb.jpg",
+      "name": "Server-side Development with NodeJS, Express and MongoDB",
+      "issuer": "Coursera",
+      "institute": "The Hong Kong University of Science and Technology",
+      "credentialID": "VTHK4VHWBLLP",
+      "professor": "Jogesh K. Muppala",
+      "visible":true,
+      "target": "_blank"
+    },
+    {
+      "certId": 2,
       "href": "https://www.coursera.org/account/accomplishments/certificate/B4LJHAVNG9B8",
       "src": "/assets/images/certificates/react_coursera_hongkong.jpg",
       "name": "Front-End Web Development with React",
@@ -141,7 +153,7 @@ export const DATA = {
       "target": "_blank"
     },
     {
-      "certId": 2,
+      "certId": 3,
       "href": "https://www.coursera.org/account/accomplishments/certificate/WXBNNV2ZFS9Y",
       "src": "/assets/images/certificates/bootstrap_coursera_hongkong.jpg",
       "name": "Front-End Web UI Frameworks and Tools: Bootstrap 4",
@@ -153,7 +165,7 @@ export const DATA = {
       "target": "_blank"
     },
     {
-      "certId": 3,
+      "certId": 4,
       "href": "https://www.coursera.org/account/accomplishments/certificate/C969LNUBGSZN",
       "src": "/assets/images/certificates/js_interactivity_coursera.jpg",
       "name": "Interactivity with JavaScript",
@@ -165,7 +177,7 @@ export const DATA = {
       "target": ""
     },
     {
-      "certId": 4,
+      "certId": 5,
       "href": "https://www.coursera.org/account/accomplishments/certificate/V7JY5BJW7RZJ",
       "src": "/assets/images/certificates/ror_intro.jpg",
       "name": "Ruby on Rails: An Introduction",
@@ -177,7 +189,7 @@ export const DATA = {
       "target": "_blank"
     },
     {
-      "certId": 5,
+      "certId": 6,
       "href": "https://www.linkedin.com/learning/ruby-on-rails-5-essential-training",
       "src": "/assets/images/certificates/ror_essential_linkedin.jpg",
       "name": "Ruby on Rails 5 Essential Training",
@@ -188,7 +200,7 @@ export const DATA = {
       "target": ""
     },
     {
-      "certId": 6,
+      "certId": 7,
       "href": "https://www.linkedin.com/learning/learning-sinatra",
       "src": "/assets/images/certificates/sinatra_linkedin.jpg",
       "name": "Learning Sinatra",
@@ -199,7 +211,7 @@ export const DATA = {
       "target": "_blank"
     },
     {
-      "certId": 7,
+      "certId": 8,
       "href": "https://www.linkedin.com/learning/learning-react-js-4",
       "src": "/assets/images/certificates/learning_reactJS_linkedin.jpg",
       "name": "Learning React.js",
@@ -210,7 +222,7 @@ export const DATA = {
       "target": ""
     },
     {
-      "certId": 8,
+      "certId": 9,
       "href": "http://www.linkedin.com/learning/designing-restful-apis",
       "src": "/assets/images/certificates/designing_RESTful_APIs_linkedin.jpg",
       "name": "Designing Restful APIs",
@@ -221,7 +233,7 @@ export const DATA = {
       "target": ""
     },
     {
-      "certId": 9,
+      "certId": 10,
       "href": "http://www.linkedin.com/learning/programming-foundations-databases-2",
       "src": "/assets/images/certificates/prog_foundations_database_linkedin.jpg",
       "name": "Programming Foundataions Database",
@@ -232,7 +244,7 @@ export const DATA = {
       "target": ""
     },
     {
-      "certId": 10,
+      "certId": 11,
       "href": "http://www.linkedin.com/learning/game-development-foundations-game-related-math",
       "src": "/assets/images/certificates/game_dev_found_linkedin.jpg",
       "name": "JS Game Development Foundations",
@@ -243,7 +255,7 @@ export const DATA = {
       "target": "_blank"
     },
     {
-      "certId": 11,
+      "certId": 12,
       "href": "https://www.freecodecamp.org/certification/thebhushanmhatre/front-end-libraries",
       "src": "/assets/images/certificates/certi3fcc.jpg",
       "name": "Front End Libraries Developer Certification",
@@ -254,7 +266,7 @@ export const DATA = {
       "target": "_blank"
     },
     {
-      "certId": 12,
+      "certId": 13,
       "href": "https://www.freecodecamp.org/certification/thebhushanmhatre/javascript-algorithms-and-data-structures",
       "src": "/assets/images/certificates/certi2fcc.jpg",
       "name": "JavaScript Algorithms and Data Structures Developer Certification",
@@ -265,7 +277,7 @@ export const DATA = {
       "target": "_blank"
     },
     {
-      "certId": 13,
+      "certId": 14,
       "href": "https://www.freecodecamp.org/certification/thebhushanmhatre/responsive-web-design",
       "src": "/assets/images/certificates/certi1fcc.jpg",
       "name": "Responsive Web Design Developer Certification",
@@ -276,7 +288,7 @@ export const DATA = {
       "target": "_blank"
     },
     {
-      "certId": 14,
+      "certId": 15,
       "href": "https://courses.cognitiveclass.ai/certificates/e57bfb7f88a44359bee8b2f1fe82fd94",
       "src": "/assets/images/certificates/dltf.jpg",
       "name": "Deep Learning with TensorFlow",
@@ -288,7 +300,7 @@ export const DATA = {
       "target": ""
     },
     {
-      "certId": 15,
+      "certId": 16,
       "href": "https://courses.cognitiveclass.ai/certificates/261026b4c71042f880a1415cb6eb92ff",
       "src": "/assets/images/certificates/dlfund.jpg",
       "name": "Deep Learning Fundamentals",
@@ -300,7 +312,7 @@ export const DATA = {
       "target": ""
     },
     {
-      "certId": 16,
+      "certId": 17,
       "href": "https://courses.cognitiveclass.ai/certificates/04f14479b9c441248df1beced7644d83",
       "src": "/assets/images/certificates/da.jpg",
       "name": "Data Analysis with Python",
@@ -312,7 +324,7 @@ export const DATA = {
       "target": "_blank"
     },
     {
-      "certId": 17,
+      "certId": 18,
       "href": "https://courses.cognitiveclass.ai/certificates/8127fd9abca148c4bc8344c34c9d6438",
       "src": "/assets/images/certificates/dataviz.jpg",
       "name": "Data Visualization with Python",
@@ -324,7 +336,7 @@ export const DATA = {
       "target": "_blank"
     },
     {
-      "certId": 18,
+      "certId": 19,
       "href": "https://courses.cognitiveclass.ai/certificates/dc8e9f0115c945f6bd908b2376d6f43a",
       "src": "/assets/images/certificates/sql.jpg",
       "name": "SQL and Relational Databases",
@@ -336,7 +348,7 @@ export const DATA = {
       "target": ""
     },
     {
-      "certId": 19,
+      "certId": 20,
       "href": "https://www.datacamp.com/statement-of-accomplishment/course/8668534e308738c8713ba0a1079a077958fe319d",
       "src": "/assets/images/certificates/git.jpg",
       "name": "Introduction to Git",
@@ -348,7 +360,7 @@ export const DATA = {
       "target": ""
     },
     {
-      "certId": 20,
+      "certId": 21,
       "href": "https://www.datacamp.com/statement-of-accomplishment/course/4ade713f3d70039debfe6c8c1a430f72c6d5649f",
       "src": "/assets/images/certificates/shell.jpg",
       "name": "Introduction to Shell",
@@ -360,45 +372,12 @@ export const DATA = {
       "target": ""
     },
     {
-      "certId": 21,
+      "certId": 22,
       "href": "https://www.datacamp.com/statement-of-accomplishment/course/e50869d51065721fca64b1821866f0044e244786",
       "src": "/assets/images/certificates/py.jpg",
       "name": "Introduction to Python",
       "issuer": "DataCamp",
       "credentialID": "#6798134",
-      "professor": "",
-      "visible": false,
-      "target": ""
-    },
-    {
-      "certId": 22,
-      "href": "https://www.datacamp.com/statement-of-accomplishment/course/543dd80cf86a37eec1cd98342d449d43f847c37e",
-      "src": "/assets/images/certificates/r.jpg",
-      "name": "Introduction to R",
-      "issuer": "DataCamp",
-      "credentialID": "#8022686",
-      "professor": "",
-      "visible": false,
-      "target": ""
-    },
-    {
-      "certId": 25,
-      "href": "https://www.datacamp.com/statement-of-accomplishment/course/92b8db3bcfdcc3e466f1ab170f46c1b76b37bbdd",
-      "src": "/assets/images/certificates/spreadsheets.jpg",
-      "name": "Introduction to Spreadsheets",
-      "issuer": "DataCamp",
-      "credentialID": "#6841333",
-      "professor": "",
-      "visible": false,
-      "target": ""
-    },
-    {
-      "certId": 26,
-      "href": "https://www.datacamp.com/statement-of-accomplishment/course/ca02b713af7854206b0be3561d5b5f4a3e39c89b",
-      "src": "/assets/images/certificates/spreadsheets.jpg",
-      "name": "Introduction to SQL",
-      "issuer": "DataCamp",
-      "credentialID": "#6804819",
       "professor": "",
       "visible": false,
       "target": ""
@@ -416,6 +395,40 @@ export const DATA = {
     },
     {
       "certId": 24,
+      "href": "http://www.linkedin.com/learning/learning-ecmascript-6",
+      "src": "/assets/images/certificates/ECMAScript6.jpg",
+      "name": "Learning ECMAScript 6",
+      "issuer": "Linkedin",
+      "credentialID": "",
+      "professor": "",
+      "visible": false,
+      "target": "_blank"
+    },
+    {
+      "certId": 25,
+      "href": "",
+      "src": "/assets/images/certificates/react_native.jpg",
+      "name": "Learning React Native",
+      "institute": "",
+      "issuer": "Linkedin",
+      "credentialID": "",
+      "professor": "",
+      "visible": true,
+      "target": "_blank"
+    },
+    {
+      "certId": 26,
+      "href": "https://www.datacamp.com/statement-of-accomplishment/course/ca02b713af7854206b0be3561d5b5f4a3e39c89b",
+      "src": "/assets/images/certificates/spreadsheets.jpg",
+      "name": "Introduction to SQL",
+      "issuer": "DataCamp",
+      "credentialID": "#6804819",
+      "professor": "",
+      "visible": false,
+      "target": ""
+    },
+    {
+      "certId": 27,
       "href": "https://drive.google.com/file/d/1rtbMqWYD-O8ljcDBf-5Lnl9F1pRBqHxS/view?usp:sharing",
       "src": "/assets/images/certificates/amcat.jpg",
       "name": "Amcat Report",
@@ -426,7 +439,18 @@ export const DATA = {
       "target": ""
     },
     {
-      "certId": 27,
+      "certId": 28,
+      "href": "https://www.datacamp.com/statement-of-accomplishment/course/92b8db3bcfdcc3e466f1ab170f46c1b76b37bbdd",
+      "src": "/assets/images/certificates/spreadsheets.jpg",
+      "name": "Introduction to Spreadsheets",
+      "issuer": "DataCamp",
+      "credentialID": "#6841333",
+      "professor": "",
+      "visible": false,
+      "target": ""
+    },
+    {
+      "certId": 29,
       "href": "https://courses.cognitiveclass.ai/certificates/07f3f8eb298c478d974c38aa459ef1f8",
       "src": "/assets/images/certificates/blockchain.jpg",
       "name": "Blockchain Essentials",
@@ -438,27 +462,15 @@ export const DATA = {
       "target": ""
     },
     {
-      "certId": 26,
-      "href": "http://www.linkedin.com/learning/learning-ecmascript-6",
-      "src": "/assets/images/certificates/ECMAScript6.jpg",
-      "name": "Learning ECMAScript 6",
-      "issuer": "Linkedin",
-      "credentialID": "",
+      "certId": 30,
+      "href": "https://www.datacamp.com/statement-of-accomplishment/course/543dd80cf86a37eec1cd98342d449d43f847c37e",
+      "src": "/assets/images/certificates/r.jpg",
+      "name": "Introduction to R",
+      "issuer": "DataCamp",
+      "credentialID": "#8022686",
       "professor": "",
       "visible": false,
-      "target": "_blank"
-    },
-    {
-      "certId": 28,
-      "href": "",
-      "src": "/assets/images/certificates/react_native.jpg",
-      "name": "Learning React Native",
-      "institute": "",
-      "issuer": "Linkedin",
-      "credentialID": "",
-      "professor": "",
-      "visible": true,
-      "target": "_blank"
+      "target": ""
     }
   ],
   "contacts":[
