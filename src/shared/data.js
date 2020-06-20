@@ -1,5 +1,5 @@
 export const DATA = {
-  "projects":[
+  "projects ":[
     {
       "projectId": 1,
       "href": "https://recipe-app-bhushan.herokuapp.com/",
@@ -16,7 +16,7 @@ export const DATA = {
       "tech": "React Javascript",
       "name": "To Do List App",
       "visible": true,
-      "target": ""
+      "target": "_blank"
     },
     {
       "projectId": 3,
@@ -25,7 +25,7 @@ export const DATA = {
       "tech": "Javascript",
       "name": "Random Quote Machine",
       "visible":true,
-      "target": ""
+      "target": "_blank"
     },
     {
       "projectId": 4,
@@ -34,7 +34,7 @@ export const DATA = {
       "tech": "Javascript",
       "name": "Pomodoro Clock",
       "visible":true,
-      "target": ""
+      "target": "_blank"
     },
     {
       "projectId": 5,
@@ -97,7 +97,7 @@ export const DATA = {
       "tech": "Python, Machine Learning",
       "name": "Sentiment Analysis",
       "visible": false,
-      "target": ""
+      "target": "_blank"
     },
     {
       "projectId": 11,
@@ -115,7 +115,7 @@ export const DATA = {
       "tech": "Electronics",
       "name": "Arduino Radar",
       "visible": false,
-      "target": ""
+      "target": "_blank"
     },
     {
       "projectId": 14,
@@ -124,7 +124,7 @@ export const DATA = {
       "tech": "Electronics",
       "name": "Haptic Robotic Arm",
       "visible": false,
-      "target": ""
+      "target": "_blank"
     }
   ],
   "certificates":[
@@ -137,7 +137,7 @@ export const DATA = {
       "institute": "The Hong Kong University of Science and Technology",
       "credentialID": "VTHK4VHWBLLP",
       "professor": "Jogesh K. Muppala",
-      "visible":true,
+      "visible": true,
       "target": "_blank"
     },
     {
@@ -149,7 +149,7 @@ export const DATA = {
       "institute": "The Hong Kong University of Science and Technology",
       "credentialID": "B4LJHAVNG9B8",
       "professor": "Jogesh K. Muppala",
-      "visible":true,
+      "visible": true,
       "target": "_blank"
     },
     {
@@ -161,7 +161,7 @@ export const DATA = {
       "institute": "The Hong Kong University of Science and Technology",
       "credentialID": "WXBNNV2ZFS9Y",
       "professor": "Jogesh K. Muppala",
-      "visible":true,
+      "visible": true,
       "target": "_blank"
     },
     {
@@ -174,7 +174,7 @@ export const DATA = {
       "credentialID": "C969LNUBGSZN",
       "professor": "Kalmin Haznis",
       "visible": false,
-      "target": ""
+      "target": "_blank"
     },
     {
       "certId": 5,
@@ -185,7 +185,7 @@ export const DATA = {
       "institute": "Johns Hopkins University",
       "credentialID": "V7JY5BJW7RZJ",
       "professor": "Kalmin Haznis",
-      "visible":true,
+      "visible": true,
       "target": "_blank"
     },
     {
@@ -197,7 +197,7 @@ export const DATA = {
       "credentialID": "Kevin Skoglund",
       "professor": "",
       "visible": false,
-      "target": ""
+      "target": "_blank"
     },
     {
       "certId": 7,
@@ -207,7 +207,7 @@ export const DATA = {
       "issuer": "Linkedin",
       "credentialID": "",
       "professor": "Kevin Skoglund",
-      "visible":true,
+      "visible": true,
       "target": "_blank"
     },
     {
@@ -219,7 +219,7 @@ export const DATA = {
       "credentialID": "",
       "professor": "",
       "visible": false,
-      "target": ""
+      "target": "_blank"
     },
     {
       "certId": 9,
@@ -230,7 +230,7 @@ export const DATA = {
       "credentialID": "",
       "professor": "",
       "visible": false,
-      "target": ""
+      "target": "_blank"
     },
     {
       "certId": 10,
@@ -241,7 +241,7 @@ export const DATA = {
       "credentialID": "",
       "professor": "",
       "visible": false,
-      "target": ""
+      "target": "_blank"
     },
     {
       "certId": 11,
@@ -251,7 +251,7 @@ export const DATA = {
       "issuer": "Linkedin",
       "credentialID": "",
       "professor": "Jesse Freeman",
-      "visible":true,
+      "visible": true,
       "target": "_blank"
     },
     {
@@ -262,7 +262,7 @@ export const DATA = {
       "issuer": "Freecodecamp",
       "credentialID": "",
       "professor": "",
-      "visible":true,
+      "visible": true,
       "target": "_blank"
     },
     {
@@ -273,7 +273,7 @@ export const DATA = {
       "issuer": "Freecodecamp",
       "credentialID": "",
       "professor": "",
-      "visible":true,
+      "visible": true,
       "target": "_blank"
     },
     {
@@ -284,7 +284,7 @@ export const DATA = {
       "issuer": "Freecodecamp",
       "credentialID": "",
       "professor": "",
-      "visible":true,
+      "visible": true,
       "target": "_blank"
     },
     {
@@ -297,7 +297,7 @@ export const DATA = {
       "credentialID": "",
       "professor": "",
       "visible": false,
-      "target": ""
+      "target": "_blank"
     },
     {
       "certId": 16,
@@ -309,7 +309,7 @@ export const DATA = {
       "credentialID": "",
       "professor": "",
       "visible": false,
-      "target": ""
+      "target": "_blank"
     },
     {
       "certId": 17,
@@ -320,7 +320,7 @@ export const DATA = {
       "issuer": "IBM",
       "credentialID": "",
       "professor": "",
-      "visible":true,
+      "visible": true,
       "target": "_blank"
     },
     {
@@ -332,7 +332,7 @@ export const DATA = {
       "issuer": "IBM",
       "credentialID": "",
       "professor": "",
-      "visible":true,
+      "visible": true,
       "target": "_blank"
     },
     {
@@ -345,7 +345,7 @@ export const DATA = {
       "credentialID": "",
       "professor": "",
       "visible": false,
-      "target": ""
+      "target": "_blank"
     },
     {
       "certId": 20,
@@ -357,7 +357,7 @@ export const DATA = {
       "credentialID": "#6812768",
       "professor": "",
       "visible": false,
-      "target": ""
+      "target": "_blank"
     },
     {
       "certId": 21,
@@ -369,7 +369,7 @@ export const DATA = {
       "credentialID": "#6853360",
       "professor": "",
       "visible": false,
-      "target": ""
+      "target": "_blank"
     },
     {
       "certId": 22,
@@ -380,7 +380,7 @@ export const DATA = {
       "credentialID": "#6798134",
       "professor": "",
       "visible": false,
-      "target": ""
+      "target": "_blank"
     },
     {
       "certId": 23,
@@ -391,7 +391,7 @@ export const DATA = {
       "credentialID": "",
       "professor": "",
       "visible": false,
-      "target": ""
+      "target": "_blank"
     },
     {
       "certId": 24,
@@ -425,7 +425,7 @@ export const DATA = {
       "credentialID": "#6804819",
       "professor": "",
       "visible": false,
-      "target": ""
+      "target": "_blank"
     },
     {
       "certId": 27,
@@ -436,7 +436,7 @@ export const DATA = {
       "credentialID": "",
       "professor": "",
       "visible": false,
-      "target": ""
+      "target": "_blank"
     },
     {
       "certId": 28,
@@ -447,7 +447,7 @@ export const DATA = {
       "credentialID": "#6841333",
       "professor": "",
       "visible": false,
-      "target": ""
+      "target": "_blank"
     },
     {
       "certId": 29,
@@ -459,7 +459,7 @@ export const DATA = {
       "credentialID": "",
       "professor": "developerWorks",
       "visible": false,
-      "target": ""
+      "target": "_blank"
     },
     {
       "certId": 30,
@@ -470,7 +470,54 @@ export const DATA = {
       "credentialID": "#8022686",
       "professor": "",
       "visible": false,
-      "target": ""
+      "target": "_blank"
+    },
+    {
+      "certId": 31,
+      "href": "http://www.linkedin.com/learning/express-essential-training",
+      "src": "/assets/images/certificates/express_essential.jpg",
+      "name": "Express Essential Training",
+      "institute": "",
+      "issuer": "Linkedin",
+      "credentialID": "",
+      "professor": "Emmanuel Henri",
+      "visible": false,
+      "target": "_blank"
+    },
+    {
+      "certId": 32,
+      "href": "http://www.linkedin.com/learning/docker-for-developers-2",
+      "src": "/assets/images/certificates/docker_for_developers.jpg",
+      "name": "Docker for Developers",
+      "institute": "",
+      "issuer": "Linkedin",
+      "credentialID": "",
+      "professor": "Emmanuel Henri",
+      "visible": true,
+      "target": "_blank"
+    },
+    {
+      "certId": 33,
+      "href": "http://www.linkedin.com/learning/node-js-real-time-web-with-socket-io",
+      "src": "/assets/images/certificates/socket.jpg",
+      "name": "Node.js: Real-Time Web with Socket.IO",
+      "institute": "",
+      "issuer": "Linkedin",
+      "credentialID": "",
+      "professor": "Emmanuel Henri",
+      "visible": false,
+      "target": "_blank"
+    },
+    {
+      "certId": 34,
+      "href": "http://www.linkedin.com/learning/advanced-sql-logical-query-processing",
+      "src": "/assets/images/certificates/adv_sql_logical_query_processing.jpg",
+      "name": "Advanced SQL – Logical Query Processing",
+      "issuer": "Linkedin",
+      "credentialID": "AZzwrTXRM4gUkgo1gtDnIcxgsApe",
+      "professor": "Ami Levin",
+      "visible": true,
+      "target": "_blank"
     }
   ],
   "contacts":[
