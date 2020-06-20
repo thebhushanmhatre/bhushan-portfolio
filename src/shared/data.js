@@ -1,5 +1,5 @@
 export const DATA = {
-  "projects ":[
+  "projects":[
     {
       "projectId": 1,
       "href": "https://recipe-app-bhushan.herokuapp.com/",
@@ -16,25 +16,25 @@ export const DATA = {
       "tech": "React Javascript",
       "name": "To Do List App",
       "visible": true,
-      "target": "_blank"
+      "target": ""
     },
     {
       "projectId": 3,
-      "href": "/quotes",//https://codepen.io/thebhushanmhatre/full/yZQmVw"
+      "href": "quotes",//https://codepen.io/thebhushanmhatre/full/yZQmVw"
       "src": "assets/images/projects/quotes.jpg",
       "tech": "Javascript",
       "name": "Random Quote Machine",
       "visible":true,
-      "target": "_blank"
+      "target": ""
     },
     {
       "projectId": 4,
-      "href": "/clock",//https://codepen.io/thebhushanmhatre/full/LaJqvy",
+      "href": "clock",//https://codepen.io/thebhushanmhatre/full/LaJqvy",
       "src": "assets/images/projects/clock.jpg",
       "tech": "Javascript",
       "name": "Pomodoro Clock",
       "visible":true,
-      "target": "_blank"
+      "target": ""
     },
     {
       "projectId": 5,
