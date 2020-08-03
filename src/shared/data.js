@@ -125,6 +125,15 @@ export const DATA = {
       "name": "Haptic Robotic Arm",
       "visible": false,
       "target": "_blank"
+    },
+    {
+      "projectId": 14,
+      "href": "https://github.com/thebhushanmhatre/Tetris",
+      "src": "assets/images/projects/tetris_js.jpg",
+      "tech": "JavaScript",
+      "name": "Tetris Game",
+      "visible": true,
+      "target": "_blank"
     }
   ],
   "certificates":[
@@ -194,8 +203,8 @@ export const DATA = {
       "src": "/assets/images/certificates/ror_essential_linkedin.jpg",
       "name": "Ruby on Rails 5 Essential Training",
       "issuer": "Linkedin",
-      "credentialID": "Kevin Skoglund",
-      "professor": "",
+      "credentialID": "",
+      "professor": "Kevin Skoglund",
       "visible": false,
       "target": "_blank"
     },
@@ -217,7 +226,7 @@ export const DATA = {
       "name": "Learning React.js",
       "issuer": "Linkedin",
       "credentialID": "",
-      "professor": "",
+      "professor": "Eve Porcello",
       "visible": false,
       "target": "_blank"
     },
@@ -228,7 +237,7 @@ export const DATA = {
       "name": "Designing Restful APIs",
       "issuer": "Linkedin",
       "credentialID": "",
-      "professor": "",
+      "professor": "Keith Casey",
       "visible": false,
       "target": "_blank"
     },
@@ -239,7 +248,7 @@ export const DATA = {
       "name": "Programming Foundataions Database",
       "issuer": "Linkedin",
       "credentialID": "",
-      "professor": "",
+      "professor": "Scott Simpson",
       "visible": false,
       "target": "_blank"
     },
@@ -406,7 +415,7 @@ export const DATA = {
     },
     {
       "certId": 25,
-      "href": "",
+      "href": "https://www.linkedin.com/learning/learning-react-native-2017",
       "src": "/assets/images/certificates/react_native.jpg",
       "name": "Learning React Native",
       "institute": "",
