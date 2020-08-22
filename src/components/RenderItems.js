@@ -24,7 +24,7 @@ class RenderItems extends Component{
 
   render(){
     const cardSubtitle = this.props.item.institute || this.props.item.professor;
-    const cardText = this.props.item.issuer || this.props.item.tech;
+    const cardText = this.props.item.issuer || this.props.item.tech.join(', ');
     let insideCard = ""
     const cardBody = (
       <div>

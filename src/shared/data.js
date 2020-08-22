@@ -4,16 +4,16 @@ export const DATA = {
       "projectId": 1,
       "href": "https://recipe-app-bhushan.herokuapp.com/",
       "src": "assets/images/projects/recipe-app.jpg",
-      "tech": "React Javascript, Fetch API",
+      "tech": ["React", "Javascript", "Fetch API"],
       "name": "Recipe App",
-      "visible":true,
+      "visible": true,
       "target": "_blank"
     },
     {
       "projectId": 2,
       "href": "todolist",
       "src": "assets/images/projects/todoapp.jpg",
-      "tech": "React Javascript",
+      "tech": ["React", "Javascript"],
       "name": "To Do List App",
       "visible": true,
       "target": ""
@@ -22,79 +22,79 @@ export const DATA = {
       "projectId": 3,
       "href": "quotes",//https://codepen.io/thebhushanmhatre/full/yZQmVw"
       "src": "assets/images/projects/quotes.jpg",
-      "tech": "Javascript",
+      "tech": ["Javascript"],
       "name": "Random Quote Machine",
-      "visible":true,
+      "visible": true,
       "target": ""
     },
     {
       "projectId": 4,
       "href": "clock",//https://codepen.io/thebhushanmhatre/full/LaJqvy",
       "src": "assets/images/projects/clock.jpg",
-      "tech": "Javascript",
+      "tech": ["Javascript"],
       "name": "Pomodoro Clock",
-      "visible":true,
+      "visible": true,
       "target": ""
     },
     {
       "projectId": 5,
       "href": "https://book-flights-bhushan.herokuapp.com/",
       "src": "assets/images/projects/bookflight.jpg",
-      "tech": "Ruby on Rails",
+      "tech": ["Ruby", "Ruby on Rails"],
       "name": "Flight Booking App",
-      "visible":true,
+      "visible": true,
       "target": "_blank"
     },
     {
       "projectId": 6,
       "href": "https://codepen.io/thebhushanmhatre/full/BbPrwa",
       "src": "assets/images/projects/calculator.jpg",
-      "tech": "Javascript",
+      "tech": ["Javascript"],
       "name": "Simple Calculator",
-      "visible":true,
+      "visible": true,
       "target": "_blank"
     },
     {
       "projectId": 7,
       "href": "https://codepen.io/thebhushanmhatre/full/QYeKBy",
       "src": "assets/images/projects/drum.jpg",
-      "tech": "Javascript",
+      "tech": ["Javascript"],
       "name": "Drum Machine",
-      "visible":true,
+      "visible": true,
       "target": "_blank"
     },
     {
       "projectId": 8,
       "href": "https://codepen.io/thebhushanmhatre/full/KJbZrY",
       "src": "assets/images/projects/bookmark.jpg",
-      "tech": "Javascript",
+      "tech": ["Javascript"],
       "name": "Bookmark App",
-      "visible":true,
+      "visible": true,
       "target": "_blank"
     },
     {
       "projectId": 9,
       "href": "https://codepen.io/thebhushanmhatre/full/aXPoNw",
       "src": "assets/images/projects/weights.jpg",
-      "tech": "Javascript",
+      "tech": ["Javascript"],
       "name": "Intergallatic Weights",
-      "visible":true,
+      "visible": true,
       "target": "_blank"
     },
     {
       "projectId": 10,
       "href": "https://codepen.io/thebhushanmhatre/full/BMXLob",
       "src": "assets/images/projects/markdown.jpg",
-      "tech": "Javascript",
+      "tech": ["Javascript"],
       "name": "Markdown Previewer",
-      "visible":true,
+      "visible": true,
       "target": "_blank"
     },
     {
       "projectId": 12,
       "href": "",
       "src": "assets/images/projects/senti.jpg",
-      "tech": "Python, Machine Learning",
+      "tech": ["Python", "Machine Learning"],
       "name": "Sentiment Analysis",
       "visible": false,
       "target": "_blank"
@@ -103,16 +103,16 @@ export const DATA = {
       "projectId": 11,
       "href": "https://www.kaggle.com/thebhushanmhatre/my-firsttry-on-kaggle/",
       "src": "assets/images/projects/titanic.jpg",
-      "tech": "Python, Machine Learning",
+      "tech": ["Python", "Machine Learning"],
       "name": "Kaggle: Titanic Dataset",
-      "visible":true,
+      "visible": true,
       "target": "_blank"
     },
     {
       "projectId": 13,
       "href": "",
       "src": "assets/images/projects/radar.jpg",
-      "tech": "Electronics",
+      "tech": ["Electronics"],
       "name": "Arduino Radar",
       "visible": false,
       "target": "_blank"
@@ -121,7 +121,7 @@ export const DATA = {
       "projectId": 14,
       "href": "",
       "src": "assets/images/projects/robarm.jpg",
-      "tech": "Electronics",
+      "tech": ["Electronics"],
       "name": "Haptic Robotic Arm",
       "visible": false,
       "target": "_blank"
@@ -130,7 +130,7 @@ export const DATA = {
       "projectId": 14,
       "href": "https://github.com/thebhushanmhatre/Tetris",
       "src": "assets/images/projects/tetris_js.jpg",
-      "tech": "JavaScript",
+      "tech": ["JavaScript"],
       "name": "Tetris Game",
       "visible": true,
       "target": "_blank"
@@ -146,6 +146,7 @@ export const DATA = {
       "institute": "The Hong Kong University of Science and Technology",
       "credentialID": "VTHK4VHWBLLP",
       "professor": "Jogesh K. Muppala",
+      "tech": ["Javascript", "MongoDB", "Express"],
       "visible": true,
       "target": "_blank"
     },
@@ -158,6 +159,7 @@ export const DATA = {
       "institute": "The Hong Kong University of Science and Technology",
       "credentialID": "B4LJHAVNG9B8",
       "professor": "Jogesh K. Muppala",
+      "tech": ["Javascript", "React", "Redux"],
       "visible": true,
       "target": "_blank"
     },
@@ -170,6 +172,7 @@ export const DATA = {
       "institute": "The Hong Kong University of Science and Technology",
       "credentialID": "WXBNNV2ZFS9Y",
       "professor": "Jogesh K. Muppala",
+      "tech": ["Javascript", "Bootstrap"],
       "visible": true,
       "target": "_blank"
     },
@@ -182,6 +185,7 @@ export const DATA = {
       "institute": "University of Michigan",
       "credentialID": "C969LNUBGSZN",
       "professor": "Kalmin Haznis",
+      "tech": ["Javascript"],
       "visible": false,
       "target": "_blank"
     },
@@ -194,6 +198,7 @@ export const DATA = {
       "institute": "Johns Hopkins University",
       "credentialID": "V7JY5BJW7RZJ",
       "professor": "Kalmin Haznis",
+      "tech": ["Ruby", "Ruby on Rails"],
       "visible": true,
       "target": "_blank"
     },
@@ -203,8 +208,9 @@ export const DATA = {
       "src": "/assets/images/certificates/ror_essential_linkedin.jpg",
       "name": "Ruby on Rails 5 Essential Training",
       "issuer": "Linkedin",
-      "credentialID": "",
+      "credentialID": "AUqddA0VZOf6lu_OFzKJd8KzO_yY",
       "professor": "Kevin Skoglund",
+      "tech": ["Ruby", "Ruby on Rails"],
       "visible": false,
       "target": "_blank"
     },
@@ -214,8 +220,9 @@ export const DATA = {
       "src": "/assets/images/certificates/sinatra_linkedin.jpg",
       "name": "Learning Sinatra",
       "issuer": "Linkedin",
-      "credentialID": "",
+      "credentialID": "AYWshpZRNxq8xepn73WqI0ZaCknk",
       "professor": "Kevin Skoglund",
+      "tech": ["Ruby", "Sinatra"],
       "visible": true,
       "target": "_blank"
     },
@@ -225,8 +232,9 @@ export const DATA = {
       "src": "/assets/images/certificates/learning_reactJS_linkedin.jpg",
       "name": "Learning React.js",
       "issuer": "Linkedin",
-      "credentialID": "",
+      "credentialID": "AYDIRpKsx7KjJtlN2bd_1SiVG0ig",
       "professor": "Eve Porcello",
+      "tech": ["Javascript", "React"],
       "visible": false,
       "target": "_blank"
     },
@@ -236,8 +244,9 @@ export const DATA = {
       "src": "/assets/images/certificates/designing_RESTful_APIs_linkedin.jpg",
       "name": "Designing Restful APIs",
       "issuer": "Linkedin",
-      "credentialID": "",
+      "credentialID": "AQiG6w1sebYr-kVrCPo6Mr1_jW4K",
       "professor": "Keith Casey",
+      "tech": ["API"],
       "visible": false,
       "target": "_blank"
     },
@@ -245,10 +254,11 @@ export const DATA = {
       "certId": 10,
       "href": "http://www.linkedin.com/learning/programming-foundations-databases-2",
       "src": "/assets/images/certificates/prog_foundations_database_linkedin.jpg",
-      "name": "Programming Foundataions Database",
+      "name": "Programming Foundations Database",
       "issuer": "Linkedin",
-      "credentialID": "",
+      "credentialID": "AX1Rvv4OQN-3DHdrsLWeVHS2lF3r",
       "professor": "Scott Simpson",
+      "tech": ["SQL"],
       "visible": false,
       "target": "_blank"
     },
@@ -258,8 +268,9 @@ export const DATA = {
       "src": "/assets/images/certificates/game_dev_found_linkedin.jpg",
       "name": "JS Game Development Foundations",
       "issuer": "Linkedin",
-      "credentialID": "",
+      "credentialID": "AUg_kiypn4Lx_og7oR7j384JhFju",
       "professor": "Jesse Freeman",
+      "tech": ["Javascript", "Game"],
       "visible": true,
       "target": "_blank"
     },
@@ -271,6 +282,7 @@ export const DATA = {
       "issuer": "Freecodecamp",
       "credentialID": "",
       "professor": "",
+      "tech": ["Javascript", "React", "Redux", "Bootstrap"],
       "visible": true,
       "target": "_blank"
     },
@@ -282,6 +294,7 @@ export const DATA = {
       "issuer": "Freecodecamp",
       "credentialID": "",
       "professor": "",
+      "tech": ["Javascript"],
       "visible": true,
       "target": "_blank"
     },
@@ -293,6 +306,7 @@ export const DATA = {
       "issuer": "Freecodecamp",
       "credentialID": "",
       "professor": "",
+      "tech": ["HTML", "CSS"],
       "visible": true,
       "target": "_blank"
     },
@@ -305,6 +319,7 @@ export const DATA = {
       "issuer": "IBM",
       "credentialID": "",
       "professor": "",
+      "tech": ["Python"],
       "visible": false,
       "target": "_blank"
     },
@@ -317,6 +332,7 @@ export const DATA = {
       "issuer": "IBM",
       "credentialID": "",
       "professor": "",
+      "tech": ["Python"],
       "visible": false,
       "target": "_blank"
     },
@@ -329,6 +345,7 @@ export const DATA = {
       "issuer": "IBM",
       "credentialID": "",
       "professor": "",
+      "tech": ["Python"],
       "visible": true,
       "target": "_blank"
     },
@@ -341,6 +358,7 @@ export const DATA = {
       "issuer": "IBM",
       "credentialID": "",
       "professor": "",
+      "tech": ["Python"],
       "visible": true,
       "target": "_blank"
     },
@@ -353,6 +371,7 @@ export const DATA = {
       "issuer": "IBM",
       "credentialID": "",
       "professor": "",
+      "tech": ["SQL"],
       "visible": false,
       "target": "_blank"
     },
@@ -365,6 +384,7 @@ export const DATA = {
       "issuer": "IBM",
       "credentialID": "#6812768",
       "professor": "",
+      "tech": ["Git"],
       "visible": false,
       "target": "_blank"
     },
@@ -377,6 +397,7 @@ export const DATA = {
       "issuer": "IBM",
       "credentialID": "#6853360",
       "professor": "",
+      "tech": ["Shell"],
       "visible": false,
       "target": "_blank"
     },
@@ -388,6 +409,7 @@ export const DATA = {
       "issuer": "DataCamp",
       "credentialID": "#6798134",
       "professor": "",
+      "tech": ["Python"],
       "visible": false,
       "target": "_blank"
     },
@@ -399,6 +421,7 @@ export const DATA = {
       "issuer": "",
       "credentialID": "",
       "professor": "",
+      "tech": ["Data Structures"],
       "visible": false,
       "target": "_blank"
     },
@@ -410,6 +433,7 @@ export const DATA = {
       "issuer": "Linkedin",
       "credentialID": "",
       "professor": "",
+      "tech": ["Javascript"],
       "visible": false,
       "target": "_blank"
     },
@@ -422,6 +446,7 @@ export const DATA = {
       "issuer": "Linkedin",
       "credentialID": "",
       "professor": "",
+      "tech": ["React Native"],
       "visible": true,
       "target": "_blank"
     },
@@ -433,6 +458,7 @@ export const DATA = {
       "issuer": "DataCamp",
       "credentialID": "#6804819",
       "professor": "",
+      "tech": ["SQL"],
       "visible": false,
       "target": "_blank"
     },
@@ -444,6 +470,7 @@ export const DATA = {
       "issuer": "Amcat",
       "credentialID": "",
       "professor": "",
+      "tech": ["Aptitude"],
       "visible": false,
       "target": "_blank"
     },
@@ -455,6 +482,7 @@ export const DATA = {
       "issuer": "DataCamp",
       "credentialID": "#6841333",
       "professor": "",
+      "tech": ["Excel"],
       "visible": false,
       "target": "_blank"
     },
@@ -467,6 +495,7 @@ export const DATA = {
       "issuer": "IBM",
       "credentialID": "",
       "professor": "developerWorks",
+      "tech": ["Blockchain"],
       "visible": false,
       "target": "_blank"
     },
@@ -478,6 +507,7 @@ export const DATA = {
       "issuer": "DataCamp",
       "credentialID": "#8022686",
       "professor": "",
+      "tech": ["R"],
       "visible": false,
       "target": "_blank"
     },
@@ -490,6 +520,7 @@ export const DATA = {
       "issuer": "Linkedin",
       "credentialID": "",
       "professor": "Emmanuel Henri",
+      "tech": ["Javascript", "Express"],
       "visible": false,
       "target": "_blank"
     },
@@ -502,6 +533,7 @@ export const DATA = {
       "issuer": "Linkedin",
       "credentialID": "",
       "professor": "Emmanuel Henri",
+      "tech": ["Docker"],
       "visible": true,
       "target": "_blank"
     },
@@ -514,17 +546,31 @@ export const DATA = {
       "issuer": "Linkedin",
       "credentialID": "",
       "professor": "Emmanuel Henri",
+      "tech": ["Javascript", "Node", "Socket"],
       "visible": false,
       "target": "_blank"
     },
     {
       "certId": 34,
       "href": "http://www.linkedin.com/learning/advanced-sql-logical-query-processing",
-      "src": "/assets/images/certificates/adv_sql_logical_query_processing.jpg",
+      "src": "/assets/images/certificates/logical_sql.jpg",
       "name": "Advanced SQL – Logical Query Processing",
       "issuer": "Linkedin",
       "credentialID": "AZzwrTXRM4gUkgo1gtDnIcxgsApe",
       "professor": "Ami Levin",
+      "tech": ["SQL"],
+      "visible": true,
+      "target": "_blank"
+    },
+    {
+      "certId": 35,
+      "href": "http://www.linkedin.com/learning/oracle-database-12c-advanced-sql",
+      "src": "/assets/images/certificates/adv_oracle_sql.jpg",
+      "name": "Oracle Database 12c: Advanced SQL",
+      "issuer": "Linkedin",
+      "credentialID": "AewlhyesheTkt6M-Yrm-6As8TtCb",
+      "professor": "David Yahalom",
+      "tech": ["Oracle", "SQL"],
       "visible": true,
       "target": "_blank"
     }
@@ -553,10 +599,6 @@ export const DATA = {
     {
       "href": "https://codepen.io/thebhushanmhatre/",
       "name": "codepen"
-    },
-    {
-      "href": "https://www.instagram.com/thebhushanmhatre/",
-      "name": "instagram"
     }
   ],
   "education":[
