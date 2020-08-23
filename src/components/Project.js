@@ -6,30 +6,41 @@ class Project extends Component{
   constructor(props) {
     super(props)
     this.state = {
-      filter: false
+      filter: ["Javascript"]
     }
   }
 
   setFilter = (filter) => {
-    if(this.state.filter===filter){
-      this.setState({filter: false})
+    let filters = this.state.filter
+    if(filters.indexOf(filter) >= 0){
+      filters.splice(filters.indexOf(filter), 1)
+      this.setState({filter: filters})
     } else {
-      this.setState({filter: filter})
+      filters.push(filter)
+      this.setState({filter: filters})
     }
   }
 
   getProjects = () => {
     let projects = this.props.projects.filter(item=>item.visible)
-    if(this.state.filter){
-      projects = projects.filter(item => item.tech.indexOf(this.state.filter)!==-1)
+    let filters = this.state.filter
+    if(filters.length > 0){
+      filters.map(filter => {
+        projects = projects.filter(item => item.tech.indexOf(filter)!==-1)
+      })
     }
     return projects
   }
 
   render(){
-    const projects = this.getProjects().filter(item=>item.visible).map(item=>
-      <RenderItems key={"projectId"+item.projectId.toString()} item={item} height={{minHeight: "5rem"}} />
-    )
+    var projects;
+    if(this.getProjects().length > 0){
+      projects = this.getProjects().map(item=>
+        <RenderItems key={"projectId"+item.projectId.toString()} item={item} height={{minHeight: "5rem"}} />
+      )
+    } else {
+      projects = <h3 className="text-danger">"{this.state.filter.join(' + ')}" Projects Coming Soon</h3>
+    }
 
     const filters = ["Javascript", "Python"].map(item => 
       <><Button className="bg-light text-dark" onClick={() =>this.setFilter(item)}> {item} </Button>{' '}</>
@@ -37,7 +48,7 @@ class Project extends Component{
 
     return(
       <div className="container">
-        <h3 className="mb-4">My {this.state.filter ? this.state.filter : ''} Projects {filters}</h3>
+        <h3 className="mb-4">My {this.state.filter ? this.state.filter.join(' + ') : ''} Projects {filters}</h3>
         <Row>{projects}</Row>
       </div>
     );

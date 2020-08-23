@@ -97,7 +97,7 @@ export const DATA = {
       "tech": ["Python", "Machine Learning"],
       "name": "Sentiment Analysis",
       "visible": false,
-      "target": "_blank"
+      "target": ""
     },
     {
       "projectId": 11,
@@ -127,11 +127,29 @@ export const DATA = {
       "target": "_blank"
     },
     {
-      "projectId": 14,
+      "projectId": 17,
       "href": "https://github.com/thebhushanmhatre/Tetris",
       "src": "assets/images/projects/tetris_js.jpg",
       "tech": ["JavaScript"],
       "name": "Tetris Game",
+      "visible": true,
+      "target": "_blank"
+    },
+    {
+      "projectId": 15,
+      "href": "assets/notebooks/WebScraping.html",
+      "src": "assets/images/projects/web_scrapping.jpg",
+      "tech": ["Python"],
+      "name": "Web Scrapping using Beautiful Soup",
+      "visible": true,
+      "target": "_blank"
+    },
+    {
+      "projectId": 16,
+      "href": "assets/notebooks/Handwashing.html",
+      "src": "assets/images/projects/hand_washing.jpg",
+      "tech": ["Python"],
+      "name": "Wash your Hands says the Data",
       "visible": true,
       "target": "_blank"
     }
@@ -146,7 +164,7 @@ export const DATA = {
       "institute": "The Hong Kong University of Science and Technology",
       "credentialID": "VTHK4VHWBLLP",
       "professor": "Jogesh K. Muppala",
-      "tech": ["Javascript", "MongoDB", "Express"],
+      "tech": ["Javascript", "MongoDB", "Express", "API"],
       "visible": true,
       "target": "_blank"
     },
@@ -279,7 +297,7 @@ export const DATA = {
       "href": "https://www.freecodecamp.org/certification/thebhushanmhatre/front-end-libraries",
       "src": "/assets/images/certificates/certi3fcc.jpg",
       "name": "Front End Libraries Developer Certification",
-      "issuer": "Freecodecamp",
+      "issuer": "FreeCodeCamp",
       "credentialID": "",
       "professor": "",
       "tech": ["Javascript", "React", "Redux", "Bootstrap"],
@@ -291,7 +309,7 @@ export const DATA = {
       "href": "https://www.freecodecamp.org/certification/thebhushanmhatre/javascript-algorithms-and-data-structures",
       "src": "/assets/images/certificates/certi2fcc.jpg",
       "name": "JavaScript Algorithms and Data Structures Developer Certification",
-      "issuer": "Freecodecamp",
+      "issuer": "FreeCodeCamp",
       "credentialID": "",
       "professor": "",
       "tech": ["Javascript"],
@@ -303,7 +321,7 @@ export const DATA = {
       "href": "https://www.freecodecamp.org/certification/thebhushanmhatre/responsive-web-design",
       "src": "/assets/images/certificates/certi1fcc.jpg",
       "name": "Responsive Web Design Developer Certification",
-      "issuer": "Freecodecamp",
+      "issuer": "FreeCodeCamp",
       "credentialID": "",
       "professor": "",
       "tech": ["HTML", "CSS"],
@@ -380,8 +398,8 @@ export const DATA = {
       "href": "https://www.datacamp.com/statement-of-accomplishment/course/8668534e308738c8713ba0a1079a077958fe319d",
       "src": "/assets/images/certificates/git.jpg",
       "name": "Introduction to Git",
-      "institute": "DataCamp",
-      "issuer": "IBM",
+      "institute": "",
+      "issuer": "DataCamp",
       "credentialID": "#6812768",
       "professor": "",
       "tech": ["Git"],
@@ -393,8 +411,8 @@ export const DATA = {
       "href": "https://www.datacamp.com/statement-of-accomplishment/course/4ade713f3d70039debfe6c8c1a430f72c6d5649f",
       "src": "/assets/images/certificates/shell.jpg",
       "name": "Introduction to Shell",
-      "institute": "DataCamp",
-      "issuer": "IBM",
+      "institute": "",
+      "issuer": "DataCamp",
       "credentialID": "#6853360",
       "professor": "",
       "tech": ["Shell"],
@@ -586,7 +604,7 @@ export const DATA = {
     },
     {
       "href": "https://www.freecodecamp.org/thebhushanmhatre",
-      "name": "freecodecamp"
+      "name": "freeCodeCamp"
     },
     {
       "href": "https://www.kaggle.com/thebhushanmhatre",
