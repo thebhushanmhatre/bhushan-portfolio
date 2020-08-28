@@ -8,6 +8,7 @@ import Contact from './Contact';
 import RenderCertificate from './RenderCertificate';
 import RandomQuoteMachine from './projects/RandomQuoteMachine';
 import PomodoroClock from './projects/PomodoroClock';
+import Markdown from './projects/MarkdownPreviewer';
 import ToDoList from './projects/ToDoList';
 import { Switch, Route, withRouter, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
@@ -46,7 +47,8 @@ class Main extends Component{
           <Route exact path="/contact" component={() => <Contact contacts={this.props.contacts} />} />
           <Route exact path="/quotes" component={() => <RandomQuoteMachine quotes={this.props.quotes} />} />
           <Route exact path="/clock" component={() => <PomodoroClock />} />
-          <Route exact path="/todolist" component={() => <ToDoList  style={{background:'skyblue'}} />} />
+          <Route exact path="/todolist" component={() => <ToDoList style={{background:'skyblue'}} />} />
+          <Route exact path="/markdown" component={() => <Markdown />} />
           <Redirect to="/" />
         </Switch>
       </>

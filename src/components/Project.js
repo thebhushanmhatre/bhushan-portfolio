@@ -6,7 +6,7 @@ class Project extends Component{
   constructor(props) {
     super(props)
     this.state = {
-      filter: ["Javascript"]
+      filter: []
     }
   }
 

@@ -82,19 +82,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 #### yarn add react-router-dom@4.2.2
 #### yarn add redux@3.7.2
 #### yarn add react-redux@5.0.7
-<br />
+#### yarn add marked
 
-## Not yet performed or may not required
-<br />
-
-#### yarn add react-animation-components@3.0.0
-#### yarn add react-transition-group@2.3.0
-#### yarn add react-redux-form@1.16.8
-#### yarn add redux-logger@3.0.6
-#### yarn add redux-thunk@2.2.0
-#### yarn add prop-types@15.6.0
-
-### json-server --watch db.json -p 3001
-
-Redux Action are for making changes to redux store
-Refer this: https://www.coursera.org/learn/front-end-react/supplement/1eC3w/exercise-instructions-redux-actions

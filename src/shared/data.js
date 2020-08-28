@@ -83,12 +83,12 @@ export const DATA = {
     },
     {
       "projectId": 10,
-      "href": "https://codepen.io/thebhushanmhatre/full/BMXLob",
+      "href": "markdown",
       "src": "assets/images/projects/markdown.jpg",
       "tech": ["Javascript"],
       "name": "Markdown Previewer",
       "visible": true,
-      "target": "_blank"
+      "target": ""
     },
     {
       "projectId": 12,
