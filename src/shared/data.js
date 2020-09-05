@@ -595,34 +595,53 @@ export const DATA = {
   ],
   "contacts":[
     {
+      "contId": 1,
       "href": "https://www.linkedin.com/in/thebhushanmhatre",
-      "name": "linkedin"
+      "name": "linkedin",
+      "icon": "fa fa-linkedin fa-lg",
+      "color": "#2977c9"
     },
     {
+      "contId": 2,
       "href": "https://github.com/thebhushanmhatre",
-      "name": "github"
+      "name": "github",
+      "icon": "fa fa-github fa-lg",
+      "color": "black"
     },
     {
+      "contId": 3,
       "href": "https://www.freecodecamp.org/thebhushanmhatre",
-      "name": "freeCodeCamp"
+      "name": "freeCodeCamp",
+      "icon": "fa fa-free-code-camp fa-lg",
+      "color": "green"
     },
+    // {
+    //   "contId": 4,
+    //   "href": "https://www.kaggle.com/thebhushanmhatre",
+    //   "name": "kaggle",
+    //   "icon": "fab fa-kaggle",
+    //   "color": "skyblue"
+    // },
+    // {
+    //   "contId": 5,
+    //   "href": "https://www.hackerrank.com/bhushanmhatre",
+    //   "name": "hackerrank",
+    //   "icon": "fab fa-hackerrank",
+    //   "color": "#1ba94c"
+    // },
     {
-      "href": "https://www.kaggle.com/thebhushanmhatre",
-      "name": "kaggle"
-    },
-    {
-      "href": "https://www.hackerrank.com/bhushanmhatre",
-      "name": "hackerrank"
-    },
-    {
+      "contId": 6,
       "href": "https://codepen.io/thebhushanmhatre/",
-      "name": "codepen"
+      "name": "codepen",
+      "icon": "fa fa-codepen fa-lg",
+      "color": "black"
     }
   ],
   "education":[
     {
       "href": "https://en.wikipedia.org/wiki/Veermata_Jijabai_Technological_Institute",
-      "name": "Veermata Jijabai Techological Institute (V.J.T.I.)",
+      "name": "Veermata Jijabai Techological Institute",
+      "shortname": "V.J.T.I.",
       "src": "assets/images/vjti_logo.jpg",
       "year": "2019",
       "branch": "B.Tech., Electronics and Telecommunications"
@@ -630,12 +649,14 @@ export const DATA = {
     {
       "href": "http://www.patkarvardecollege.edu.in/index.php",
       "name": "Patkar College of Science",
+      "shortname": "",
       "src": "assets/images/patkar_logo.jpg",
       "year": "2015"
     },
     {
       "href": "https://en.wikipedia.org/wiki/Saint_Francis_D%27Assisi_High_School",
-      "name": "St. Francis D'Assisi High School (S.F.H.S.)",
+      "name": "St. Francis D'Assisi High School",
+      "shortname": "S.F.H.S.",
       "src": "assets/images/sfhs_logo.jpg",
       "year": "2013"
     }

@@ -7,11 +7,14 @@ function RenderMedia({item}) {
         <Media className="pb-2">
           <Media body>
             <Media heading>{item.name}</Media>
+            <Media heading>{item.shortname}</Media>
             <p>{item.branch}</p>
             <p> Graduated in {item.year}</p>
           </Media>
           <div className="d-none d-sm-block" >
-          <a href={item.href} target="_blank" rel="noopener noreferrer"><Media style={{borderRadius: '50px'}} object src={item.src} alt={item.name} width="100px" height="120px" /></a>
+          <a href={item.href} target="_blank" rel="noopener noreferrer">
+            <Media style={{borderRadius: '50px'}} object src={item.src} alt={item.name} width="100px" height="120px" />
+          </a>
           </div>
         </Media>
     </div>
