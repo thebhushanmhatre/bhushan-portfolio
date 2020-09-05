@@ -3,20 +3,21 @@ import { Media } from 'reactstrap';
 
 function RenderMedia({item}) {
   return(
-    <div className="mb-4 pt-2 col-12 offset-md-1 col-md-9 col-lg-8 educationMedia">
-        <Media className="pb-2">
-          <Media body>
-            <Media heading>{item.name}</Media>
-            <Media heading>{item.shortname}</Media>
-            <p>{item.branch}</p>
-            <p> Graduated in {item.year}</p>
-          </Media>
-          <div className="d-none d-sm-block" >
-          <a href={item.href} target="_blank" rel="noopener noreferrer">
-            <Media style={{borderRadius: '50px'}} object src={item.src} alt={item.name} width="100px" height="120px" />
-          </a>
-          </div>
+    <div className="mb-4 pt-2 col-12 offset-md-1 col-md-9 col-lg-8 educationMedia" 
+      style={{backgroundColor: window.innerWidth < 995 ? 'white' : ''}}>
+      <Media className="pb-2">
+        <Media body>
+          <Media heading>{item.name}</Media>
+          <Media heading>{item.shortname}</Media>
+          <p>{item.branch}</p>
+          <p> Graduated in {item.year}</p>
         </Media>
+        <div className="d-none d-sm-block" >
+        <a href={item.href} target="_blank" rel="noopener noreferrer">
+          <Media style={{borderRadius: '50px'}} object src={item.src} alt={item.name} width="100px" height="120px" />
+        </a>
+        </div>
+      </Media>
     </div>
   );
 }

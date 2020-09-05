@@ -2,12 +2,12 @@ export const DATA = {
   "projects":[
     {
       "projectId": 1,
-      "href": "https://recipe-app-bhushan.herokuapp.com/",
-      "src": "assets/images/projects/recipe-app.jpg",
-      "tech": ["React", "Javascript", "Fetch API"],
-      "name": "Recipe App",
+      "href": "quotes",//https://codepen.io/thebhushanmhatre/full/yZQmVw"
+      "src": "assets/images/projects/quotes.jpg",
+      "tech": ["Javascript"],
+      "name": "Random Quote Machine",
       "visible": true,
-      "target": "_blank"
+      "target": ""
     },
     {
       "projectId": 2,
@@ -20,15 +20,6 @@ export const DATA = {
     },
     {
       "projectId": 3,
-      "href": "quotes",//https://codepen.io/thebhushanmhatre/full/yZQmVw"
-      "src": "assets/images/projects/quotes.jpg",
-      "tech": ["Javascript"],
-      "name": "Random Quote Machine",
-      "visible": true,
-      "target": ""
-    },
-    {
-      "projectId": 4,
       "href": "clock",//https://codepen.io/thebhushanmhatre/full/LaJqvy",
       "src": "assets/images/projects/clock.jpg",
       "tech": ["Javascript"],
@@ -37,7 +28,25 @@ export const DATA = {
       "target": ""
     },
     {
+      "projectId": 4,
+      "href": "markdown",
+      "src": "assets/images/projects/markdown.jpg",
+      "tech": ["Javascript"],
+      "name": "Markdown Previewer",
+      "visible": true,
+      "target": ""
+    },
+    {
       "projectId": 5,
+      "href": "https://recipe-app-bhushan.herokuapp.com/",
+      "src": "assets/images/projects/recipe-app.jpg",
+      "tech": ["React", "Javascript", "Fetch API"],
+      "name": "Recipe App",
+      "visible": true,
+      "target": "_blank"
+    },
+    {
+      "projectId": 6,
       "href": "https://book-flights-bhushan.herokuapp.com/",
       "src": "assets/images/projects/bookflight.jpg",
       "tech": ["Ruby", "Ruby on Rails"],
@@ -46,7 +55,7 @@ export const DATA = {
       "target": "_blank"
     },
     {
-      "projectId": 6,
+      "projectId": 7,
       "href": "https://codepen.io/thebhushanmhatre/full/BbPrwa",
       "src": "assets/images/projects/calculator.jpg",
       "tech": ["Javascript"],
@@ -55,7 +64,7 @@ export const DATA = {
       "target": "_blank"
     },
     {
-      "projectId": 7,
+      "projectId": 8,
       "href": "https://codepen.io/thebhushanmhatre/full/QYeKBy",
       "src": "assets/images/projects/drum.jpg",
       "tech": ["Javascript"],
@@ -64,7 +73,7 @@ export const DATA = {
       "target": "_blank"
     },
     {
-      "projectId": 8,
+      "projectId": 9,
       "href": "https://codepen.io/thebhushanmhatre/full/KJbZrY",
       "src": "assets/images/projects/bookmark.jpg",
       "tech": ["Javascript"],
@@ -73,22 +82,13 @@ export const DATA = {
       "target": "_blank"
     },
     {
-      "projectId": 9,
+      "projectId": 10,
       "href": "https://codepen.io/thebhushanmhatre/full/aXPoNw",
       "src": "assets/images/projects/weights.jpg",
       "tech": ["Javascript"],
       "name": "Intergallatic Weights",
       "visible": true,
       "target": "_blank"
-    },
-    {
-      "projectId": 10,
-      "href": "markdown",
-      "src": "assets/images/projects/markdown.jpg",
-      "tech": ["Javascript"],
-      "name": "Markdown Previewer",
-      "visible": true,
-      "target": ""
     },
     {
       "projectId": 12,

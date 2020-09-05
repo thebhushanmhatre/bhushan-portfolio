@@ -50,8 +50,8 @@ class Markdown extends Component {
           <BreadcrumbItem active>Markdown Previewer</BreadcrumbItem>
         </Breadcrumb>
 
-        <Row>
-          <Col>
+        <Row style={{backgroundColor: 'white'}}>
+          <Col sm="12" md="6">
             <h4 className="text-center"><i><u> Editor </u></i></h4>
             <Input type="textarea" id="editor" value={this.state.input} onChange={this.updateMarkdown} 
             style={{minHeight: "70vh"}} >
@@ -59,7 +59,7 @@ class Markdown extends Component {
             </Input>
           </Col>
 
-          <Col>
+          <Col sm="12" md="6">
             <h4 className="text-center"><i><u> Previewer </u></i></h4>
             <div style={{minHeight: "70vh"}} className="border p-2" id="preview" dangerouslySetInnerHTML={{__html: marked(this.state.markdown)}} ></div>
           </Col>
