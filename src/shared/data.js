@@ -591,6 +591,18 @@ export const DATA = {
       "tech": ["Oracle", "SQL"],
       "visible": true,
       "target": "_blank"
+    },
+    {
+      "certId": 36,
+      "href": "https://www.freecodecamp.org/certification/thebhushanmhatre/scientific-computing-with-python-v7",
+      "src": "/assets/images/certificates/scientific-computing-with-python.jpg",
+      "name": "Scientific Computing With Python Developer Certification",
+      "issuer": "FreeCodeCamp",
+      "credentialID": "",
+      "professor": "",
+      "tech": ["Python"],
+      "visible": true,
+      "target": "_blank"
     }
   ],
   "contacts":[

@@ -25,6 +25,7 @@ class Project extends Component{
     let projects = this.props.projects.filter(item=>item.visible)
     let filters = this.state.filter
     if(filters.length > 0){
+      // eslint-disable-next-line
       filters.map(filter => {
         projects = projects.filter(item => item.tech.indexOf(filter)!==-1)
       })
