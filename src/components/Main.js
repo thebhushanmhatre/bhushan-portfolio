@@ -3,6 +3,7 @@ import Navigation from './Navigation';
 import WorkExperience from './WorkExperience';
 import Certificate from './Certificate';
 import Home from './Home';
+import Education from './Education';
 import Project from './Project';
 import Contact from './Contact';
 import RenderCertificate from './RenderCertificate';
@@ -39,7 +40,8 @@ class Main extends Component{
       <>
         <Navigation />
         <Switch>
-          <Route exact path="/" component={()=> <Home education={this.props.education} />} />
+          <Route exact path="/" component={()=> <Home />} />
+          <Route exact path="/education" component={()=> <Education education={this.props.education} />} />
           <Route exact path="/workexp" component={() => <WorkExperience />} />
           <Route exact path="/certificate" component={() => <Certificate certificates={this.props.certificates} />} />
           <Route path="/certificate/:certId" component={CertificateWithId} />
