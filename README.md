@@ -1,86 +1,74 @@
-# https://thebhushanmhatre.herokuapp.com/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# [Bhushan's Portfolio](https://thebhushanmhatre.herokuapp.com/)
 
-## Available Scripts
+### Technology Stack used:
+1. HTML/CSS
+1. Javascript (React/Redux)
 
-In the project directory, you can run:
+### JS Libraries Used:
 
-### `yarn start`
+**For App Generator**: create-react-app
 
+**For Styling**: bootstrap, reactstrap, react-popper, bootstrap-social
+
+**For Fonts and Icons**: font-awesome, react-router-dom
+
+**For Storing Data**: redux, react-redux
+
+**For Markdown Previewer Project**: marked
+
+### Steps to Run this app locally:
+1. Fork the repo and Clone the app to your local machine.
+1. Install the packages using `yarn install` command
+1. Start the app using `yarn start` command
 Runs the app in the development mode.<br />
+
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Projects Included 
+This repo also Includes following Projects:
+1. [Random Quote Machine](https://thebhushanmhatre.herokuapp.com/quotes)
+1. [To Do List](https://thebhushanmhatre.herokuapp.com/todolist)
+1. [Markdown Previewer](https://thebhushanmhatre.herokuapp.com/markdown)
+1. [Pomodoro Clock](https://thebhushanmhatre.herokuapp.com/clock)
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Contact me on [Linkedin](https://www.linkedin.com/in/thebhushanmhatre/)
 
 
-# For My Information
-## Command Line Steps I followed:
-#### yarn global add create-react-app@1.5.2
-#### --create-react-app bhushan-pofolio
-#### yarn add bootstrap@4.0.0
-#### yarn add reactstrap@5.0.0
-#### yarn add react-popper@0.9.2
-#### yarn add font-awesome@4.7.0
-#### yarn add bootstrap-social@5.1.1
-#### yarn add react-router-dom@4.2.2
-#### yarn add redux@3.7.2
-#### yarn add react-redux@5.0.7
-#### yarn add marked
 
+## New to Programming?
+Here are some of the Best (Free) Ways to get Started:
+1. [FreeCodeCamp](https://www.freecodecamp.org/)
+1. [Youtube](https://www.youtube.com/) in General
+  1. [FreeCodeCamp](https://www.youtube.com/c/Freecodecamp/featured)
+  1. [Traversy Media](https://www.youtube.com/user/TechGuyWeb)
+  1. [Darek Banas](https://www.youtube.com/c/derekbanas/featured)
+ 1. [JosephDelgadillo](https://www.youtube.com/c/JosephDelgadillo/featured)
+
+  1. For Data Structures:
+    1. [MyCodeSchool](https://www.youtube.com/user/mycodeschool/featured)
+    1. [WilliamFiset](https://www.youtube.com/c/WilliamFiset-videos/featured)
+
+  1. For Maths:
+    1. [3Blue1Brown](https://www.youtube.com/c/3blue1brown/featured)
+
+1. [Edx](https://www.edx.org/)
+1. [Coursera](https://www.coursera.org/)
+1. [Udemy](https://www.udemy.com/)
+1. [Udacity](https://www.udacity.com/)
+
+1. [DataCamp](https://www.datacamp.com/)
+
+
+These are some of the Websites which I have used but there are many more especially on Youtube.
+
+## Good Place to Find resources
+[Hackr](https://hackr.io/)
+
+## For Hands On Pratice:
+1. [HackerRank](https://www.hackerrank.com/dashboard)
+1. [Kaggle](https://www.kaggle.com/)
