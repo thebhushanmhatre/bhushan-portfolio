@@ -603,6 +603,42 @@ export const DATA = {
       "tech": ["Python"],
       "visible": true,
       "target": "_blank"
+    },
+    {
+      "certId": 37,
+      "href": "http://www.linkedin.com/learning/flask-essential-training",
+      "src": "/assets/images/certificates/essential-flask.jpg",
+      "name": "Flask Essential Training",
+      "issuer": "Linkedin",
+      "credentialID": "",
+      "professor": "Nick Walter",
+      "tech": ["Python"],
+      "visible": true,
+      "target": "_blank"
+    },
+    {
+      "certId": 38,
+      "href": "http://www.linkedin.com/learning/full-stack-web-development-with-flask",
+      "src": "/assets/images/certificates/fullstack-flask.jpg",
+      "name": "Full Stack Web Development with Flask",
+      "issuer": "Linkedin",
+      "credentialID": "",
+      "professor": "Christian Hur",
+      "tech": ["Python"],
+      "visible": true,
+      "target": "_blank"
+    },
+    {
+      "certId": 39,
+      "href": "http://www.linkedin.com/learning/python-decorators",
+      "src": "/assets/images/certificates/python-decorators.jpg",
+      "name": "Python Decorators",
+      "issuer": "Linkedin",
+      "credentialID": "",
+      "professor": "Jonathan Fernandes",
+      "tech": ["Python"],
+      "visible": true,
+      "target": "_blank"
     }
   ],
   "contacts":[
@@ -627,26 +663,26 @@ export const DATA = {
       "icon": "fa fa-free-code-camp fa-lg",
       "color": "green"
     },
-    // {
-    //   "contId": 4,
-    //   "href": "https://www.kaggle.com/thebhushanmhatre",
-    //   "name": "kaggle",
-    //   "icon": "fab fa-kaggle",
-    //   "color": "skyblue"
-    // },
-    // {
-    //   "contId": 5,
-    //   "href": "https://www.hackerrank.com/bhushanmhatre",
-    //   "name": "hackerrank",
-    //   "icon": "fab fa-hackerrank",
-    //   "color": "#1ba94c"
-    // },
     {
-      "contId": 6,
+      "contId": 4,
       "href": "https://codepen.io/thebhushanmhatre/",
       "name": "codepen",
       "icon": "fa fa-codepen fa-lg",
       "color": "black"
+    },
+    {
+      "contId": 5,
+      "href": "https://www.hackerrank.com/bhushanmhatre",
+      "name": "hackerrank",
+      "icon": "fab fa-hackerrank fa-lg",
+      "color": "#1ba94c"
+    },
+    {
+      "contId": 6,
+      "href": "https://www.kaggle.com/thebhushanmhatre",
+      "name": "kaggle",
+      "icon": "fab fa-kaggle fa-lg",
+      "color": "#20BEFF"
     }
   ],
   "education":[
