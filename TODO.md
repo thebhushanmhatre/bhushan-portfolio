@@ -1,0 +1,17 @@
+# List of planned Improvements
+
+1. Merge Education into Experience
+
+1. Dark Mode
+
+1. Option to Show Certificates in Tabular Format
+
+1. Download Resume Button
+
+1. Option to Download the list of Certificates/Projects (Just for Fun)
+
+1. Improve on Navigation
+
+1. Improve on Responsiveness - I expect more people to see this portfolio on their Mobile
+
+1. Add some Cool things if you improve Animation/Styling in Future
