@@ -5,7 +5,6 @@ import Certificate from './Certificate';
 import Home from './Home';
 import Education from './Education';
 import Project from './Project';
-import Contact from './Contact';
 import RenderCertificate from './RenderCertificate';
 import RandomQuoteMachine from './projects/RandomQuoteMachine';
 import PomodoroClock from './projects/PomodoroClock';
@@ -40,13 +39,12 @@ class Main extends Component{
       <>
         <Navigation />
         <Switch>
-          <Route exact path="/" component={()=> <Home />} />
+          <Route exact path="/" component={() => <Home contacts={this.props.contacts} />} />
           <Route exact path="/education" component={()=> <Education education={this.props.education} />} />
           <Route exact path="/workexp" component={() => <WorkExperience />} />
           <Route exact path="/certificate" component={() => <Certificate certificates={this.props.certificates} />} />
           <Route path="/certificate/:certId" component={CertificateWithId} />
           <Route exact path="/project" component={() => <Project projects={this.props.projects} />} />
-          <Route exact path="/contact" component={() => <Contact contacts={this.props.contacts} />} />
           <Route exact path="/quotes" component={() => <RandomQuoteMachine quotes={this.props.quotes} />} />
           <Route exact path="/clock" component={() => <PomodoroClock />} />
           <Route exact path="/todolist" component={() => <ToDoList style={{background:'skyblue'}} />} />
