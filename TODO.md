@@ -1,6 +1,10 @@
 # List of planned Improvements
 
-1. Merge Education into Experience
+1. Convert Work Experience Page into Timeline
+
+1. Convert Bootstrap to Reactstrap
+
+1. Convert Class Components to Functional Components and try to use Hooks if required.
 
 1. Dark Mode
 

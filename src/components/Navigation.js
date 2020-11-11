@@ -30,7 +30,6 @@ class Navigation extends Component {
               <NavItem><NavLink href='/workexp'><span className="fa fa-server fa-lg"> Work-Experience</span></NavLink></NavItem>
               <NavItem><NavLink href='/project'><span className="fa fa-code fa-lg"> Projects</span></NavLink></NavItem>
               <NavItem><NavLink href='/certificate'><span className="fa fa-trophy fa-lg"> Certificates</span></NavLink></NavItem>
-              <NavItem><NavLink href='/education'><span className="fa fa-institution fa-lg"> Education</span></NavLink></NavItem>
             </Nav>
           </Collapse>
       </Navbar>

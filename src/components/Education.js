@@ -3,12 +3,12 @@ import { Media } from 'reactstrap';
 
 function RenderMedia({item}) {
   return(
-    <div className="mb-4 pt-2 col-12 offset-md-1 col-md-9 col-lg-8 educationMedia" 
+    <div className="mb-1 col-12 offset-md-1 col-md-9 col-lg-8 educationMedia" 
       style={{backgroundColor: window.innerWidth < 995 ? 'white' : ''}}>
       <Media className="pb-2">
         <Media body>
           <Media heading>{item.name}</Media>
-          <Media heading>{item.shortname}</Media>
+          {item.shortname && <Media heading> {item.shortname}</Media>}
           <p>{item.branch}</p>
           <p> Graduated in {item.year}</p>
         </Media>
