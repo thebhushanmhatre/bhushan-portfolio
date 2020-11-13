@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import RenderItems from './RenderItems';
-import { Row, Button } from 'reactstrap';
+import { Row, Button, Container } from 'reactstrap';
   
   class Project extends Component{
   constructor(props) {
@@ -25,9 +25,8 @@ import { Row, Button } from 'reactstrap';
     let projects = this.props.projects.filter(item=>item.visible)
     let filters = this.state.filter
     if(filters.length > 0){
-      // eslint-disable-next-line
       filters.map(filter => {
-        projects = projects.filter(item => item.tech.indexOf(filter)!==-1)
+        projects = projects.filter(item => item.tech.includes(filter))
       })
     }
     return projects
@@ -44,14 +43,14 @@ import { Row, Button } from 'reactstrap';
     }
 
     const filters = ["Javascript", "Python"].map(item => 
-      <><Button className="bg-light text-dark" onClick={() =>this.setFilter(item)}> {item} </Button>{' '}</>
+      <Button className="bg-light text-dark mr-1" key={item} onClick={() => this.setFilter(item)}>{item}</Button>
     )
 
     return(
-      <div className="container">
+      <Container>
         <h3 className="mb-4">My {this.state.filter ? this.state.filter.join(' + ') : ''} Projects {filters}</h3>
         <Row>{projects}</Row>
-      </div>
+      </Container>
     );
   }
 }

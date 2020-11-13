@@ -1,10 +1,9 @@
 import React from 'react';
-import { Breadcrumb, BreadcrumbItem, Card, CardImg, CardBody, CardTitle, CardSubtitle, CardText, CardLink } from 'reactstrap';
+import { Breadcrumb, BreadcrumbItem, Card, CardImg, CardBody, CardTitle, CardSubtitle, CardText, CardLink, Container } from 'reactstrap';
 
 function RenderCertificate(props){
-  console.log(props.certificate)
   return (
-    <div className="container">
+    <Container>
       <Breadcrumb>
         <BreadcrumbItem><a href="/">Home</a></BreadcrumbItem>
         <BreadcrumbItem><a href="/certificates">Certificates</a></BreadcrumbItem>
@@ -21,7 +20,7 @@ function RenderCertificate(props){
           </CardBody>
         </Card>
       </div>
-    </div>
+    </Container>
   );
 }
 

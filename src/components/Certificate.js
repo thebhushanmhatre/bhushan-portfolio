@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import RenderItems from './RenderItems';
-import { Row , Button } from 'reactstrap';
+import { Container, Row , Button } from 'reactstrap';
 
 class Certificate extends Component{
   constructor(props) {
@@ -34,19 +34,19 @@ class Certificate extends Component{
     )
 
     const filters = ["Javascript", "Python", "Ruby", "SQL"].map(item => 
-      <><Button className="bg-light text-dark" onClick={() =>this.setFilter(item, 'tech')}> {item} </Button>{' '}</>
+      <Button key={item} className="bg-light text-dark mr-1" onClick={() => this.setFilter(item, 'tech')}>{item} </Button>
     )
     
     const issuers = ["Coursera", "FreeCodeCamp", "Linkedin", "IBM", "DataCamp"].map(item => 
-      <><Button className="bg-light text-dark" onClick={() =>this.setFilter(item, 'issuer')}> {item} </Button>{' '}</>
+      <Button key={item} className="bg-light text-dark mr-1" onClick={() => this.setFilter(item, 'issuer')}>{item}</Button>
     )
 
     return(
-      <div className="container">
+      <Container>
         <h3>My {this.state.filter ? this.state.filter : ''} Certificates {filters}</h3>
         <h3>{issuers}</h3>
         <Row>{certis}</Row>
-      </div>
+      </Container>
     );
   }
 }

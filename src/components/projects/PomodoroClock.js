@@ -162,7 +162,7 @@ class PomodoroClock extends Component {
         <BreadcrumbItem><a href="/projects">Projects</a></BreadcrumbItem>
         <BreadcrumbItem active>Pomodoro Clock</BreadcrumbItem>
       </Breadcrumb>
-        <h2 style={{backgroundColor: 'skyblue', marginBottom: '20px', borderRadius: '15px'}} class="text-center p-3"> Pomodoro Clock </h2>
+        <h2 style={{backgroundColor: 'skyblue', marginBottom: '20px', borderRadius: '15px'}} className="text-center p-3"> Pomodoro Clock </h2>
         <audio id="beep" src="https://actions.google.com/sounds/v1/alarms/medium_bell_ringing_near.ogg" type="audio/ogg"></audio>
 
         <Row className="container mb-5 mt-5 text-center">

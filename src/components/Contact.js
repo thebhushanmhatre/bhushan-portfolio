@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 
 export default function Contact(props){
 
@@ -13,8 +13,8 @@ const contacts = props.contacts.map(item=>
 )
 
   return( 
-    <div className="container text-center">
+    <Container className="text-center">
       <Row>{contacts}</Row>
-    </div>
+    </Container>
   );
 }

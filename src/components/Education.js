@@ -15,7 +15,6 @@ function RenderInstitute({item}){
 }
 
 function Education(props){
-  console.log(props)
   const institutes = props.education.map(item=>
     <RenderInstitute key={item.year} item={item} />
   )
