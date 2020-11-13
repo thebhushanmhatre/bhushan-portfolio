@@ -22,7 +22,7 @@ class RandomQuoteMachine extends Component{
 
   render(){
     return(
-      <div className="container">
+      <div className="container mt-2">
         <Breadcrumb>
           <BreadcrumbItem><a href="/">Home</a></BreadcrumbItem>
           <BreadcrumbItem><a href="/project">Projects</a></BreadcrumbItem>

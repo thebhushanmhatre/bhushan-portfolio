@@ -156,7 +156,7 @@ class PomodoroClock extends Component {
   
   render() {
     return(
-      <div className="container text-center bg-light">
+      <div className="container text-center bg-light mt-2">
       <Breadcrumb>
         <BreadcrumbItem><a href="/">Home</a></BreadcrumbItem>
         <BreadcrumbItem><a href="/project">Projects</a></BreadcrumbItem>

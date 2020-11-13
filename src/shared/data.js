@@ -2,6 +2,15 @@ export const DATA = {
   "projects":[
     {
       "projectId": 1,
+      "href": "/recipes",
+      "src": "assets/images/projects/recipe-app.jpg",
+      "tech": ["React", "Javascript", "Fetch API"],
+      "name": "Recipe App",
+      "visible": true,
+      "target": ""
+    },
+    {
+      "projectId": 2,
       "href": "quotes",//https://codepen.io/thebhushanmhatre/full/yZQmVw"
       "src": "assets/images/projects/quotes.jpg",
       "tech": ["Javascript"],
@@ -10,20 +19,11 @@ export const DATA = {
       "target": ""
     },
     {
-      "projectId": 2,
+      "projectId": 3,
       "href": "todolist",
       "src": "assets/images/projects/todoapp.jpg",
       "tech": ["React", "Javascript"],
       "name": "To Do List App",
-      "visible": true,
-      "target": ""
-    },
-    {
-      "projectId": 3,
-      "href": "clock",//https://codepen.io/thebhushanmhatre/full/LaJqvy",
-      "src": "assets/images/projects/clock.jpg",
-      "tech": ["Javascript"],
-      "name": "Pomodoro Clock",
       "visible": true,
       "target": ""
     },
@@ -38,12 +38,12 @@ export const DATA = {
     },
     {
       "projectId": 5,
-      "href": "https://recipe-app-bhushan.herokuapp.com/",
-      "src": "assets/images/projects/recipe-app.jpg",
-      "tech": ["React", "Javascript", "Fetch API"],
-      "name": "Recipe App",
+      "href": "clock",//https://codepen.io/thebhushanmhatre/full/LaJqvy",
+      "src": "assets/images/projects/clock.jpg",
+      "tech": ["Javascript"],
+      "name": "Pomodoro Clock",
       "visible": true,
-      "target": "_blank"
+      "target": ""
     },
     {
       "projectId": 6,
