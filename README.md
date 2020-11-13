@@ -39,5 +39,5 @@ This repo also Includes following Projects:
 ## Contact me on [Linkedin](https://www.linkedin.com/in/thebhushanmhatre/)
 
 ## New to Programming?
-Check my Free Guide to [Getting Started to Programming](https://github.com/thebhushanmhatre/bhushan-portfolio/blob/master/)
+Check my Free Guide to [Getting Started to Programming](https://github.com/thebhushanmhatre/bhushan-portfolio/blob/master/GUIDE.md)
 
