@@ -41,5 +41,3 @@ This repo also Includes following Projects:
 ## New to Programming?
 Check my Free Guide to [Getting Started to Programming](https://github.com/thebhushanmhatre/bhushan-portfolio/blob/master/)
 
-Thanks and Regards,
-Bhushan Mhatre.
