@@ -43,10 +43,10 @@ class Markdown extends Component {
   
   render(){
     return(
-      <Container>
+      <Container className="m-2">
         <Breadcrumb>
           <BreadcrumbItem><a href="/">Home</a></BreadcrumbItem>
-          <BreadcrumbItem><a href="/project">Projects</a></BreadcrumbItem>
+          <BreadcrumbItem><a href="/projects">Projects</a></BreadcrumbItem>
           <BreadcrumbItem active>Markdown Previewer</BreadcrumbItem>
         </Breadcrumb>
 

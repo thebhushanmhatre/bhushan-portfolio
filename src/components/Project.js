@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import RenderItems from './RenderItems';
 import { Row, Button } from 'reactstrap';
-
-class Project extends Component{
+  
+  class Project extends Component{
   constructor(props) {
     super(props)
     this.state = {

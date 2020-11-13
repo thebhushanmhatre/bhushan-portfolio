@@ -14,7 +14,6 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-
 const picturebox = document.querySelector('#picturebox')
 const picture = document.querySelector("#picture")
 
@@ -39,7 +38,14 @@ if (picture && picturebox){
   picture.addEventListener("mouseover", (e) => {
     picture.style.transform = `scale(1.1)`;
   });
+}
 
+const breadcrumbs = document.querySelectorAll('.breadcrumb').length
+console.log(breadcrumbs)
+const navbar = document.getElementById('navbar')
+console.log(navbar)
+if (breadcrumbs && navbar) {
+  if (breadcrumbs > 0) { navbar.style.display = "none" }
 }
 
 // If you want your app to work offline and load faster, you can change

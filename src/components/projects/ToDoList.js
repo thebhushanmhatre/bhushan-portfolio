@@ -42,10 +42,10 @@ class ToDoList extends Component {
 
 	render() {
 		return (
-			<div style={{background:'skyblue',padding:'20px', height:'85vh', borderRadius: '15px'}} className="container">
+			<div style={{ background: 'skyblue', padding: '20px', height: '95vh', borderRadius: '15px' }} className="container mt-2">
 				<Breadcrumb className="offset-md-1 col-md-10" >
 	        <BreadcrumbItem><a href="/">Home</a></BreadcrumbItem>
-	        <BreadcrumbItem><a href="/project">Projects</a></BreadcrumbItem>
+	        <BreadcrumbItem><a href="/projects">Projects</a></BreadcrumbItem>
 	        <BreadcrumbItem active>ToDo List App</BreadcrumbItem>
 	      </Breadcrumb>
 				<div className="todoListMain text-center">

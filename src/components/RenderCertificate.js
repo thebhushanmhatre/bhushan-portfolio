@@ -7,7 +7,7 @@ function RenderCertificate(props){
     <div className="container">
       <Breadcrumb>
         <BreadcrumbItem><a href="/">Home</a></BreadcrumbItem>
-        <BreadcrumbItem><a href="/certificate">Certificates</a></BreadcrumbItem>
+        <BreadcrumbItem><a href="/certificates">Certificates</a></BreadcrumbItem>
         <BreadcrumbItem active>{props.certificate.name}</BreadcrumbItem>
       </Breadcrumb>
       <div className="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">

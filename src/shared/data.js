@@ -2,7 +2,16 @@ export const DATA = {
   "projects":[
     {
       "projectId": 1,
-      "href": "quotes",//https://codepen.io/thebhushanmhatre/full/yZQmVw"
+      "href": "/project/recipes",
+      "src": "assets/images/projects/recipe-app.jpg",
+      "tech": ["React", "Javascript", "Fetch API"],
+      "name": "Recipe App",
+      "visible": true,
+      "target": ""
+    },
+    {
+      "projectId": 2,
+      "href": "/project/quotes",//https://codepen.io/thebhushanmhatre/full/yZQmVw"
       "src": "assets/images/projects/quotes.jpg",
       "tech": ["Javascript"],
       "name": "Random Quote Machine",
@@ -10,8 +19,8 @@ export const DATA = {
       "target": ""
     },
     {
-      "projectId": 2,
-      "href": "todolist",
+      "projectId": 3,
+      "href": "/project/todolist",
       "src": "assets/images/projects/todoapp.jpg",
       "tech": ["React", "Javascript"],
       "name": "To Do List App",
@@ -19,17 +28,8 @@ export const DATA = {
       "target": ""
     },
     {
-      "projectId": 3,
-      "href": "clock",//https://codepen.io/thebhushanmhatre/full/LaJqvy",
-      "src": "assets/images/projects/clock.jpg",
-      "tech": ["Javascript"],
-      "name": "Pomodoro Clock",
-      "visible": true,
-      "target": ""
-    },
-    {
       "projectId": 4,
-      "href": "markdown",
+      "href": "/project/markdown",
       "src": "assets/images/projects/markdown.jpg",
       "tech": ["Javascript"],
       "name": "Markdown Previewer",
@@ -38,12 +38,12 @@ export const DATA = {
     },
     {
       "projectId": 5,
-      "href": "https://recipe-app-bhushan.herokuapp.com/",
-      "src": "assets/images/projects/recipe-app.jpg",
-      "tech": ["React", "Javascript", "Fetch API"],
-      "name": "Recipe App",
+      "href": "/project/clock",//https://codepen.io/thebhushanmhatre/full/LaJqvy",
+      "src": "assets/images/projects/clock.jpg",
+      "tech": ["Javascript"],
+      "name": "Pomodoro Clock",
       "visible": true,
-      "target": "_blank"
+      "target": ""
     },
     {
       "projectId": 6,
