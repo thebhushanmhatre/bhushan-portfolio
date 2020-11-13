@@ -41,6 +41,5 @@ This repo also Includes following Projects:
 ## New to Programming?
 Check my Free Guide to [Getting Started to Programming](https://github.com/thebhushanmhatre/bhushan-portfolio/blob/master/)
 
-![](https://img.shields.io/badge/Thanks%20&%20Regards,-%23181717.svg?&style=for-the-badge)
-
-[![](https://img.shields.io/badge/Bhushan%20Mhatre-%23181717.svg?&style=for-the-badge&logo=github&logoColor=white)](https://github.com/thebhushanmhatre)
+Thanks and Regards,
+Bhushan Mhatre.
