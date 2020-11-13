@@ -1,39 +1,31 @@
-import React, { Component } from 'react';
-import { Media } from 'reactstrap';
+import React from 'react';
+import { Col, Container, Row } from 'reactstrap';
 
-function RenderMedia({item}) {
+function RenderInstitute({item}){
   return(
-    <div className="mb-1 col-12 offset-md-1 col-md-9 col-lg-8 educationMedia" 
-      style={{backgroundColor: window.innerWidth < 995 ? 'white' : ''}}>
-      <Media className="pb-2">
-        <Media body>
-          <Media heading>{item.name}</Media>
-          {item.shortname && <Media heading> {item.shortname}</Media>}
-          <p>{item.branch}</p>
-          <p> Graduated in {item.year}</p>
-        </Media>
-        <div className="d-none d-sm-block" >
-        <a href={item.href} target="_blank" rel="noopener noreferrer">
-          <Media style={{borderRadius: '50px'}} object src={item.src} alt={item.name} width="100px" height="120px" />
-        </a>
-        </div>
-      </Media>
-    </div>
-  );
+  <Col md="4" className="text-center">
+    <a href={item.href} target="_blank" rel="noopener noreferrer">
+      <img className="eduimage" src={item.src} alt={item.shortname} width="150px" ></img>
+    </a>
+    <h3>{item.shortname}</h3>
+    <h5>({item.year})</h5>
+    <p>{item.degree}</p>
+  </Col>
+  )
 }
 
-class Education extends Component{
-
-  render(){
-    const institutes = this.props.education.map(item=>
-        <RenderMedia item={item} />
-    )
-    return(
-      <div className="container">
-        {institutes}
-      </div>
-    );
-  }
+function Education(props){
+  console.log(props)
+  const institutes = props.education.map(item=>
+    <RenderInstitute key={item.year} item={item} />
+  )
+  return(
+    <Container>
+    <Row className="pt-3 align-items-center">
+      {institutes}
+    </Row>
+    </Container>
+  )
 }
 
 export default Education;

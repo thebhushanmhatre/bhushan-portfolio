@@ -70,14 +70,10 @@ ul.theList {
   border: 5px solid skyblue;
 }
 
-.educationMedia {
-  border-left: 2.5px solid silver;
-}
-
-.educationMedia:hover{
-  border-left: 5px solid gray;
-}
-
 .contact-icon:hover {
   text-shadow: 3px 3px red;
+}
+
+.eduimage{
+  border-radius: 60px;
 }

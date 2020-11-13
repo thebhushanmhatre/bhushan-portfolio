@@ -692,21 +692,23 @@ export const DATA = {
       "shortname": "V.J.T.I.",
       "src": "assets/images/vjti_logo.jpg",
       "year": "2019",
-      "branch": "B.Tech., Electronics and Telecommunications"
+      "degree": "B.Tech."
     },
     {
       "href": "http://www.patkarvardecollege.edu.in/index.php",
       "name": "Patkar College of Science",
-      "shortname": "",
+      "shortname": "Patkar College",
       "src": "assets/images/patkar_logo.jpg",
-      "year": "2015"
+      "year": "2015",
+      "degree": "Junior College (Science)"
     },
     {
       "href": "https://en.wikipedia.org/wiki/Saint_Francis_D%27Assisi_High_School",
       "name": "St. Francis D'Assisi High School",
       "shortname": "S.F.H.S.",
       "src": "assets/images/sfhs_logo.jpg",
-      "year": "2013"
+      "year": "2013",
+      "degree": "School"
     }
   ]
 }

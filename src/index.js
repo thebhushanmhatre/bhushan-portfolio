@@ -41,9 +41,8 @@ if (picture && picturebox){
 }
 
 const breadcrumbs = document.querySelectorAll('.breadcrumb').length
-console.log(breadcrumbs)
 const navbar = document.getElementById('navbar')
-console.log(navbar)
+
 if (breadcrumbs && navbar) {
   if (breadcrumbs > 0) { navbar.style.display = "none" }
 }
