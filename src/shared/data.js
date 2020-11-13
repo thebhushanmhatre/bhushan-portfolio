@@ -2,7 +2,7 @@ export const DATA = {
   "projects":[
     {
       "projectId": 1,
-      "href": "/recipes",
+      "href": "/project/recipes",
       "src": "assets/images/projects/recipe-app.jpg",
       "tech": ["React", "Javascript", "Fetch API"],
       "name": "Recipe App",
@@ -11,7 +11,7 @@ export const DATA = {
     },
     {
       "projectId": 2,
-      "href": "quotes",//https://codepen.io/thebhushanmhatre/full/yZQmVw"
+      "href": "/project/quotes",//https://codepen.io/thebhushanmhatre/full/yZQmVw"
       "src": "assets/images/projects/quotes.jpg",
       "tech": ["Javascript"],
       "name": "Random Quote Machine",
@@ -20,7 +20,7 @@ export const DATA = {
     },
     {
       "projectId": 3,
-      "href": "todolist",
+      "href": "/project/todolist",
       "src": "assets/images/projects/todoapp.jpg",
       "tech": ["React", "Javascript"],
       "name": "To Do List App",
@@ -29,7 +29,7 @@ export const DATA = {
     },
     {
       "projectId": 4,
-      "href": "markdown",
+      "href": "/project/markdown",
       "src": "assets/images/projects/markdown.jpg",
       "tech": ["Javascript"],
       "name": "Markdown Previewer",
@@ -38,7 +38,7 @@ export const DATA = {
     },
     {
       "projectId": 5,
-      "href": "clock",//https://codepen.io/thebhushanmhatre/full/LaJqvy",
+      "href": "/project/clock",//https://codepen.io/thebhushanmhatre/full/LaJqvy",
       "src": "assets/images/projects/clock.jpg",
       "tech": ["Javascript"],
       "name": "Pomodoro Clock",

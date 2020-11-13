@@ -25,7 +25,7 @@ class RandomQuoteMachine extends Component{
       <div className="container mt-2">
         <Breadcrumb>
           <BreadcrumbItem><a href="/">Home</a></BreadcrumbItem>
-          <BreadcrumbItem><a href="/project">Projects</a></BreadcrumbItem>
+          <BreadcrumbItem><a href="/projects">Projects</a></BreadcrumbItem>
           <BreadcrumbItem active>Random Quote Machine</BreadcrumbItem>
         </Breadcrumb>
         <h3 className="text-center pt-3" style={{backgroundColor: 'white'}}>Random Quote Machine</h3>

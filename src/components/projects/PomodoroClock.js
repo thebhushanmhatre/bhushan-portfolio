@@ -159,7 +159,7 @@ class PomodoroClock extends Component {
       <div className="container text-center bg-light mt-2">
       <Breadcrumb>
         <BreadcrumbItem><a href="/">Home</a></BreadcrumbItem>
-        <BreadcrumbItem><a href="/project">Projects</a></BreadcrumbItem>
+        <BreadcrumbItem><a href="/projects">Projects</a></BreadcrumbItem>
         <BreadcrumbItem active>Pomodoro Clock</BreadcrumbItem>
       </Breadcrumb>
         <h2 style={{backgroundColor: 'skyblue', marginBottom: '20px', borderRadius: '15px'}} class="text-center p-3"> Pomodoro Clock </h2>

@@ -212,8 +212,8 @@ function Recipes() {
         <InputForm getDish={getDish} />
         <Breadcrumb className='mt-2'>
           <BreadcrumbItem><a href="/">Home</a></BreadcrumbItem>
-          <BreadcrumbItem><a href="/project">Projects</a></BreadcrumbItem>
-          <BreadcrumbItem><a href="/recipes" onClick={goHome}>Recipes</a></BreadcrumbItem>
+          <BreadcrumbItem><a href="/projects">Projects</a></BreadcrumbItem>
+          <BreadcrumbItem><a href="/project/recipes" onClick={goHome}>Recipes</a></BreadcrumbItem>
           {(input.length > 0) &&
             <>
             <BreadcrumbItem active>{input}</BreadcrumbItem>
