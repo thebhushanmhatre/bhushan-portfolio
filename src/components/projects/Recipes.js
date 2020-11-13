@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card, Collapse, CardText, CardBody, CardTitle, CardSubtitle, Container, Breadcrumb, BreadcrumbItem, Input, Button, Row, Col, Alert } from 'reactstrap';
+import { Card, Collapse, CardBody, CardSubtitle, Container, Breadcrumb, BreadcrumbItem, Input, Button, Row, Col, Alert } from 'reactstrap';
 
 // InputForm
 function InputForm(props) {
@@ -105,7 +105,7 @@ const example = [{
 // DisplayItems
 function DisplayItems(props) {
   var itemList = props.items.meals.map(i => {
-    return <RenderItem item={i} />
+    return <RenderItem key={i.idMeal} item={i} />
   })
   return (
     <div>
@@ -128,31 +128,32 @@ function RenderItem({ item }) {
       if (element)
         elements.push(element + " -> " + quantity)
     })
-    return [...elements.filter(x => x)].map(p => <li>{p}.</li>)
+    return [...elements.filter(x => x)].map(p => <li key={p}>{p}.</li>)
   }
 
   const getSteps = (item) => {
     let steps = item.strInstructions.split('.')
-    return [...steps.filter(x => x)].map(p => <li>{p}.</li>)
+    return [...steps.filter(x => x)].map(p => <li key={p}>{p}.</li>)
   }
 
   return (
     <Card style={{ margin: 10 }}>
       <CardBody>
-        <CardTitle><h3>{item.strMeal}</h3></CardTitle>
-        {(item.strTags) &&
-          <CardSubtitle>{item.strTags.split(',').join(', ')}</CardSubtitle>
-        }
-        <Button color="primary" onClick={toggle} style={{ marginTop: 10, marginBottom: 10 }}>
-          <i className="fa fa-align-justify fa-lg" aria-hidden="true"> See Recipe</i></Button>
-        <a href={item.strYoutube} target="_blank" rel="noopener noreferrer">
-          <Button color="danger" onClick={toggle} style={{ margin: 10 }}>
-            <i className="fa fa-youtube-play fa-lg" aria-hidden="true"> Watch</i>
+        <div className="text-center">
+          <h3 className="text-center">{item.strMeal}</h3>
+          {(item.strTags) && <CardSubtitle className="text-center">{item.strTags.split(',').join(', ')}</CardSubtitle>}
+          <Button color="primary" onClick={toggle} style={{ marginTop: 10, marginBottom: 10 }}>
+            <i className="fa fa-align-justify fa-lg" aria-hidden="true"> See Recipe</i>
           </Button>
-        </a>
+          <a href={item.strYoutube} target="_blank" rel="noopener noreferrer">
+            <Button color="danger" onClick={toggle} style={{ margin: 10 }}>
+              <i className="fa fa-youtube-play fa-lg" aria-hidden="true"> Watch</i>
+            </Button>
+          </a>
+        </div>
         <Collapse isOpen={isOpen}>
-          <CardText><u>Ingredients required:</u><ul>{getElements(item)}</ul></CardText>
-          <CardText><u>Instructions:</u> <ol>{getSteps(item)}</ol></CardText>
+          <span><u>Ingredients required:</u><ul>{getElements(item)}</ul></span>
+          <span><u>Instructions:</u> <ol>{getSteps(item)}</ol></span>
         </Collapse>
       </CardBody>
     </Card>
@@ -162,8 +163,7 @@ function RenderItem({ item }) {
 //Popular Items
 function PopularItems(props) {
   let popular_items = ['Chocolate', 'Soup', 'Cake', 'Fish', 'Chicken'].map(item => {
-    return <Button type="submit" color="success" className="m-1"
-      onClick={i => props.getPopularDish(item)}> {item} </Button>
+    return <Button key={item} type="submit" color="success" className="m-1" onClick={i => props.getPopularDish(item)}> {item} </Button>
   })
 
   return (
@@ -207,18 +207,14 @@ function Recipes() {
   }
 
   return (
-    <div className="container text-center bg-light">
+    <Container className="bg-light">
       <Container>
         <InputForm getDish={getDish} />
         <Breadcrumb className='mt-2'>
           <BreadcrumbItem><a href="/">Home</a></BreadcrumbItem>
           <BreadcrumbItem><a href="/projects">Projects</a></BreadcrumbItem>
           <BreadcrumbItem><a href="/project/recipes" onClick={goHome}>Recipes</a></BreadcrumbItem>
-          {(input.length > 0) &&
-            <>
-            <BreadcrumbItem active>{input}</BreadcrumbItem>
-            </>
-          }
+          {(input.length > 0) && <BreadcrumbItem active>{input}</BreadcrumbItem> }
         </Breadcrumb>
         {(data.meals == null || data.meals.length < 4) &&
           <PopularItems getPopularDish={getPopularDish} />
@@ -228,7 +224,7 @@ function Recipes() {
         </div>
         <Footer />
       </Container>
-    </div>
+    </Container>
   )
 }
 

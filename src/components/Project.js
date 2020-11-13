@@ -25,9 +25,7 @@ import { Row, Button, Container } from 'reactstrap';
     let projects = this.props.projects.filter(item=>item.visible)
     let filters = this.state.filter
     if(filters.length > 0){
-      filters.map(filter => {
-        projects = projects.filter(item => item.tech.includes(filter))
-      })
+      return projects.filter(project => filters.every(fil => project.tech.includes(fil)))
     }
     return projects
   }

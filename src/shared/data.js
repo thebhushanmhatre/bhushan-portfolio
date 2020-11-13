@@ -152,6 +152,33 @@ export const DATA = {
       "name": "Wash your Hands says the Data",
       "visible": true,
       "target": "_blank"
+    },
+    {
+      "projectId": 18,
+      "href": "https://github.com/thebhushanmhatre/url-shortener",
+      "src": "assets/images/projects/url_shortener.jpg",
+      "tech": ["Python"],
+      "name": "Url-Shortner",
+      "visible": true,
+      "target": "_blank"
+    },
+    {
+      "projectId": 19,
+      "href": "https://github.com/thebhushanmhatre/react-flask-app",
+      "src": "assets/images/projects/react_flask_app.jpg",
+      "tech": ["Javascript", "Python"],
+      "name": "React-Flask App",
+      "visible": true,
+      "target": "_blank"
+    },
+    {
+      "projectId": 20,
+      "href": "https://github.com/thebhushanmhatre/JSProjects",
+      "src": "assets/images/projects/js_apps.jpg",
+      "tech": ["Javascript"],
+      "name": "Javascript App",
+      "visible": false,
+      "target": "_blank"
     }
   ],
   "certificates":[
