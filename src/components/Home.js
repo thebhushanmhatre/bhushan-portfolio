@@ -3,13 +3,30 @@ import { Container } from 'reactstrap';
 import Contact from './Contact';
 
 function Home(props){
+  let my_name;
+  if (window.innerWidth >= 500) {
+    my_name = <div id="myname">Bhushan Chandrakant Mhatre</div>
+  } else {
+    my_name = <div id="myname">Bhushan C. Mhatre</div>
+  }
+
+  let pic_style;
+  if (window.innerWidth >= 500) {
+    pic_style = {}
+  } else {
+    pic_style = {
+      width: (window.innerWidth - 50).toString(),
+      height: (window.innerWidth - 50).toString()
+    }
+  }
+
   return(
     <>
       <Container className="text-center pt-3 pb-3" id="picturebox" >
-        <img id="picture" className="mb-4" src="/assets/images/onclouds.jpg" alt="Bhushan Mhatre"/>
+        <img id="picture" className="mb-4" src="/assets/images/onclouds.jpg" alt="Bhushan Mhatre" width={pic_style.width} height={pic_style.height} />
       </Container>
       <Container className="text-center pt-1 pb-3">
-        <h1><div id="myname">Bhushan Chandrakant Mhatre</div></h1>
+        <h1>{my_name}</h1>
       </Container>
       <Contact contacts={props.contacts} />
       <p className="text-center pt-3 mb-0">
