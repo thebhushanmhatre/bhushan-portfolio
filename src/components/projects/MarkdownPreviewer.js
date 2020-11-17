@@ -26,7 +26,7 @@ for (var i = 0; i < array.length; i++) {
  Bold: **Time to Say Good Bye**
 `
 
-class Markdown extends Component {
+class MarkdownPreviewer extends Component {
   constructor(props){
     super(props);
     this.state = {
@@ -71,4 +71,4 @@ class Markdown extends Component {
 }
 
 
-export default Markdown;
+export default MarkdownPreviewer;

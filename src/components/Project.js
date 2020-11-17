@@ -1,56 +1,49 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import RenderItems from './RenderItems';
 import { Row, Button, Container } from 'reactstrap';
   
-  class Project extends Component{
-  constructor(props) {
-    super(props)
-    this.state = {
-      filter: []
-    }
-  }
+function Project(props){
+  const [languages, setLanguages] = useState([])
 
-  setFilter = (filter) => {
-    let filters = this.state.filter
-    if(filters.indexOf(filter) >= 0){
-      filters.splice(filters.indexOf(filter), 1)
-      this.setState({filter: filters})
+  const setFilter = clickedFilter => {
+    let filters = languages
+    if (filters.indexOf(clickedFilter) >= 0){
+      filters.splice(filters.indexOf(clickedFilter), 1)
+      setLanguages([...filters])
     } else {
-      filters.push(filter)
-      this.setState({filter: filters})
+      filters.push(clickedFilter)
+      setLanguages([...filters])
     }
   }
 
-  getProjects = () => {
-    let projects = this.props.projects.filter(item=>item.visible)
-    let filters = this.state.filter
+  const getProjects = () => {
+    let projects = props.projects.filter(item=>item.visible)
+    let filters = languages
     if(filters.length > 0){
       return projects.filter(project => filters.every(fil => project.tech.includes(fil)))
     }
     return projects
   }
 
-  render(){
-    var projects;
-    if(this.getProjects().length > 0){
-      projects = this.getProjects().map(item=>
-        <RenderItems key={"projectId"+item.projectId.toString()} item={item} height={{minHeight: "5rem"}} />
-      )
-    } else {
-      projects = <h3 className="text-danger">"{this.state.filter.join(' + ')}" Projects Coming Soon</h3>
-    }
-
-    const filters = ["Javascript", "Python"].map(item => 
-      <Button className="bg-light text-dark mr-1" key={item} onClick={() => this.setFilter(item)}>{item}</Button>
+  var projects;
+  if(getProjects().length > 0){
+    projects = getProjects().map(item=>
+      <RenderItems key={"projectId"+item.projectId.toString()} item={item} height={{minHeight: "5rem"}} />
     )
-
-    return(
-      <Container>
-        <h3 className="mb-4">My {this.state.filter ? this.state.filter.join(' + ') : ''} Projects {filters}</h3>
-        <Row>{projects}</Row>
-      </Container>
-    );
+  } else {
+    projects = <h3 className="text-danger">"{languages.join(' + ')}" Projects Coming Soon</h3>
   }
+
+  const filters = ["Javascript", "Python"].map(item => 
+    <Button className="bg-light text-dark mr-1" key={item} onClick={() => setFilter(item)}>{item}</Button>
+  )
+
+  return(
+    <Container>
+      <h3 className="mb-4">My {languages ? languages.join(' + ') : ''} Projects {filters}</h3>
+      <Row>{projects}</Row>
+    </Container>
+  )
 }
 
 export default Project;

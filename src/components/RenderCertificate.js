@@ -1,5 +1,5 @@
 import React from 'react';
-import { Breadcrumb, BreadcrumbItem, Card, CardImg, CardBody, CardTitle, CardSubtitle, CardText, CardLink, Container } from 'reactstrap';
+import { Breadcrumb, BreadcrumbItem, Card, CardImg, CardBody, CardTitle, CardSubtitle, CardLink, Container } from 'reactstrap';
 
 function RenderCertificate(props){
   return (
@@ -15,7 +15,6 @@ function RenderCertificate(props){
           <CardBody>
             <CardTitle>{props.certificate.name}</CardTitle>
             <CardSubtitle className="mb-4">{props.certificate.institute || props.certificate.issuer}</CardSubtitle>
-            <CardText></CardText>
             <CardLink href={props.certificate.href} target={props.certificate.target} className="bg-primary text-light p-2 m-2 verifyButton">Verify Certficate</CardLink>
           </CardBody>
         </Card>
