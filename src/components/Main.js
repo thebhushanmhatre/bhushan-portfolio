@@ -25,7 +25,6 @@ const mapStateToProps = state => {
 
 function Main(props){
   const CertificateWithId = ({match}) => {
-    console.log(props.certificates.filter((item) => item.certId === parseInt(match.params.certId,10))[0])
     return(
       <RenderCertificate certificate={props.certificates.filter((item) => item.certId === parseInt(match.params.certId,10))[0]} />
     );
