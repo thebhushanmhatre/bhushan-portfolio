@@ -2,6 +2,7 @@ export const DATA = {
   "projects":[
     {
       "projectId": 1,
+      "inbuilt": true,
       "href": "/project/recipes",
       "src": "assets/images/projects/recipe-app.jpg",
       "tech": ["React", "Javascript", "Fetch API"],
@@ -11,6 +12,7 @@ export const DATA = {
     },
     {
       "projectId": 2,
+      "inbuilt": true,
       "href": "/project/quotes",//https://codepen.io/thebhushanmhatre/full/yZQmVw"
       "src": "assets/images/projects/quotes.jpg",
       "tech": ["Javascript"],
@@ -20,6 +22,7 @@ export const DATA = {
     },
     {
       "projectId": 3,
+      "inbuilt": true,
       "href": "/project/todolist",
       "src": "assets/images/projects/todoapp.jpg",
       "tech": ["React", "Javascript"],
@@ -29,6 +32,7 @@ export const DATA = {
     },
     {
       "projectId": 4,
+      "inbuilt": true,
       "href": "/project/markdown",
       "src": "assets/images/projects/markdown.jpg",
       "tech": ["Javascript"],
@@ -38,6 +42,7 @@ export const DATA = {
     },
     {
       "projectId": 5,
+      "inbuilt": true,
       "href": "/project/clock",//https://codepen.io/thebhushanmhatre/full/LaJqvy",
       "src": "assets/images/projects/clock.jpg",
       "tech": ["Javascript"],
@@ -47,6 +52,7 @@ export const DATA = {
     },
     {
       "projectId": 6,
+      "inbuilt": false,
       "href": "https://book-flights-bhushan.herokuapp.com/",
       "src": "assets/images/projects/bookflight.jpg",
       "tech": ["Ruby", "Ruby on Rails"],
@@ -56,6 +62,7 @@ export const DATA = {
     },
     {
       "projectId": 7,
+      "inbuilt": false,
       "href": "https://codepen.io/thebhushanmhatre/full/BbPrwa",
       "src": "assets/images/projects/calculator.jpg",
       "tech": ["Javascript"],
@@ -65,6 +72,7 @@ export const DATA = {
     },
     {
       "projectId": 8,
+      "inbuilt": false,
       "href": "https://codepen.io/thebhushanmhatre/full/QYeKBy",
       "src": "assets/images/projects/drum.jpg",
       "tech": ["Javascript"],
@@ -74,6 +82,7 @@ export const DATA = {
     },
     {
       "projectId": 9,
+      "inbuilt": false,
       "href": "https://codepen.io/thebhushanmhatre/full/KJbZrY",
       "src": "assets/images/projects/bookmark.jpg",
       "tech": ["Javascript"],
@@ -83,6 +92,7 @@ export const DATA = {
     },
     {
       "projectId": 10,
+      "inbuilt": false,
       "href": "https://codepen.io/thebhushanmhatre/full/aXPoNw",
       "src": "assets/images/projects/weights.jpg",
       "tech": ["Javascript"],
@@ -92,6 +102,7 @@ export const DATA = {
     },
     {
       "projectId": 12,
+      "inbuilt": false,
       "href": "",
       "src": "assets/images/projects/senti.jpg",
       "tech": ["Python", "Machine Learning"],
@@ -101,6 +112,7 @@ export const DATA = {
     },
     {
       "projectId": 11,
+      "inbuilt": false,
       "href": "https://www.kaggle.com/thebhushanmhatre/my-firsttry-on-kaggle/",
       "src": "assets/images/projects/titanic.jpg",
       "tech": ["Python", "Machine Learning"],
@@ -110,6 +122,7 @@ export const DATA = {
     },
     {
       "projectId": 13,
+      "inbuilt": false,
       "href": "",
       "src": "assets/images/projects/radar.jpg",
       "tech": ["Electronics"],
@@ -119,6 +132,7 @@ export const DATA = {
     },
     {
       "projectId": 14,
+      "inbuilt": false,
       "href": "",
       "src": "assets/images/projects/robarm.jpg",
       "tech": ["Electronics"],
@@ -128,6 +142,7 @@ export const DATA = {
     },
     {
       "projectId": 17,
+      "inbuilt": false,
       "href": "https://github.com/thebhushanmhatre/Tetris",
       "src": "assets/images/projects/tetris_js.jpg",
       "tech": ["JavaScript", "Game"],
@@ -137,6 +152,7 @@ export const DATA = {
     },
     {
       "projectId": 15,
+      "inbuilt": false,
       "href": "assets/notebooks/WebScraping.html",
       "src": "assets/images/projects/web_scrapping.jpg",
       "tech": ["Python", "Web Scrapping"],
@@ -146,6 +162,7 @@ export const DATA = {
     },
     {
       "projectId": 16,
+      "inbuilt": false,
       "href": "assets/notebooks/Handwashing.html",
       "src": "assets/images/projects/hand_washing.jpg",
       "tech": ["Python", "Data Analysis"],
@@ -155,6 +172,7 @@ export const DATA = {
     },
     {
       "projectId": 18,
+      "inbuilt": false,
       "href": "https://github.com/thebhushanmhatre/url-shortener",
       "src": "assets/images/projects/url_shortener.jpg",
       "tech": ["Python"],
@@ -164,6 +182,7 @@ export const DATA = {
     },
     {
       "projectId": 19,
+      "inbuilt": false,
       "href": "https://github.com/thebhushanmhatre/react-flask-app",
       "src": "assets/images/projects/react_flask_app.jpg",
       "tech": ["Javascript", "Python", "React", "Flask"],
@@ -173,6 +192,7 @@ export const DATA = {
     },
     {
       "projectId": 20,
+      "inbuilt": false,
       "href": "https://github.com/thebhushanmhatre/JSProjects",
       "src": "assets/images/projects/js_apps.jpg",
       "tech": ["Javascript"],
