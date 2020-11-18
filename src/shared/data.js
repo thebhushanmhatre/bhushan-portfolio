@@ -130,7 +130,7 @@ export const DATA = {
       "projectId": 17,
       "href": "https://github.com/thebhushanmhatre/Tetris",
       "src": "assets/images/projects/tetris_js.jpg",
-      "tech": ["JavaScript"],
+      "tech": ["JavaScript", "Game"],
       "name": "Tetris Game",
       "visible": true,
       "target": "_blank"
@@ -139,7 +139,7 @@ export const DATA = {
       "projectId": 15,
       "href": "assets/notebooks/WebScraping.html",
       "src": "assets/images/projects/web_scrapping.jpg",
-      "tech": ["Python"],
+      "tech": ["Python", "Web Scrapping"],
       "name": "Web Scrapping using Beautiful Soup",
       "visible": true,
       "target": "_blank"
@@ -148,7 +148,7 @@ export const DATA = {
       "projectId": 16,
       "href": "assets/notebooks/Handwashing.html",
       "src": "assets/images/projects/hand_washing.jpg",
-      "tech": ["Python"],
+      "tech": ["Python", "Data Analysis"],
       "name": "Wash your Hands says the Data",
       "visible": true,
       "target": "_blank"
@@ -166,7 +166,7 @@ export const DATA = {
       "projectId": 19,
       "href": "https://github.com/thebhushanmhatre/react-flask-app",
       "src": "assets/images/projects/react_flask_app.jpg",
-      "tech": ["Javascript", "Python"],
+      "tech": ["Javascript", "Python", "React", "Flask"],
       "name": "React-Flask App",
       "visible": true,
       "target": "_blank"

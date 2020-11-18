@@ -11,15 +11,13 @@ function Navigation(){
         <img id="logo" src="assets/images/logo.jpg" height="40" width="40" alt="bhushan"/> Bhushan Mhatre
       </NavbarBrand>
       <NavItem onClick={() => setDarkMode(darkMode => !darkMode)} >
-        <span className={darkMode ? "fas fa-sun-o fa-lg" : "fas fa-sun-o fa-lg"} style={darkMode ? { color: "orange" } : { color: "gold" }} /> {' '}
-        <span className={darkMode ? "fa fa-toggle-on fa-lg" : "fa fa-toggle-off fa-lg"} style={darkMode ? { color: "slateblue" } : { color: "gold" }} /> {' '}
-        <span className={darkMode ? "fas fa-moon-o fa-lg" : "fas fa-moon-o fa-lg"} style={darkMode ? { color: "skyblue" } : { color: "slateblue" }}  />  {' '}
+        {darkMode ? <span className="fas fa-sun-o fa-lg" style={{ color: "orange" }} /> : <span className="fas fa-moon-o fa-lg" style={{ color: "slateblue" }} /> }
       </NavItem>
       <NavbarToggler onClick={() => toggleNav(!isNavOpen)} >
-        <span className="fa fa-angle-double-down fa-lg" />
+        {isNavOpen ? <span className="fa fa-angle-double-up fa-lg" /> : <span className="fa fa-angle-double-down fa-lg" />}
       </NavbarToggler>
       <Collapse isOpen={isNavOpen} navbar>
-        <Nav className="ml-auto">
+        <Nav navbar className="ml-auto text-center">
           <NavItem><NavLink href='/workexp'><span className="fa fa-server fa-lg"> Work-Experience</span></NavLink></NavItem>
           <NavItem><NavLink href='/projects'><span className="fa fa-code fa-lg"> Projects</span></NavLink></NavItem>
           <NavItem><NavLink href='/certificates'><span className="fa fa-trophy fa-lg"> Certificates</span></NavLink></NavItem>

@@ -34,7 +34,7 @@ function Project(props){
     projects = <h3 className="text-danger">"{languages.join(' + ')}" Projects Coming Soon</h3>
   }
 
-  const filters = ["Javascript", "Python"].map(item => 
+  const filters = ["Javascript", "Python", "React"].map(item => 
     <Button className="bg-light text-dark mr-1" key={item} onClick={() => setFilter(item)}>{item}</Button>
   )
 
