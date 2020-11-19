@@ -1,6 +1,5 @@
 import React from 'react';
 import { Table } from 'reactstrap';
-// import { Link } from 'react-router-dom';
 
 function RenderProjectsTabular({projects}) {
   let column_names = ["#", "Project Name", "Technologies Used"] // ["projectId", "inbuilt", "href", "src", "tech", "name", "visible", "target"]
@@ -9,10 +8,10 @@ function RenderProjectsTabular({projects}) {
 
   let rows = projects.map((project, count) =>
     (<tr key={count.toString()} >
-      <th scope="row">{count+1}</th>
+      <td>{count+1}</td>
       <td>
         <a href={project.href} target={project.target}>{project.name} {' '} 
-          {project.inbuilt ? <i class="fa fa-link" aria-hidden="true" /> : <i class="fa fa-external-link" aria-hidden="true" />}
+          {project.inbuilt ? <i className="fa fa-link" aria-hidden="true" /> : <i className="fa fa-external-link" aria-hidden="true" />}
         </a>
       </td>
       <td>{project.tech.join(', ')}</td>
@@ -20,7 +19,7 @@ function RenderProjectsTabular({projects}) {
   )
 
   return (
-    <Table hover>
+    <Table bordered hover>
       <thead>
         <tr>
           {column_headers}
