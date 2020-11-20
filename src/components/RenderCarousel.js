@@ -27,19 +27,23 @@ function RenderCarousel({ certis }) {
   const slides = certis.map(item => {
     return (
       <CarouselItem onExiting={() => setAnimating(true)} onExited={() => setAnimating(false)} key={item.src} >
-        <a href={item.href} target={item.target} ><img src={item.src} alt={item.name} /></a>
-        <CarouselCaption className="text-dark" captionHeader={item.professor ? "Taught by: " + item.professor : "Technologies: " + item.tech.join(', ')} captionText={item.professor ? "Technologies: "+item.tech.join(', ') : ""} />
+        <a href={item.href} target={item.target} >
+          <img src={item.src} alt={item.name} width="100%" />
+        </a>
+        <CarouselCaption className="text-dark" captionText={item.professor ? "Taught by: " + item.professor : "Technologies: " + item.tech.join(', ')} />
       </CarouselItem>
     )
   })
 
   return (
-    <Carousel activeIndex={activeIndex} next={next} previous={previous}>
-      <CarouselIndicators items={certis} activeIndex={activeIndex} onClickHandler={goToIndex} />
-      {slides}
-      <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-      <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-    </Carousel>
+    <div className="col-12 col-md-10 offset-md-1">
+      <Carousel activeIndex={activeIndex} next={next} previous={previous}>
+        <CarouselIndicators items={certis} activeIndex={activeIndex} onClickHandler={goToIndex} />
+        {slides}
+        <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+        <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+      </Carousel>
+    </div>
   )
 }
 

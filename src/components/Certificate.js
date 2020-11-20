@@ -6,7 +6,7 @@ import { Container, Row , Button } from 'reactstrap';
 function Certificate(props){
   const [filterBy, setFilterBy] = useState(false)
   const [filterOn, setFilterOn] = useState(false)
-  const [carousel, toggleCarousel] = useState(false)
+  const [carousel, toggleCarousel] = useState(true)
 
   const setFilter = (filter, on) => {
     if(filterBy === filter){

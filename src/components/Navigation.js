@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
-import {  Navbar, NavbarBrand, Nav, NavItem, NavLink, NavbarToggler, Collapse} from 'reactstrap';
+import { Navbar, NavbarBrand, Nav, NavItem, NavLink, NavbarToggler, Collapse, Tooltip } from 'reactstrap';
 
 function Navigation(){
   const [isNavOpen, toggleNav] = useState(false)
   const [darkMode, setDarkMode] = useState(false)
+
+  const [tooltipOpen, setTooltipOpen] = useState(false);
+  const toggle = () => setTooltipOpen(!tooltipOpen);
 
   return(
     <Navbar id="navbar" className="text-light container mb-3" expand="lg">
@@ -11,7 +14,11 @@ function Navigation(){
         <img id="logo" src="assets/images/logo.jpg" height="40" width="40" alt="bhushan"/> Bhushan Mhatre
       </NavbarBrand>
       <NavItem onClick={() => setDarkMode(darkMode => !darkMode)} >
-        {darkMode ? <span className="fas fa-sun-o fa-lg" style={{ color: "orange" }} /> : <span className="fas fa-moon-o fa-lg" style={{ color: "slateblue" }} /> }
+        {darkMode ? 
+          <span className="fas fa-sun-o fa-lg" style={{ color: "orange" }} href="#" id="dmtt" /> :
+          <span className="fas fa-moon-o fa-lg" style={{ color: "slateblue" }} href="#" id="dmtt" /> 
+        }
+        <Tooltip placement="right" isOpen={tooltipOpen} target="dmtt" toggle={toggle}> Coming Soon!</Tooltip>
       </NavItem>
       <NavbarToggler onClick={() => toggleNav(!isNavOpen)} >
         {isNavOpen ? <span className="fa fa-angle-double-up fa-lg" /> : <span className="fa fa-angle-double-down fa-lg" />}

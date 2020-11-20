@@ -11,6 +11,32 @@ a {
   border-bottom: 1px solid black;
 }
 
+#picturebox{
+  perspective: 500px;
+  cursor: crosshair;
+}
+
+#picture {
+  transform-style: preserve-3d;
+  border-radius: 50%;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+#picture:hover {
+  box-shadow: 0 20px 20px rgba(255, 240, 33, 0.2), 0px 0px 50px rgba(255, 240, 33, 0.2);
+}
+
+#myname {
+  font-style: italic;
+  font-family: 'Segoe UI';
+  cursor: pointer;
+  background-image: linear-gradient(to right, white, skyblue, skyblue, white);
+}
+
+#eduhead{
+  background-image: linear-gradient(to right, skyblue, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+}
+
 .todoListMain .header input {
   padding: 10px;
   font-size: 16px;
@@ -78,6 +104,11 @@ ul.theList {
   border-radius: 60px;
 }
 
+.carousel-control-prev,
+.carousel-control-next{
+  background-color: rgba(102, 177, 247, 0.2);
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon{
   filter: invert(100%);
@@ -90,4 +121,8 @@ ul.theList {
 
 .carousel-indicators {
   filter: invert(100%);
+}
+
+.carousel {
+  margin: auto;
 }
