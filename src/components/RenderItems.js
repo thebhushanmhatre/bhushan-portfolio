@@ -32,7 +32,7 @@ function RenderItems(props){
         <ModalBody>
         <CardBody>
           <CardLink href={props.item.href} target={props.item.target}>
-            <CardImg top width="20%"  src={props.item.src} alt={props.item.name} />
+            <CardImg top width="20%" src={props.item.src} alt={props.item.name} />
           </CardLink>
         </CardBody>
         </ModalBody>

@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import RenderItems from './RenderItems';
+import RenderCarousel from './RenderCarousel';
 import { Container, Row , Button } from 'reactstrap';
 
 function Certificate(props){
   const [filterBy, setFilterBy] = useState(false)
   const [filterOn, setFilterOn] = useState(false)
+  const [carousel, toggleCarousel] = useState(true)
 
   const setFilter = (filter, on) => {
     if(filterBy === filter){
@@ -20,7 +22,7 @@ function Certificate(props){
     if(filterBy){
       certificates = props.certificates.filter(item => item[filterOn].indexOf(filterBy) !== -1)
     }
-    return certificates
+    return certificates.reverse()
   }
 
   const certis = getCertis().map(item=>
@@ -31,15 +33,19 @@ function Certificate(props){
     <Button key={item} className="bg-light text-dark mr-1" onClick={() => setFilter(item, 'tech')}>{item} </Button>
   )
   
-  const issuers = ["Coursera", "FreeCodeCamp", "Linkedin", "IBM", "DataCamp"].map(item => 
+  const issuers = ["Coursera", "FreeCodeCamp", "Linkedin"].map(item => 
     <Button key={item} className="bg-light text-dark mr-1" onClick={() => setFilter(item, 'issuer')}>{item}</Button>
   )
 
+  let carouselForm = <span onClick={() => toggleCarousel(prevMode => !prevMode)} className={carousel ? "fa fa-th fa-lg" : "fas fa-film fa-lg"} style={{ float: "right" }} />
+
+  let ppt = <RenderCarousel certis={getCertis()} />
+
   return(
     <Container>
-      <h3>My {filterBy ? filterBy : ''} Certificates {filters}</h3>
+      <h3>{filterBy ? filterBy : 'My'} Certificates {filters} {carouselForm}</h3>
       <h3>{issuers}</h3>
-      <Row>{certis}</Row>
+      <Row>{carousel ? ppt : certis}</Row>
     </Container>
   );
 }

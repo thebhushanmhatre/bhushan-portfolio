@@ -13,29 +13,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-#picturebox{
-  perspective: 500px;
-  cursor: crosshair;
-}
-
-#picture {
-  transform-style: preserve-3d;
-  border-radius: 50%;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
-}
-
-#picture:hover {
-  box-shadow: 0 20px 20px rgba(255, 240, 33, 0.2), 0px 0px 50px rgba(255, 240, 33, 0.2);
-}
-
-#myname {
-  font-style: italic;
-  font-family: 'Segoe UI';
-  cursor: pointer;
-  background-image: linear-gradient(to right, white, skyblue, skyblue, white);
-}
-
-#eduhead{
-  background-image: linear-gradient(to right, skyblue, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
-}

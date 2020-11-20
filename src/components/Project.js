@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
-import RenderItems from './RenderItems';
 import { Row, Button, Container } from 'reactstrap';
-  
+import RenderItems from './RenderItems';
+import RenderProjectsTabular from './RenderProjectsTabular'
+
 function Project(props){
   const [languages, setLanguages] = useState([])
+  const [tabular, toggleTabluar] = useState(true)
 
   const setFilter = clickedFilter => {
     let filters = languages
@@ -26,22 +28,27 @@ function Project(props){
   }
 
   var projects;
-  if(getProjects().length > 0){
-    projects = getProjects().map(item=>
-      <RenderItems key={"projectId"+item.projectId.toString()} item={item} height={{minHeight: "5rem"}} />
-    )
+  let project_list = getProjects()
+  if(project_list.length > 0){
+    if (tabular) {
+      projects = <RenderProjectsTabular projects={project_list} />
+    } else {
+      projects = project_list.map(item=> <RenderItems key={"projectId" + item.projectId.toString()} item={item} height={{ minHeight: "5rem" }} />)
+    }
   } else {
     projects = <h3 className="text-danger">"{languages.join(' + ')}" Projects Coming Soon</h3>
   }
 
-  const filters = ["Javascript", "Python"].map(item => 
+  const filters = ["Javascript", "Python", "React"].map(item => 
     <Button className="bg-light text-dark mr-1" key={item} onClick={() => setFilter(item)}>{item}</Button>
   )
 
+  let tabularForm = <span onClick={()=>toggleTabluar(prevMode => !prevMode)} className={tabular ? "fa fa-th fa-lg" : "fa fa-table fa-lg"} style={{float:"right"}} />
+
   return(
     <Container>
-      <h3 className="mb-4">My {languages ? languages.join(' + ') : ''} Projects {filters}</h3>
-      <Row>{projects}</Row>
+      <h3 className="mb-4">My {languages ? languages.join(' + ') : ''} Projects {filters} {tabularForm}</h3>
+      {tabular ? projects : <Row>{projects}</Row>}
     </Container>
   )
 }
