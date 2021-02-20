@@ -14,6 +14,7 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+
 const picturebox = document.querySelector('#picturebox')
 const picture = document.querySelector("#picture")
 

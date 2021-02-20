@@ -53,7 +53,7 @@ export const DATA = {
     {
       "projectId": 6,
       "inbuilt": false,
-      "href": "https://book-flights-bhushan.herokuapp.com/",
+      "href": "https://github.com/thebhushanmhatre/book_flights",
       "src": "assets/images/projects/bookflight.jpg",
       "tech": ["Ruby", "Ruby on Rails"],
       "name": "Flight Booking App",
@@ -686,6 +686,43 @@ export const DATA = {
       "tech": ["Python"],
       "visible": true,
       "target": "_blank"
+    },
+    {
+      "certId": 40,
+      "href": "https://www.coursera.org/account/accomplishments/certificate/EGYCA575BPZD",
+      "src": "/assets/images/certificates/project-flask.jpg",
+      "name": "Create Your First Web App with Python and Flask",
+      "issuer": "Coursera",
+      "credentialID": "EGYCA575BPZD",
+      "professor": "Amit Yadav",
+      "tech": ["Python", "Flask"],
+      "visible": false,
+      "target": "_blank"
+    },
+    {
+      "certId": 41,
+      "href": "https://www.coursera.org/account/accomplishments/certificate/3WWMX2WCRNC3",
+      "src": "/assets/images/certificates/fin-mkt.jpg",
+      "name": "Understanding Financial Markets",
+      "issuer": "Coursera",
+      "institute": "University of Geneva",
+      "credentialID": "3WWMX2WCRNC3",
+      "professor": "Michel Girardin",
+      "tech": ["Finance"],
+      "visible": true,
+      "target": "_blank"
+    },
+    {
+      "certId": 42,
+      "href": "http://www.linkedin.com/learning/learning-django-2",
+      "src": "/assets/images/certificates/learning_django.jpg",
+      "name": "Learning Django",
+      "issuer": "Linkedin",
+      "credentialID": "",
+      "professor": "Caleb Smith",
+      "tech": ["Python", "Django"],
+      "visible": true,
+      "target": "_blank"
     }
   ],
   "contacts":[
@@ -711,11 +748,11 @@ export const DATA = {
       "color": "green"
     },
     {
-      "contId": 4,
-      "href": "https://codepen.io/thebhushanmhatre/",
-      "name": "codepen",
-      "icon": "fa fa-codepen fa-lg",
-      "color": "black"
+      "contId": 7,
+      "href": "https://twitter.com/thebhushanmhatr",
+      "name": "twitter",
+      "icon": "fab fa-twitter fa-lg",
+      "color": "#1DA1F2"
     },
     {
       "contId": 5,
@@ -723,6 +760,13 @@ export const DATA = {
       "name": "hackerrank",
       "icon": "fab fa-hackerrank fa-lg",
       "color": "#1ba94c"
+    },
+    {
+      "contId": 4,
+      "href": "https://codepen.io/thebhushanmhatre/",
+      "name": "codepen",
+      "icon": "fa fa-codepen fa-lg",
+      "color": "black"
     },
     {
       "contId": 6,

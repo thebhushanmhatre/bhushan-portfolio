@@ -5,18 +5,23 @@ import Contact from './Contact';
 function Home(props){
   let my_name;
   if (window.innerWidth >= 500) {
-    my_name = <div id="myname">Bhushan Chandrakant Mhatre</div>
+    my_name = <div className="myname">Bhushan Chandrakant Mhatre</div>
   } else {
-    my_name = <div id="myname">Bhushan C. Mhatre</div>
+    my_name = <div className="myname">Bhushan C. Mhatre</div>
   }
 
   let pic_style;
-  if (window.innerWidth >= 500) {
+  if (window.innerWidth >= 1445) {
     pic_style = {}
+  } else if (window.innerWidth >= 500) {
+    pic_style = {
+      width: (window.innerWidth * 0.4).toString(),
+      height: (window.innerWidth * 0.4).toString()
+    }
   } else {
     pic_style = {
-      width: (window.innerWidth - 50).toString(),
-      height: (window.innerWidth - 50).toString()
+      width: (window.innerWidth - 100).toString(),
+      height: (window.innerWidth - 100).toString()
     }
   }
 

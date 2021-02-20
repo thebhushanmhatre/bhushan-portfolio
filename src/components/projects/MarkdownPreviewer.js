@@ -43,7 +43,7 @@ class MarkdownPreviewer extends Component {
   
   render(){
     return(
-      <Container className="m-2">
+      <Container className="mt-2">
         <Breadcrumb>
           <BreadcrumbItem><a href="/">Home</a></BreadcrumbItem>
           <BreadcrumbItem><a href="/projects">Projects</a></BreadcrumbItem>

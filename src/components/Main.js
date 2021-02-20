@@ -1,17 +1,21 @@
 import React from 'react';
 import Navigation from './Navigation';
-import WorkExperience from './WorkExperience';
-import Certificate from './Certificate';
-import Home from './Home';
-import Project from './Project';
-import RenderCertificate from './RenderCertificate';
+import { Switch, Route, withRouter, Redirect } from 'react-router-dom';
+import { connect } from 'react-redux';
+// web pages
+import WorkExperience from './web/WorkExperience';
+import Certificate from './web/Certificate';
+import Home from './web/Home';
+import RenderCertificate from './web/RenderCertificate';
+import Project from './web/Project';
+// projects
 import RandomQuoteMachine from './projects/RandomQuoteMachine';
 import PomodoroClock from './projects/PomodoroClock';
 import MarkdownPreviewer from './projects/MarkdownPreviewer';
 import ToDoList from './projects/ToDoList';
 import Recipes from './projects/Recipes';
-import { Switch, Route, withRouter, Redirect } from 'react-router-dom';
-import { connect } from 'react-redux';
+// mobile pages
+import MobileHome from './mobile/MobileHome'
 
 const mapStateToProps = state => {
   return {
@@ -21,6 +25,10 @@ const mapStateToProps = state => {
     education: state.education,
     quotes: state.quotes
   }
+}
+
+const isMobile = () => {
+  return (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
 }
 
 function Main(props){
@@ -34,7 +42,7 @@ function Main(props){
     <>
       <Navigation />
       <Switch>
-        <Route exact path="/" component={() => <Home contacts={props.contacts} />} />
+        <Route exact path="/" component={() => isMobile() ? <MobileHome /> : <Home contacts={props.contacts} />} />
         <Route exact path="/workexp" component={() => <WorkExperience education={props.education} />} />
         <Route exact path="/certificates" component={() => <Certificate certificates={props.certificates} />} />
         <Route path="/certificate/:certId" component={CertificateWithId} />
