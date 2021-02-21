@@ -17,11 +17,10 @@ function Home(props) {
     <>
       <Container style={{background: 'white'}}>
         <h1 className="m-auto" style={center_style} >I am currently working as Software Engineer in ESG Department at MSCI Inc.</h1>
-        <h3 className="mt-5">Worked with Ruby, Python, JavaScript Languages </h3>
-        <Career />
-        <Certificates />
-        <Projects />
       </Container>
+      <Career />
+      <Certificates />
+      <Projects />
     </>
   );
 }
