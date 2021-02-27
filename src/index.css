@@ -1,13 +1,23 @@
 body {
+  --bg-light-color: white;
+  --text-light-color: black;
+  --bg-dark-color: #333;
+  --text-dark-color: white;
+
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(/assets/images/logo.svg);
+  /* background-image: url(/assets/images/logo.svg); */
   background-repeat: no-repeat, repeat;
   background-position: center;
   background-attachment: fixed; 
   height: 100vh;
+}
+
+body.dark, div.dark, span.dark, a.dark, th.dark, td.dark {
+  background-color: var(--bg-dark-color);
+  color: var(--text-dark-color);
 }
 
 code {

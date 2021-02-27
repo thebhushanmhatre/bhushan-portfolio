@@ -15,7 +15,7 @@ const center_style = {
 function Home(props) {
   return (
     <>
-      <Container style={{background: 'white'}}>
+      <Container>
         <h1 className="m-auto" style={center_style} >I am currently working as Software Engineer in ESG Department at MSCI Inc.</h1>
       </Container>
       <Career />

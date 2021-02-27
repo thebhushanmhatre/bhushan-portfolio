@@ -40,7 +40,7 @@ function Project(props){
   }
 
   const filters = ["Javascript", "Python", "React"].map(item => 
-    <Button className="bg-light text-dark mr-1" key={item} onClick={() => setFilter(item)}>{item}</Button>
+    <Button className="mr-1" key={item} onClick={() => setFilter(item)}>{item}</Button>
   )
 
   let tabularForm = <span onClick={()=>toggleTabluar(prevMode => !prevMode)} className={tabular ? "fa fa-th fa-lg" : "fa fa-table fa-lg"} style={{float:"right"}} />

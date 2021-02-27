@@ -1,13 +1,13 @@
 # List of planned Improvements
 
-1. Convert Work Experience Page into Timeline
+1. Improve on Responsiveness - I expect more people to see this portfolio on their Mobile
 
-1. Dark Mode
+1. Keep Improving Dark Mode
+
+1. Convert Work Experience Page into Timeline
 
 1. Download Resume Button
 
 1. Option to Download the list of Certificates/Projects (Just for Fun)
-
-1. Improve on Responsiveness - I expect more people to see this portfolio on their Mobile
 
 1. Add some Cool things if you improve Animation/Styling in Future

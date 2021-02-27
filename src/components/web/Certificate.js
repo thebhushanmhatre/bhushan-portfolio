@@ -30,11 +30,11 @@ function Certificate(props){
   )
 
   const filters = ["Javascript", "Python", "Ruby", "SQL"].map(item => 
-    <Button key={item} className="bg-light text-dark mr-1" onClick={() => setFilter(item, 'tech')}>{item} </Button>
+    <Button key={item} className="mr-1" onClick={() => setFilter(item, 'tech')}>{item} </Button>
   )
   
   const issuers = ["Coursera", "FreeCodeCamp", "Linkedin"].map(item => 
-    <Button key={item} className="bg-light text-dark mr-1" onClick={() => setFilter(item, 'issuer')}>{item}</Button>
+    <Button key={item} className="mr-1" onClick={() => setFilter(item, 'issuer')}>{item}</Button>
   )
 
   let carouselForm = <span onClick={() => toggleCarousel(prevMode => !prevMode)} className={carousel ? "fa fa-th fa-lg" : "fas fa-film fa-lg"} style={{ float: "right" }} />
