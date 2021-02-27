@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption } from 'reactstrap';
+import { Carousel, CarouselItem, CarouselControl, CarouselIndicators } from 'reactstrap';
 
 function RenderCarousel({ certis }) {
   // ["certId", "href", "src", "name", "issuer", "institute", "credentialID", "professor", "tech", "visible", "target"]
@@ -30,7 +30,7 @@ function RenderCarousel({ certis }) {
         <a href={item.href} target={item.target} >
           <img src={item.src} alt={item.name} width="100%" />
         </a>
-        <CarouselCaption className="text-dark" captionText={item.professor ? "Taught by: " + item.professor : "Technologies: " + item.tech.join(', ')} />
+        {/* <CarouselCaption className="text-dark" captionText={item.professor ? "Taught by: " + item.professor : "Technologies: " + item.tech.join(', ')} /> */}
       </CarouselItem>
     )
   })

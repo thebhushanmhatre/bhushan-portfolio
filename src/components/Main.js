@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Navigation from './Navigation';
 import { Switch, Route, withRouter, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
@@ -32,6 +32,39 @@ const isMobile = () => {
 }
 
 function Main(props){
+  const [darkMode, setDarkMode] = useState(() => {
+    const storedValue = localStorage.getItem("darkMode")
+    return (storedValue === null || storedValue === false || storedValue === "false") ? false : true
+  })
+
+  const applyTheme = () => {
+    document.body.classList.toggle('dark')
+    const tags = ['div', 'span', 'a', 'th', 'td', 'button', 'nav']
+    tags.map(i => toggleAllTags(i))
+  }
+
+  const toggleAllTags = (tag) => {
+    var elements = document.getElementsByTagName(tag)
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].classList.toggle('dark')
+    }
+  }
+
+  const toggleTheme = () => {
+    localStorage.setItem("darkMode", !darkMode)
+    setDarkMode(darkMode => !darkMode)
+    applyTheme()
+    window.location.reload()
+  }
+
+  useEffect(() => {
+    const storedValue = localStorage.getItem("darkMode")
+    let dark_body = document.body.classList[0] === "dark"
+    if (storedValue === "true" && dark_body === false) {
+      applyTheme()
+    }
+  })
+
   const CertificateWithId = ({match}) => {
     return(
       <RenderCertificate certificate={props.certificates.filter((item) => item.certId === parseInt(match.params.certId,10))[0]} />
@@ -40,7 +73,7 @@ function Main(props){
 
   return(
     <>
-      <Navigation />
+      <Navigation toggleTheme={toggleTheme} darkMode={darkMode} />
       <Switch>
         <Route exact path="/" component={() => isMobile() ? <MobileHome /> : <Home contacts={props.contacts} />} />
         <Route exact path="/workexp" component={() => <WorkExperience education={props.education} />} />

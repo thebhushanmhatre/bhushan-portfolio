@@ -6,7 +6,7 @@ export default function Projects() {
     <>
       <Container className="mt-5">
         <Card>
-          <CardImg top width="100%" src="assets/images/MSCI_logo.svg" alt="Card image cap" height="230" style={{backgroundColor:"white"}} />
+          <CardImg top width="100%" src="assets/images/MSCI_logo.svg" alt="Card image cap" height="230" className="bg-white" />
           <CardBody>
             <CardTitle tag="h5">My Work Experience</CardTitle>
             <a href="/workexp">

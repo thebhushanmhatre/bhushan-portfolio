@@ -11,6 +11,10 @@ a {
   border-bottom: 1px solid black;
 }
 
+#navbar.dark {
+  border-bottom: 1px solid white;
+}
+
 #picturebox{
   perspective: 500px;
   cursor: crosshair;
@@ -31,6 +35,11 @@ a {
   font-family: 'Segoe UI';
   cursor: pointer;
   background-image: linear-gradient(to right, white, skyblue, skyblue, white);
+}
+
+.myname.dark {
+  background-image: linear-gradient(to right, #333, orange, orange, #333);
+  color: black;
 }
 
 #eduhead{
@@ -125,4 +134,8 @@ ul.theList {
 
 .carousel {
   margin: auto;
+}
+
+#dmtt {
+  font-size: 25px;
 }
