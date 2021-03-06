@@ -11,11 +11,9 @@ function WorkExperience(props){
       <i style={{fontSize: '1.12em'}}><strong>Software Developer</strong> - Ruby, Javascript</i>
       <br/>
       <i style={{fontSize: '1.12em'}}>June 2019 to Present</i>
-    </Container>
-      <Container>
-        <div id="eduhead" className="offset-md-1 mb-2 mt-2 p-1 pl-2">
-          <span className="fa fa-institution fa-lg"> Education</span>
-        </div>
+      <div className="offset-md-1 mb-2 mt-4 pt-2 myname">
+        <p className="fa fa-institution fa-lg"> Education</p>
+      </div>
       <Education education={props.education} />
     </Container>
     </>

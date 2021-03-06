@@ -6,14 +6,14 @@ function Navigation(props){
 
   return(
     <Navbar id="navbar" className="container mb-3" expand="lg">
-      <NavbarBrand className="mr-auto pr-3" href="/">
+      <NavbarBrand className="mr-auto" href="/">
         <img id="logo" src="assets/images/logo.jpg" height="40" width="40" alt="bhushan"/> 
         <span style={{fontSize: "larger"}}> <strong> Bhushan Mhatre </strong></span>
       </NavbarBrand>
       <NavItem onClick={() => props.toggleTheme()} style={{ listStyleType: 'none' }}>
         {props.darkMode===false ? 
-          <span className="fas fa-sun-o fa-lg pr-3" style={{ color: "orange" }} href="#" id="dmtt" /> : 
-          <span className="fas fa-moon-o fa-lg pr-3" style={{ color: "#007bff" }} href="#" id="dmtt" />
+          <span className="fas fa-sun-o fa-lg" style={{ color: "orange" }} href="#" id="darkmmodeicon" /> : 
+          <span className="fas fa-moon-o fa-lg" style={{ color: "#007bff" }} href="#" id="darkmmodeicon" />
         }
       </NavItem>
       <NavbarToggler onClick={() => toggleNav(!isNavOpen)} >

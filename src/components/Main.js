@@ -75,7 +75,7 @@ function Main(props){
     <>
       <Navigation toggleTheme={toggleTheme} darkMode={darkMode} />
       <Switch>
-        <Route exact path="/" component={() => isMobile() ? <MobileHome /> : <Home contacts={props.contacts} />} />
+        <Route exact path="/" component={() => isMobile() ? <MobileHome contacts={props.contacts} /> : <Home contacts={props.contacts} />} />
         <Route exact path="/workexp" component={() => <WorkExperience education={props.education} />} />
         <Route exact path="/certificates" component={() => <Certificate certificates={props.certificates} />} />
         <Route path="/certificate/:certId" component={CertificateWithId} />

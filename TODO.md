@@ -2,7 +2,7 @@
 
 1. Improve on Responsiveness - I expect more people to see this portfolio on their Mobile
 
-1. Keep Improving Dark Mode
+1. Keep Improving Dark Mode - Improve views on Project/Certificates page
 
 1. Convert Work Experience Page into Timeline
 

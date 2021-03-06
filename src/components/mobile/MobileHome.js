@@ -3,6 +3,7 @@ import { Container } from 'reactstrap';
 import Certificates from './Certificates'
 import Projects from './Projects'
 import Career from './Career'
+import Contact from './Contact';
 
 const center_style = {
   minHeight: '80vh',
@@ -21,6 +22,7 @@ function Home(props) {
       <Career />
       <Certificates />
       <Projects />
+      <Contact contacts={props.contacts} />
     </>
   );
 }

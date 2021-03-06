@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Row, Button, Container } from 'reactstrap';
 import RenderItems from './RenderItems';
-import RenderProjectsTabular from './RenderProjectsTabular'
+import RenderTable from './RenderTable'
 
 function Project(props){
   const [languages, setLanguages] = useState([])
@@ -27,11 +27,19 @@ function Project(props){
     return projects
   }
 
+  console.log(Object.keys(getProjects()[0]))
+
+  const pickValues = () => {
+    return getProjects().map((item) =>
+      (({ href, name, tech, target, inbuilt }) => ({ href, name, tech, target, inbuilt }))(item)
+    )
+  }
+
   var projects;
   let project_list = getProjects()
   if(project_list.length > 0){
     if (tabular) {
-      projects = <RenderProjectsTabular projects={project_list} />
+      projects = <RenderTable items={pickValues()} type={"Project"} />
     } else {
       projects = project_list.map(item=> <RenderItems key={"projectId" + item.projectId.toString()} item={item} height={{ minHeight: "5rem" }} />)
     }

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { Container, Row , Button } from 'reactstrap';
 import RenderItems from './RenderItems';
 import RenderCarousel from './RenderCarousel';
-import { Container, Row , Button } from 'reactstrap';
+import RenderTable from './RenderTable';
 
 function Certificate(props){
   const [filterBy, setFilterBy] = useState(false)
@@ -41,11 +42,20 @@ function Certificate(props){
 
   let ppt = <RenderCarousel certis={getCertis()} />
 
+  let display_format = carousel ? ppt : certis
+
+  const pickValues = () => {
+    return getCertis().map((item) => 
+      (({ href, name, issuer, professor, tech, target, inbuilt }) => ({ href, name, issuer, professor, tech, target, inbuilt }))(item)
+    )
+  }
+
   return(
     <Container>
       <h3>{filterBy ? filterBy : 'My'} Certificates {filters} {carouselForm}</h3>
       <h3>{issuers}</h3>
-      <Row>{carousel ? ppt : certis}</Row>
+      <Row>{display_format}</Row>
+      <RenderTable items={pickValues()} type={"Certificate"} />
     </Container>
   );
 }
