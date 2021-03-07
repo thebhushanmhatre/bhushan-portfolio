@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Row , Button } from 'reactstrap';
-import RenderItems from './RenderItems';
+import RenderCards from './RenderCards';
 import RenderCarousel from './RenderCarousel';
 import RenderTable from './RenderTable';
 
@@ -21,14 +21,18 @@ function Certificate(props){
   const getCertis = () => {
     let certificates = props.certificates.filter(item=>item.visible)
     if(filterBy){
-      certificates = props.certificates.filter(item => item[filterOn].indexOf(filterBy) !== -1)
+      certificates = certificates.filter(item => item[filterOn].indexOf(filterBy) !== -1)
     }
     return certificates.reverse()
   }
 
-  const certis = getCertis().map(item=>
-    <RenderItems key={"certId"+item.certId.toString()} item={item} height={{minHeight: "10rem"}} />
-  )
+  const pickValues = () => {
+    return getCertis().map((item) =>
+      (({ href, name, issuer, professor, tech, target, inbuilt, src }) => ({ href, name, issuer, professor, tech, target, inbuilt, src }))(item)
+    )
+  }
+
+  const certis = <RenderCards items={getCertis()} type={"Certificate"} />
 
   const filters = ["Javascript", "Python", "Ruby", "SQL"].map(item => 
     <Button key={item} className="mr-1" onClick={() => setFilter(item, 'tech')}>{item} </Button>
@@ -44,18 +48,12 @@ function Certificate(props){
 
   let display_format = carousel ? ppt : certis
 
-  const pickValues = () => {
-    return getCertis().map((item) => 
-      (({ href, name, issuer, professor, tech, target, inbuilt }) => ({ href, name, issuer, professor, tech, target, inbuilt }))(item)
-    )
-  }
-
   return(
     <Container>
       <h3>{filterBy ? filterBy : 'My'} Certificates {filters} {carouselForm}</h3>
       <h3>{issuers}</h3>
-      <Row>{display_format}</Row>
-      <RenderTable items={pickValues()} type={"Certificate"} />
+      <Row className="d-flex justify-content-around text-center">{display_format}</Row>
+      <RenderTable className="mb-4 pb-4" items={pickValues()} type={"Certificate"} />
     </Container>
   );
 }

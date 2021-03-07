@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Row, Button, Container } from 'reactstrap';
-import RenderItems from './RenderItems';
 import RenderTable from './RenderTable'
+import RenderCards from './RenderCards'
 
 function Project(props){
   const [languages, setLanguages] = useState([])
-  const [tabular, toggleTabluar] = useState(true)
+  const [tabular, toggleTabluar] = useState(false)
 
   const setFilter = clickedFilter => {
     let filters = languages
@@ -27,11 +27,9 @@ function Project(props){
     return projects
   }
 
-  console.log(Object.keys(getProjects()[0]))
-
   const pickValues = () => {
     return getProjects().map((item) =>
-      (({ href, name, tech, target, inbuilt }) => ({ href, name, tech, target, inbuilt }))(item)
+      (({ href, name, tech, target, inbuilt, src }) => ({ href, name, tech, target, inbuilt, src }))(item)
     )
   }
 
@@ -41,7 +39,7 @@ function Project(props){
     if (tabular) {
       projects = <RenderTable items={pickValues()} type={"Project"} />
     } else {
-      projects = project_list.map(item=> <RenderItems key={"projectId" + item.projectId.toString()} item={item} height={{ minHeight: "5rem" }} />)
+      projects = <RenderCards items={pickValues()} type={"Project"} />
     }
   } else {
     projects = <h3 className="text-danger">"{languages.join(' + ')}" Projects Coming Soon</h3>
@@ -56,7 +54,7 @@ function Project(props){
   return(
     <Container>
       <h3 className="mb-4">My {languages ? languages.join(' + ') : ''} Projects {filters} {tabularForm}</h3>
-      {tabular ? projects : <Row>{projects}</Row>}
+      {tabular ? projects : <Row className="d-flex justify-content-around text-center">{projects}</Row>}
     </Container>
   )
 }

@@ -13,7 +13,7 @@ function RenderTable(props) {
       <td>{count+1}</td>
       <td>
         <a href={item.href} target={item.target}>{item.name} {' '} 
-          {item.inbuilt ? <i className="fa fa-link" aria-hidden="true" /> : <i className="fa fa-external-link" aria-hidden="true" />}
+        {item.inbuilt ? <i className="fa fa-link" aria-hidden="true" ><span className="inbuilt" style={{ fontSize:"x-small", color:"green"}}> inbuilt</span></i> : <i className="fa fa-external-link" aria-hidden="true" />}
         </a>
       </td>
     {after_name_cols.map(i => <td>{(typeof(item[i]) === 'object') ? item[i].join(', ') : item[i]}</td> )}

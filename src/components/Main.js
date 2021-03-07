@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import Navigation from './Navigation';
 import { Switch, Route, withRouter, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
+// Navigation bar
+import Navigation from './Navigation';
 // web pages
 import WorkExperience from './web/WorkExperience';
 import Certificate from './web/Certificate';
@@ -23,7 +24,8 @@ const mapStateToProps = state => {
     contacts: state.contacts,
     projects: state.projects,
     education: state.education,
-    quotes: state.quotes
+    quotes: state.quotes,
+    filters: state.filters
   }
 }
 
@@ -32,6 +34,7 @@ const isMobile = () => {
 }
 
 function Main(props){
+  
   const [darkMode, setDarkMode] = useState(() => {
     const storedValue = localStorage.getItem("darkMode")
     return (storedValue === null || storedValue === false || storedValue === "false") ? false : true
@@ -79,7 +82,7 @@ function Main(props){
         <Route exact path="/workexp" component={() => <WorkExperience education={props.education} />} />
         <Route exact path="/certificates" component={() => <Certificate certificates={props.certificates} />} />
         <Route path="/certificate/:certId" component={CertificateWithId} />
-        <Route exact path="/projects" component={() => <Project projects={props.projects} />} />
+        <Route exact path="/projects" component={() => <Project projects={props.projects} filters={props.filters} />} />
         <Route exact path="/project/quotes" component={() => <RandomQuoteMachine quotes={props.quotes} />} />
         <Route exact path="/project/clock" component={() => <PomodoroClock />} />
         <Route exact path="/project/todolist" component={() => <ToDoList style={{background:'skyblue'}} />} />
