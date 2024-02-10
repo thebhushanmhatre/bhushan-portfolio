@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 // Navigation bar
 import Navigation from './Navigation';
 // web pages
@@ -76,7 +76,10 @@ function Main(props) {
   return (
     <>
       <Navigation toggleTheme={toggleTheme} darkMode={darkMode} />
-      <Routes
+      <div id="detail">
+        <Outlet />
+      </div>
+      {/* <Routes
         path="/"
         element={() =>
           isMobile() ? (
@@ -112,7 +115,7 @@ function Main(props) {
         />
         <Route path="/project/markdown" element={() => <MarkdownPreviewer />} />
         <Route path="/project/recipes" element={() => <Recipes />} />
-      </Routes>
+      </Routes> */}
     </>
   );
 }
