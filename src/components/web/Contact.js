@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import { DataContext } from '../../App';
 
-export default function Contact(props) {
+export default function Contact() {
   const contactsData = useContext(DataContext).contacts;
 
-  const contacts = props.contacts.map((item) => (
+  const contacts = contactsData.map((item) => (
     <Col key={item.contId.toString()} style={{ fontSize: '40px' }}>
       <a
         href={item.href}

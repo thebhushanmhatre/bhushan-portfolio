@@ -3,17 +3,29 @@ import './App.css';
 import Main from './components/Main';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ErrorPage from './components/web/Error';
+// web pages
+import Home from './components/web/Home';
 import WorkExperience from './components/web/WorkExperience';
 import Certificate from './components/web/Certificate';
+import RenderCertificate from './components/web/RenderCertificate';
 import Project from './components/web/Project';
+// projects
 import RandomQuoteMachine from './components/projects/RandomQuoteMachine';
 import PomodoroClock from './components/projects/PomodoroClock';
-import ToDoList from './components/projects/ToDoList';
 import MarkdownPreviewer from './components/projects/MarkdownPreviewer';
+import ToDoList from './components/projects/ToDoList';
 import Recipes from './components/projects/Recipes';
+// mobile pages
+import MobileHome from './components/mobile/MobileHome';
+
 import { QUOTES } from './shared/quotes.js';
 import { DATA } from './shared/data.js';
 
+const isMobile = () => {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  );
+};
 const filters = {
   projects: [],
   certificates: [],
@@ -43,12 +55,18 @@ const CertificateWithId = ({ match }) => {
   );
 };
 
+const DefaultPage = () => (isMobile() ? <MobileHome /> : <Home />);
+
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Main />,
     errorElement: <ErrorPage />,
     children: [
+      {
+        path: '/',
+        element: <DefaultPage />,
+      },
       {
         path: '/workexp',
         element: <WorkExperience />,
@@ -64,6 +82,10 @@ const router = createBrowserRouter([
       },
       { path: 'project/markdown', element: <MarkdownPreviewer /> },
       { path: 'project/recipes', element: <Recipes /> },
+      {
+        path: '*',
+        element: <DefaultPage />,
+      },
     ],
   },
 ]);

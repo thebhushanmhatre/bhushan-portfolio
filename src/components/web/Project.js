@@ -7,7 +7,7 @@ import { DataContext } from '../../App';
 function Project() {
   const projectsData = useContext(DataContext).projects;
   const [languages, setLanguages] = useState([]);
-  const [tabular, toggleTabluar] = useState(false);
+  const [tabular, toggleTabluar] = useState(true);
 
   const setFilter = (clickedFilter) => {
     let filters = languages;

@@ -10,7 +10,6 @@ function Certificate() {
   const [filterOn, setFilterOn] = useState(false);
   const [carousel, toggleCarousel] = useState(true);
   const certificatesData = useContext(DataContext).certificates;
-  console.log('certificatesData: ', certificatesData);
 
   const setFilter = (filter, on) => {
     if (filterBy === filter) {
