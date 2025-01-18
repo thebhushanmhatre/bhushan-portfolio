@@ -4,7 +4,7 @@ import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { marked } from 'marked';
 
 const defaultText = `## Heading h2 tag
- Here are [Links](https://www.linkedin.com/in/thebhushanmhatre/)
+ Here are [Links](https://www.linkedin.com/in/bhushanmhatre/)
  
  Inline Code \`<div></div>\`
  (Don't Forget Escape characters in JS)

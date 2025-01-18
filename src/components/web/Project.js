@@ -61,7 +61,7 @@ function Project() {
   }
 
   const filters = ['Javascript', 'Python', 'React'].map((item) => (
-    <Button className="mr-1" key={item} onClick={() => setFilter(item)}>
+    <Button className="m-1" key={item} onClick={() => setFilter(item)}>
       {item}
     </Button>
   ));

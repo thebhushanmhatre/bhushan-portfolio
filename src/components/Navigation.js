@@ -17,7 +17,7 @@ function Navigation(props) {
       <NavbarBrand className="mr-auto" href="/">
         <img
           id="logo"
-          src="assets/images/logo.jpg"
+          src="./assets/images/logo.jpg"
           height="40"
           width="40"
           alt="bhushan"

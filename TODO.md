@@ -11,3 +11,5 @@
 1. Option to Download the list of Certificates/Projects (Just for Fun)
 
 1. Add some Cool things if you improve Animation/Styling in Future
+
+1. For local machine only, Create a admin page, to edit metdata that goes into the Certificates and Projects Tab, Update metadata and save it in the file

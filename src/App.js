@@ -37,7 +37,7 @@ export const initialState = {
   contacts: DATA.contacts,
   projects: DATA.projects,
   education: DATA.education,
-  quotes: QUOTES.quotes,
+  quotes: QUOTES,
   filters: filters,
 };
 
@@ -74,14 +74,14 @@ const router = createBrowserRouter([
       { path: 'certificates', element: <Certificate /> },
       { path: 'certificate/:certId', element: <CertificateWithId /> },
       { path: 'projects', element: <Project /> },
-      { path: 'project/quotes', element: <RandomQuoteMachine /> },
-      { path: 'project/clock', element: <PomodoroClock /> },
+      { path: 'quotes', element: <RandomQuoteMachine /> },
+      { path: 'clock', element: <PomodoroClock /> },
       {
-        path: 'project/todolist',
+        path: 'todolist',
         element: <ToDoList style={{ background: 'skyblue' }} />,
       },
-      { path: 'project/markdown', element: <MarkdownPreviewer /> },
-      { path: 'project/recipes', element: <Recipes /> },
+      { path: 'markdown', element: <MarkdownPreviewer /> },
+      { path: 'recipes', element: <Recipes /> },
       {
         path: '*',
         element: <DefaultPage />,

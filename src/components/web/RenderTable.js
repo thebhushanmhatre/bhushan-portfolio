@@ -21,7 +21,7 @@ function RenderTable(props) {
     .filter((i) => i !== 'name');
 
   let rows = props.items.map((item, count) => (
-    <tr key={count.toString()}>
+    <tr key={item.name}>
       <td>{count + 1}</td>
       <td>
         <a href={item.href} target={item.target}>
@@ -42,7 +42,9 @@ function RenderTable(props) {
         </a>
       </td>
       {after_name_cols.map((i) => (
-        <td>{typeof item[i] === 'object' ? item[i].join(', ') : item[i]}</td>
+        <td key={i}>
+          {typeof item[i] === 'object' ? item[i].join(', ') : item[i]}
+        </td>
       ))}
     </tr>
   ));
