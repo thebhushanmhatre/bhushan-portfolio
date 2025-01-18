@@ -1,5 +1,6 @@
 import React from 'react';
 import { Table } from 'reactstrap';
+import isMobile from '../../utilities/isMobile.js';
 
 function RenderTable(props) {
   let key_name_map = {
@@ -9,13 +10,20 @@ function RenderTable(props) {
     issuer: 'Issued By',
     professor: 'Taught By',
   };
+
   let indirectly_used_cols = ['target', 'src', 'href', 'inbuilt', 'visible'];
+
+  if (isMobile()) {
+    indirectly_used_cols.push('tech');
+  }
+
   let column_headers = [
     '#',
     ...Object.keys(props.items[0]).filter(
       (i) => !indirectly_used_cols.includes(i)
     ),
   ].map((col) => <th key={col}>{key_name_map[col] || col}</th>);
+
   var after_name_cols = Object.keys(props.items[0])
     .filter((i) => !indirectly_used_cols.includes(i))
     .filter((i) => i !== 'name');

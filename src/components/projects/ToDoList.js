@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import TodoItems from './TodoItems';
-import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import ProjectBreadCrumb from '../common/ProjectBreadcrumb';
 
 class ToDoList extends Component {
   constructor(props) {
@@ -51,15 +51,7 @@ class ToDoList extends Component {
         }}
         className="container mt-2"
       >
-        <Breadcrumb className="offset-md-1 col-md-10">
-          <BreadcrumbItem>
-            <a href="/">Home</a>
-          </BreadcrumbItem>
-          <BreadcrumbItem>
-            <a href="/projects">Projects</a>
-          </BreadcrumbItem>
-          <BreadcrumbItem active>ToDo List App</BreadcrumbItem>
-        </Breadcrumb>
+        <ProjectBreadCrumb projectName={'ToDo List App'} />
         <div className="todoListMain text-center">
           <div className="header">
             <form className="my-3" onSubmit={this.addItem}>
