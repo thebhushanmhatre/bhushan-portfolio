@@ -1,5 +1,19 @@
 export const certificates = [
   {
+    certId: 43,
+    href: 'https://www.coursera.org/account/accomplishments/specialization/4B8PD9D9RDL9',
+    src: '/assets/images/certificates/fin-mkt.jpg',
+    name: 'Investment Management Specialization',
+    issuer: 'Coursera',
+    institute: 'University of Geneva',
+    credentialID: 'VTHK4VHWBLLP',
+    professor: 'Michel Girardin',
+    tech: ['Finance'],
+    visible: true,
+    target: '_blank',
+  },
+
+  {
     certId: 1,
     href: 'https://www.coursera.org/account/accomplishments/certificate/VTHK4VHWBLLP',
     src: '/assets/images/certificates/express_server_mongodb.jpg',

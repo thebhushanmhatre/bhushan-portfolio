@@ -27,7 +27,7 @@ function Certificate() {
         (item) => item[filterOn].indexOf(filterBy) !== -1
       );
     }
-    return certificates.reverse();
+    return certificates;
   };
 
   const pickValues = () => {
