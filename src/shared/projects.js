@@ -1,5 +1,15 @@
 export const projects = [
   {
+    projectId: 21,
+    inbuilt: true,
+    href: '/card-game',
+    src: 'assets/images/projects/cardgame.jpg',
+    tech: ['React', 'Javascript'],
+    name: 'Card Game',
+    visible: true,
+    target: '',
+  },
+  {
     projectId: 1,
     inbuilt: true,
     href: '/recipes',

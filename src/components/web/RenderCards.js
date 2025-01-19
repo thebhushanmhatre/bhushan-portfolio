@@ -2,12 +2,15 @@ import React from 'react';
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 
 function RenderCard(props) {
+  let link;
+  let target;
+
   if (props.type === 'Certificate') {
-    var link = `/certificate/${props.item.certId}`;
-    var target = '';
+    link = `/certificate/${props.item.certId}`;
+    target = props.item.target;
   } else {
     link = props.item.href;
-    target = '_blank';
+    target = props.item.target;
   }
   let subtext = props.item.issuer ? (
     <>
