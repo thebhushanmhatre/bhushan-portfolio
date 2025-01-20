@@ -1,3 +1,5 @@
+import { Results } from './GameScreen';
+
 export default function DisplayCard({ card }) {
   const cardIcon = (suit) => {
     if (suit == 'heart') {
@@ -45,9 +47,7 @@ export default function DisplayCard({ card }) {
           {card.value}
         </div>
       </div>
-      {card.winner && (
-        <div style={{ color: 'goldenrod', fontSize: '40px' }}>Winner</div>
-      )}
+      {card.winner && <Results resultText={'Winner'} />}
     </div>
   );
 }
