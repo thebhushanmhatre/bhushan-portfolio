@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import DisplayCard from './DisplayCard';
 import GameStats from './GameStats';
 import drawCards from './cardGameUtilities';
@@ -28,26 +28,48 @@ export function PlayBtn({ setCardsDrawn }) {
   );
 }
 
-const [card1, card2, gameStats] = drawCards();
+const [card1, card2] = drawCards();
+
+const initialGameStats = { player1Wins: 0, player2Wins: 0 };
+
+if (card1.winner) {
+  initialGameStats.player1Wins++;
+} else if (card2.winner) {
+  initialGameStats.player2Wins++;
+}
 
 const intialCardDetails = {
   card1,
   card2,
-  gameStats,
 };
 
 export function GameScreen() {
   const [carDetails, setCardDetails] = useState(intialCardDetails);
+  const [gameStats, setGameStats] = useState(initialGameStats);
 
   const refreshCardDetails = useCallback(() => {
-    const [card1Data, card2Data, gameStats] = drawCards();
+    const [card1Data, card2Data] = drawCards();
 
     setCardDetails({
       card1: card1Data,
       card2: card2Data,
-      gameStats,
     });
   }, []);
+
+  useEffect(() => {
+    const { card1, card2 } = carDetails;
+    let newGameStats = { ...gameStats };
+
+    if (card1 && card1.winner) {
+      newGameStats.player1Wins++;
+    } else if (card2 && card2.winner) {
+      newGameStats.player2Wins++;
+    } else {
+      return;
+    }
+
+    setGameStats(newGameStats);
+  }, [carDetails]);
 
   return (
     <>

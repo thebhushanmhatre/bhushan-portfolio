@@ -64,23 +64,15 @@ function drawOneAtRandom(playerCards) {
 }
 
 // adds winner property to the cards
-function decideWinner(card1, card2, player1Wins, player2Wins) {
-  console.log({ player1Wins, player2Wins });
-
+function decideWinner(card1, card2) {
   if (card1.numValue == card2.numValue) {
     card1['draw'] = true;
     card2['draw'] = true;
   } else if (card1.numValue > card2.numValue) {
     card1['winner'] = true;
-    player1Wins++;
   } else {
     card2['winner'] = true;
-    player2Wins++;
   }
-
-  console.log({ player1Wins, player2Wins });
-
-  return [player1Wins, player2Wins];
 }
 
 // shuffles the deck and distribute cards
@@ -102,23 +94,13 @@ function drawCards() {
   [player1Card, player1Deck] = drawOneAtRandom(player1Deck);
   [player2Card, player2Deck] = drawOneAtRandom(player2Deck);
 
-  [player1Wins, player2Wins] = decideWinner(
-    player1Card,
-    player2Card,
-    player1Wins,
-    player2Wins
-  );
+  decideWinner(player1Card, player2Card);
 
-  const gameStats = { player1Wins, player2Wins };
-
-  return [player1Card, player2Card, gameStats];
+  return [player1Card, player2Card];
 }
 
 let allCards = generateDeck(); // one time stuff
-let player1Deck,
-  player2Deck,
-  player1Wins = 0,
-  player2Wins = 0;
+let player1Deck, player2Deck;
 
 refreshCards();
 

@@ -6,18 +6,18 @@ export const DATA = {
   certificates,
   contacts: [
     {
-      contId: 1,
-      href: 'https://www.linkedin.com/in/bhushanmhatre',
-      name: 'linkedin',
-      icon: 'fa fa-linkedin fa-lg',
-      color: '#2977c9',
-    },
-    {
       contId: 2,
       href: 'https://github.com/thebhushanmhatre',
       name: 'github',
       icon: 'fa fa-github fa-lg',
       color: 'black',
+    },
+    {
+      contId: 1,
+      href: 'https://www.linkedin.com/in/bhushanmhatre',
+      name: 'linkedin',
+      icon: 'fa fa-linkedin fa-lg',
+      color: '#2977c9',
     },
     {
       contId: 3,
@@ -41,18 +41,18 @@ export const DATA = {
       color: '#1ba94c',
     },
     {
-      contId: 4,
-      href: 'https://codepen.io/thebhushanmhatre/',
-      name: 'codepen',
-      icon: 'fa fa-codepen fa-lg',
-      color: 'black',
-    },
-    {
       contId: 6,
       href: 'https://www.kaggle.com/thebhushanmhatre',
       name: 'kaggle',
       icon: 'fab fa-kaggle fa-lg',
       color: '#20BEFF',
+    },
+    {
+      contId: 4,
+      href: 'https://codepen.io/thebhushanmhatre/',
+      name: 'codepen',
+      icon: 'fa fa-codepen fa-lg',
+      color: 'black',
     },
   ],
   education: [
