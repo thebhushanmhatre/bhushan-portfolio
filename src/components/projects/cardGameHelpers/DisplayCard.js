@@ -1,6 +1,9 @@
 import { Results } from './GameScreen';
+import isMobile from '../../../utilities/isMobile';
 
-export default function DisplayCard({ card }) {
+export default function DisplayCard({ card, score }) {
+  const onMobile = isMobile();
+
   const cardIcon = (suit) => {
     if (suit == 'heart') {
       return '♥';
@@ -18,34 +21,33 @@ export default function DisplayCard({ card }) {
       return '♠';
     }
   };
+
   return (
     <div>
+      <Results resultText={'Score: ' + (score || 0)} />
+
       <div
         style={{
-          width: '225px',
-          height: '350px',
+          marginTop: '10px',
+          width: onMobile ? '120px' : '225px',
+          height: onMobile ? '180px' : '350px',
           padding: '20px',
           border: '1px solid',
           borderRadius: '10px',
           borderColor: 'gray',
           alignContent: 'center',
+          color: ['heart', 'diamond'].includes(card.suit) ? 'red' : '',
+          fontSize: '30px',
         }}
       >
         <div
           style={{
-            color: ['heart', 'diamond'].includes(card.suit) ? 'red' : '',
-            fontSize: '30px',
+            fontSize: onMobile ? '50px' : '100px',
           }}
         >
-          <div
-            style={{
-              fontSize: '100px',
-            }}
-          >
-            {cardIcon(card.suit)}
-          </div>
-          {card.value}
+          {cardIcon(card.suit)}
         </div>
+        {card.value}
       </div>
       {card.winner && <Results resultText={'Winner'} />}
     </div>

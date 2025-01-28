@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
 import DisplayCard from './DisplayCard';
-import GameStats from './GameStats';
 import drawCards from './cardGameUtilities';
 
 const btnStyles = {
@@ -73,8 +72,6 @@ export function GameScreen() {
 
   return (
     <>
-      <GameStats gameStats={gameStats} />
-
       <div
         style={{
           marginTop: '50px',
@@ -85,7 +82,7 @@ export function GameScreen() {
           alignContent: 'center',
         }}
       >
-        <DisplayCard card={carDetails.card1} />
+        <DisplayCard card={carDetails.card1} score={gameStats.player1Wins} />
         <div
           style={{
             alignContent: 'center',
@@ -94,11 +91,13 @@ export function GameScreen() {
         >
           v.s.
         </div>
-        <DisplayCard card={carDetails.card2} />
+        <DisplayCard card={carDetails.card2} score={gameStats.player2Wins} />
       </div>
 
       <div className="text-center">
-        {carDetails.card1.draw && <Results resultText={'Ohh! Its a Draw'} />}
+        {carDetails.card1.draw && carDetails.card2.draw && (
+          <Results resultText={'Ohh! Its a Draw'} />
+        )}
       </div>
 
       <div className="text-center mt-5">

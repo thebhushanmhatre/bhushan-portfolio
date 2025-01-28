@@ -23,6 +23,8 @@ function generateDeck() {
         suit,
         value,
         numValue: index,
+        winner: false,
+        draw: false,
       });
     });
   }
@@ -65,13 +67,22 @@ function drawOneAtRandom(playerCards) {
 
 // adds winner property to the cards
 function decideWinner(card1, card2) {
+  card1['draw'] = false;
+  card2['draw'] = false;
+  card1['winner'] = false;
+  card2['winner'] = false;
+
   if (card1.numValue == card2.numValue) {
     card1['draw'] = true;
     card2['draw'] = true;
+    card1['winner'] = false;
+    card2['winner'] = false;
   } else if (card1.numValue > card2.numValue) {
     card1['winner'] = true;
+    card2['winner'] = false;
   } else {
     card2['winner'] = true;
+    card1['winner'] = false;
   }
 }
 
