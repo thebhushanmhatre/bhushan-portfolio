@@ -3,12 +3,7 @@ import { Container } from 'reactstrap';
 import Contact from './Contact';
 
 function Home() {
-  let my_name;
-  if (window.innerWidth >= 500) {
-    my_name = <div className="myname">Bhushan Chandrakant Mhatre</div>;
-  } else {
-    my_name = <div className="myname">Bhushan C. Mhatre</div>;
-  }
+  let myName = <div className="myname">Bhushan Mhatre: Software Engineer</div>;
 
   let pic_style;
   if (window.innerWidth >= 1445) {
@@ -38,7 +33,7 @@ function Home() {
         />
       </Container>
       <Container className="text-center pt-1 pb-3">
-        <h1>{my_name}</h1>
+        <h1>{myName}</h1>
       </Container>
       <Contact />
       <p className="text-center pt-3 mb-0">

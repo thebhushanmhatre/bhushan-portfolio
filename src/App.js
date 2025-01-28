@@ -15,17 +15,15 @@ import PomodoroClock from './components/projects/PomodoroClock';
 import MarkdownPreviewer from './components/projects/MarkdownPreviewer';
 import ToDoList from './components/projects/ToDoList';
 import Recipes from './components/projects/Recipes';
+import CardGame from './components/projects/CardGame.js';
 // mobile pages
 import MobileHome from './components/mobile/MobileHome';
+// utitlities
+import isMobile from './utilities/isMobile.js';
 
 import { QUOTES } from './shared/quotes.js';
 import { DATA } from './shared/data.js';
 
-const isMobile = () => {
-  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-    navigator.userAgent
-  );
-};
 const filters = {
   projects: [],
   certificates: [],
@@ -82,6 +80,7 @@ const router = createBrowserRouter([
       },
       { path: 'markdown', element: <MarkdownPreviewer /> },
       { path: 'recipes', element: <Recipes /> },
+      { path: 'card-game', element: <CardGame /> },
       {
         path: '*',
         element: <DefaultPage />,

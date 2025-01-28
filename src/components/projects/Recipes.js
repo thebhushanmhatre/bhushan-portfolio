@@ -13,6 +13,7 @@ import {
   Col,
   Alert,
 } from 'reactstrap';
+import ProjectBreadCrumb from '../common/ProjectBreadcrumb';
 
 // InputForm
 function InputForm(props) {
@@ -299,20 +300,20 @@ function Recipes() {
     <Container className="bg-light">
       <Container>
         <InputForm getDish={getDish} />
-        <Breadcrumb className="mt-2">
-          <BreadcrumbItem>
-            <a href="/">Home</a>
-          </BreadcrumbItem>
-          <BreadcrumbItem>
-            <a href="/projects">Projects</a>
-          </BreadcrumbItem>
-          <BreadcrumbItem>
-            <a href="/project/recipes" onClick={goHome}>
-              Recipes
-            </a>
-          </BreadcrumbItem>
-          {input.length > 0 && <BreadcrumbItem active>{input}</BreadcrumbItem>}
-        </Breadcrumb>
+
+        <ProjectBreadCrumb>
+          <>
+            <BreadcrumbItem>
+              <a href="/recipes" onClick={goHome}>
+                Recipes
+              </a>
+            </BreadcrumbItem>
+            {input.length > 0 && (
+              <BreadcrumbItem active>{input}</BreadcrumbItem>
+            )}
+          </>
+        </ProjectBreadCrumb>
+
         {(data.meals == null || data.meals.length < 4) && (
           <PopularItems getPopularDish={getPopularDish} />
         )}

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col, Container, Input } from 'reactstrap';
-import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { marked } from 'marked';
+import ProjectBreadCrumb from '../common/ProjectBreadcrumb';
 
 const defaultText = `## Heading h2 tag
  Here are [Links](https://www.linkedin.com/in/bhushanmhatre/)
@@ -44,15 +44,7 @@ class MarkdownPreviewer extends Component {
   render() {
     return (
       <Container className="mt-2">
-        <Breadcrumb>
-          <BreadcrumbItem>
-            <a href="/">Home</a>
-          </BreadcrumbItem>
-          <BreadcrumbItem>
-            <a href="/projects">Projects</a>
-          </BreadcrumbItem>
-          <BreadcrumbItem active>Markdown Previewer</BreadcrumbItem>
-        </Breadcrumb>
+        <ProjectBreadCrumb projectName={'Markdown Previewer'} />
 
         <Row style={{ backgroundColor: 'white' }}>
           <Col sm="12" md="6">

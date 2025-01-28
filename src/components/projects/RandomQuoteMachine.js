@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { DataContext } from '../../App';
+import ProjectBreadCrumb from '../common/ProjectBreadcrumb';
 
 function RandomQuoteMachine() {
   const [currentQuote, changeQuote] = useState({
@@ -22,42 +23,59 @@ function RandomQuoteMachine() {
 
   return (
     <div className="container mt-2">
-      <Breadcrumb>
-        <BreadcrumbItem>
-          <a href="/">Home</a>
-        </BreadcrumbItem>
-        <BreadcrumbItem>
-          <a href="/projects">Projects</a>
-        </BreadcrumbItem>
-        <BreadcrumbItem active>Random Quote Machine</BreadcrumbItem>
-      </Breadcrumb>
+      <ProjectBreadCrumb projectName={'Random Quote Machine'} />
       <h3
         className="text-center p-1 myname"
         style={{ backgroundColor: 'white' }}
       >
         Random Quote Machine
       </h3>
-      <div className="quote-box text-dark p-1 mt-5">
-        <h3
-          className="col-12 col-md-10 mb-2"
+
+      <p
+        style={{
+          fontSize: '40px',
+          backgroundColor: 'white',
+          minHeight: '200px',
+          marginTop: '50px',
+          marginLeft: '40px',
+          alignContent: 'center',
+        }}
+      >
+        <span className="fa fa-quote-left">
+          &nbsp;&nbsp;{currentQuote.quote}
+        </span>
+      </p>
+
+      <p
+        style={{
+          fontSize: '25px',
+          marginTop: '30px',
+          textAlign: 'center',
+        }}
+      >
+        <span
+          className="fa fa-pencil"
           style={{ backgroundColor: 'white' }}
-        >
-          <span className="fa fa-quote-left">
-            &nbsp;&nbsp;{currentQuote.quote}
-          </span>
-        </h3>
-        <p className="quote-author text-right mt-5 mb-5 text-2xl">
-          <span className="fa fa-pencil" style={{ backgroundColor: 'white' }}>
-            &nbsp;{currentQuote ? currentQuote.author : ''}
-          </span>
-        </p>
+        ></span>
+        &nbsp;{currentQuote ? currentQuote.author : ''}
+      </p>
+
+      <div
+        style={{
+          textAlign: 'center',
+        }}
+      >
         <button
-          className="btn btn-primary"
+          className="btn text-right mt-5"
+          style={{
+            backgroundColor: 'skyblue',
+            fontSize: '20px',
+            padding: '10px 30px',
+          }}
           id="new-quote"
           onClick={displayNextQuote}
         >
-          {' '}
-          New Quote{' '}
+          <span className="fa fa-refresh"></span>
         </button>
       </div>
     </div>
