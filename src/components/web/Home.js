@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Container } from 'reactstrap';
 import Contact from './Contact';
 
@@ -20,19 +20,37 @@ function Home() {
     };
   }
 
+  const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    const observer = new MutationObserver(() => {
+      setIsDark(document.body.classList.contains('dark'));
+    });
+    observer.observe(document.body, {
+      attributes: true,
+      attributeFilter: ['class'],
+    });
+    setIsDark(document.body.classList.contains('dark'));
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
-      <Container className="text-center pt-3 pb-3" id="picturebox">
+      <Container className="text-center py-3" id="picturebox">
         <img
           id="picture"
           className="mb-4"
-          src="/assets/images/onclouds.jpg"
+          src={
+            isDark
+              ? '/assets/images/onclouds.jpg'
+              : '/assets/images/professional.jpg'
+          }
           alt="Bhushan Mhatre"
-          width={pic_style.width}
-          height={pic_style.height}
+          width={300}
+          height={300}
         />
       </Container>
-      <Container className="text-center pt-1 pb-3">
+      <Container className="text-center py-3">
         <h1>{myName}</h1>
       </Container>
       <Contact />
