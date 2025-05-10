@@ -1,5 +1,4 @@
 import React from 'react';
-import Education from './Education';
 import { Container } from 'reactstrap';
 
 function WorkExperience(props) {
@@ -20,7 +19,6 @@ function WorkExperience(props) {
         <div className="offset-md-1 mb-2 mt-4 pt-2 myname">
           <p className="fa fa-institution fa-lg"> Education</p>
         </div>
-        <Education education={props.education} />
       </Container>
     </>
   );
