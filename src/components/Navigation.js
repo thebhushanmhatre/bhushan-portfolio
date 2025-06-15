@@ -57,8 +57,8 @@ function Navigation(props) {
       <Collapse isOpen={isNavOpen} navbar style={{ flexGrow: 0 }}>
         <Nav navbar className="ml-auto text-end">
           <NavItem>
-            <NavLink href="/workexp">
-              <span className="fa fa-server fa-lg"> Work </span>
+            <NavLink href="/experience">
+              <span className="fa fa-server fa-lg"> Career </span>
             </NavLink>
           </NavItem>
           <NavItem>

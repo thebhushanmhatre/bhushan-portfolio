@@ -3,7 +3,6 @@ import { Outlet } from 'react-router-dom';
 // Navigation bar
 import Navigation from './Navigation';
 
-
 function Main() {
   const [darkMode, setDarkMode] = useState(() => {
     const storedValue = localStorage.getItem('darkMode');
@@ -28,19 +27,22 @@ function Main() {
   };
 
   const toggleTheme = () => {
-    localStorage.setItem('darkMode', !darkMode);
-    setDarkMode((darkMode) => !darkMode);
+    const newDarkMode = !darkMode;
+    localStorage.setItem('darkMode', newDarkMode);
+    setDarkMode(newDarkMode);
     applyTheme();
-    window.location.reload();
   };
 
   useEffect(() => {
+    // Apply initial theme on component mount
     const storedValue = localStorage.getItem('darkMode');
-    let dark_body = document.body.classList[0] === 'dark';
-    if (storedValue === 'true' && dark_body === false) {
+    const shouldBeDark = storedValue === 'true';
+    const isDark = document.body.classList.contains('dark');
+
+    if (shouldBeDark !== isDark) {
       applyTheme();
     }
-  });
+  }, []); // Empty dependency array means this runs once on mount
 
   return (
     <>

@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ErrorPage from './components/web/Error';
 // web pages
 import Home from './components/web/Home';
-import WorkExperience from './components/web/WorkExperience';
+import Experience from './components/web/Experience.js';
 import Certificate from './components/web/Certificate';
 import RenderCertificate from './components/web/RenderCertificate';
 import Project from './components/web/Project';
@@ -66,8 +66,8 @@ const router = createBrowserRouter([
         element: <DefaultPage />,
       },
       {
-        path: '/workexp',
-        element: <WorkExperience />,
+        path: '/experience',
+        element: <Experience />,
       },
       { path: 'certificates', element: <Certificate /> },
       { path: 'certificate/:certId', element: <CertificateWithId /> },
