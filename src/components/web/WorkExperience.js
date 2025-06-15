@@ -29,11 +29,12 @@ const MedalIcon = ({ type }) => {
 function WorkExperience(props) {
   return (
     <>
-      <Container className="text-center mt-5 p-3">
+      <Container className="text-center p-3">
         <div className="m-3">
           <h1>MSCI Inc.</h1>
+          <h4>ESG Climate & Sustainability Department</h4>
         </div>
-        <h4>ESG Climate & Sustainability Department</h4>
+
         <i style={{ fontSize: '1.12em' }}>
           <strong>Software Engineer II</strong>
         </i>
