@@ -5,7 +5,7 @@ import isMobile from '../../utilities/isMobile.js';
 function RenderTable(props) {
   let key_name_map = {
     name: props.type + ' Name',
-    tech: 'Technologies Used',
+    tech: 'Technologies/Skills',
     institute: 'Institute',
     issuer: 'Issued By',
     professor: 'Taught By',
