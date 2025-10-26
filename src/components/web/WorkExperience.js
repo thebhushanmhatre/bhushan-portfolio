@@ -46,7 +46,7 @@ function WorkExperience(props) {
             className="text-start mt-4 mb-5"
             style={{ maxWidth: '700px', margin: '0 auto' }}
           >
-            <h5>Associate:</h5>
+            <h4>Associate:</h4>
             <strong>Jan 2022 - Present</strong>
             <p>
               Working as a Software Engineer in the ESG Engineering
@@ -56,8 +56,8 @@ function WorkExperience(props) {
             <p>
               <strong>Tech Stack:</strong>
               <br />
-              TypeScript (Fluent UI, React-Redux-Saga, NestJS), JavaScript
-              (VueJS, Express), SQL (Oracle DB).
+              TypeScript (Fluent UI, React, Redux, Saga, Zustand, React-Query,
+              NestJS), JavaScript (VueJS, Express), SQL (Oracle DB).
               <br />
               Azure (App Service, AKS, and related services)
             </p>
@@ -67,28 +67,38 @@ function WorkExperience(props) {
             <ul style={{ listStyle: 'none', paddingLeft: 0 }}>
               <li>
                 <TrophyIcon />
-                "Star of the Month" Individual Award for Query Transformation
-                Project in Dec 2022.
+                "Star of the Month" Team Award for contributing to On Demand
+                Solutions in Aug 2025.
               </li>
-              <li>
-                <TrophyIcon />
-                "Star of the Month" Team Award for contributing to Issuer
-                feedback workflow upgrade in Feb 2023.
-              </li>
-              <li>
-                <TrophyIcon />
-                "Star of the Month" Team Award for contribution to Climate
-                Targets Data Collection on Issuer Communication Portal in Mar
-                2022.
-              </li>
+
               <li>
                 <MedalIcon type="silver" />
                 MSCI Global T&D AI Hackathon 2024 - Certificate of Achievement
                 (Finalist)
               </li>
+
+              <li>
+                <TrophyIcon />
+                "Star of the Month" Team Award for contributing to Issuer
+                feedback workflow upgrade in Feb 2023.
+              </li>
+
+              <li>
+                <TrophyIcon />
+                "Star of the Month" Individual Award for Query Transformation
+                Project in Dec 2022.
+              </li>
+
               <li>
                 <MedalIcon type="bronze" />
-                MSCI India Hackathon 2022 – 3rd Place
+                MSCI India Hackathon 2022 - 3rd Place
+              </li>
+
+              <li>
+                <TrophyIcon />
+                "Star of the Month" Team Award for contribution to Climate
+                Targets Data Collection on Issuer Communication Portal in Mar
+                2022.
               </li>
             </ul>
           </div>
@@ -97,7 +107,7 @@ function WorkExperience(props) {
             className="text-start mt-4"
             style={{ maxWidth: '700px', margin: '0 auto' }}
           >
-            <h5>Analyst:</h5>
+            <h4>Analyst:</h4>
             <strong>Jun 2019 - Dec 2021</strong>
 
             <p>
