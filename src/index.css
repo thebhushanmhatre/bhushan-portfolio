@@ -1,3 +1,7 @@
+html {
+  overflow-y: scroll;
+}
+
 body {
   --bg-light-color: white;
   --text-light-color: black;

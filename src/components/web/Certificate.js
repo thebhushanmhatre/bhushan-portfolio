@@ -45,8 +45,8 @@ function Certificate() {
 
     if (selectedIssuer.length > 0) {
       const issuerValues = selectedIssuer.map(f => f.value);
-       certificates = certificates.filter(
-        (item) => issuerValues.includes(item.issuer)
+      certificates = certificates.filter((item) =>
+        issuerValues.some((val) => item.issuer && item.issuer.includes(val))
       );
     }
     

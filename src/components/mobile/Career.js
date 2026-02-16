@@ -16,7 +16,7 @@ export default function Projects() {
           <CardImg
             top
             width="100%"
-            src="assets/images/MSCI_logo.svg"
+            src="assets/images/backbhu.jpg"
             alt="Card image cap"
             height="230"
             className="bg-white"
