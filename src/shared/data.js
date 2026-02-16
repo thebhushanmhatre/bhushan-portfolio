@@ -38,7 +38,7 @@ export const DATA = {
       href: 'https://codesandbox.io/u/thebhushanmhatre',
       name: 'codeSandbox',
       icon: 'fas fa-code fa-lg',
-      color: 'orange',
+      color: 'purple',
     },
     {
       contId: 5,
