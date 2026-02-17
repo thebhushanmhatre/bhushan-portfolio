@@ -6,14 +6,18 @@ export default function Contact() {
   const contactsData = useContext(DataContext).contacts;
 
   const contacts = contactsData.map((item) => (
-    <Col key={item.contId.toString()} style={{ fontSize: '40px' }}>
+    <Col key={item.contId.toString()} className="mb-4">
       <a
         href={item.href}
         target="_blank"
         rel="noopener noreferrer"
-        style={{ color: item.color, padding: '10px' }}
+        style={{ color: item.color, textDecoration: 'none' }}
+        className="d-flex flex-column align-items-center"
       >
-        <i className={item.icon + ' contact-icon'}></i>
+        <i className={`${item.icon} contact-icon mb-2`} style={{ fontSize: '40px' }}></i>
+        <span style={{ fontSize: '1rem', fontWeight: '500' }}>
+          {item.displayName || item.name.charAt(0).toUpperCase() + item.name.slice(1)}
+        </span>
       </a>
     </Col>
   ));

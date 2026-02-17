@@ -2,7 +2,10 @@ import React from 'react';
 import { Table } from 'reactstrap';
 import isMobile from '../../utilities/isMobile.js';
 
+import { useTheme } from '../../contexts/ThemeContext';
+
 function RenderTable(props) {
+  const { darkMode } = useTheme();
   let key_name_map = {
     name: props.type + ' Name',
     tech: 'Technologies/Skills',
@@ -58,7 +61,7 @@ function RenderTable(props) {
   ));
 
   return (
-    <Table bordered hover>
+    <Table bordered hover dark={darkMode}>
       <thead>
         <tr>{column_headers}</tr>
       </thead>

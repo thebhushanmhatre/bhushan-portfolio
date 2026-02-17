@@ -22,7 +22,6 @@ a:hover {
 
 #picturebox {
   perspective: 500px;
-  cursor: crosshair;
   height: 55vh;
   min-height: 250px;
   max-height: 70vh;
@@ -61,7 +60,7 @@ a:hover {
   background-image: linear-gradient(to right, white, skyblue, skyblue, white);
 }
 
-.myname.dark {
+body.dark .myname {
   background-image: linear-gradient(to right, #333, orange, orange, #333);
   color: black;
 }

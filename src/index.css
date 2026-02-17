@@ -24,6 +24,83 @@ h2.dark, h3.dark, i.dark {
   color: var(--text-dark-color);
 }
 
+/* Navbar Dark Mode Fixes */
+.navbar.dark .navbar-brand,
+.navbar.dark .nav-link,
+.navbar.dark span {
+  color: var(--text-dark-color) !important;
+}
+
+.navbar.dark .nav-link:hover,
+.navbar.dark .navbar-brand:hover {
+  color: skyblue !important;
+}
+
+/* Subtle Dropdown Button Hover Effects */
+.btn-outline-dark:hover {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  color: #343a40 !important;
+  border-color: #343a40 !important;
+}
+
+.btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  color: #f8f9fa !important;
+  border-color: #f8f9fa !important;
+}
+
+/* Dark Mode Overrides for Tables */
+body.dark .table {
+  color: var(--text-dark-color);
+  background-color: var(--bg-dark-color);
+}
+
+body.dark .table th,
+body.dark .table td,
+body.dark .table thead th {
+  border-color: #454d55;
+  color: var(--text-dark-color);
+}
+
+body.dark .table-hover tbody tr:hover {
+  color: var(--text-dark-color);
+  background-color: rgba(255, 255, 255, 0.075);
+}
+
+/* Dark Mode Overrides for Dropdowns & Buttons */
+body.dark .btn-outline-dark {
+  color: #fff;
+  border-color: #fff;
+}
+
+body.dark .btn-outline-dark:hover,
+body.dark .btn-outline-dark:active,
+body.dark .btn-outline-dark.active,
+body.dark .show > .btn-outline-dark.dropdown-toggle {
+  background-color: #fff;
+  color: #000;
+}
+
+body.dark .dropdown-menu {
+  background-color: var(--bg-dark-color);
+  border: 1px solid #555;
+}
+
+body.dark .dropdown-item {
+  color: var(--text-dark-color);
+}
+
+body.dark .dropdown-item:hover, 
+body.dark .dropdown-item:focus {
+  background-color: #444;
+  color: var(--text-dark-color);
+}
+
+/* Ensure links in tables are visible in dark mode */
+body.dark .table a {
+  color: #6ea8fe; 
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

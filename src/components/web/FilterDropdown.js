@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Badge, Input } from 'reactstrap';
 
+import { useTheme } from '../../contexts/ThemeContext';
+
 const FilterDropdown = ({ title, options, selected, onSelect, onRemove }) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const toggle = () => setDropdownOpen(prevState => !prevState);
+  const { darkMode } = useTheme();
 
   return (
     <>
       <Dropdown isOpen={dropdownOpen} toggle={toggle} className="mx-3">
-        <DropdownToggle caret color="outline-dark">
+        <DropdownToggle caret color={darkMode ? "outline-light" : "outline-dark"}>
           {title}
         </DropdownToggle>
         <DropdownMenu>

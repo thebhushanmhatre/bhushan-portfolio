@@ -51,7 +51,7 @@ function WorkExperience(props) {
           <strong>Software Engineer II</strong>
         </i>
         <br />
-        <i style={{ fontSize: '1.12em' }}>June 2019 to January 2026</i>
+        <i style={{ fontSize: '1.12em' }}>June 2019 to January 2026 (6 years and 8 months)</i>
 
         <div className="pb-5">
           <div
@@ -61,7 +61,7 @@ function WorkExperience(props) {
             <h4>Associate:</h4>
             <strong>Jan 2022 - Jan 2026</strong>
             <p>
-              Worked as a Senior Software Engineer in the ESG S&C Engineering Department. (Client Facing App Dev team)
+              Worked as a <strong>Senior Software Engineer (FullStack with Frontend Heavy)</strong> in the ESG S&C Engineering Department. (Client Facing App Dev team)
             </p>
             <p>
               <strong>Tech Stack:</strong>
@@ -70,6 +70,19 @@ function WorkExperience(props) {
               NestJS), JavaScript (VueJS, Express), SQL (Oracle DB).
               <br />
               Azure (App Service, AKS, and related services)
+            </p>
+            
+
+            <p>
+              Check all tech stacks I'm familiar with:{' '}
+              <a
+                href="https://github.com/thebhushanmhatre#-tech-stack"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View full Tech Stack on GitHub"
+              >
+                <strong>View full Tech Stack on GitHub</strong>
+              </a>
             </p>
 
             <strong>Awards:</strong>
@@ -102,7 +115,17 @@ function WorkExperience(props) {
               </li>
             </ul>
 
-            <p>Check the details in the Honors & awards section on linkedin by clicking <a href="https://www.linkedin.com/in/bhushanmhatre/details/honors" target="_blank">here</a></p>
+            <p>
+              <a
+                href="https://www.linkedin.com/in/bhushanmhatre/details/honors"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Honors and Awards on LinkedIn"
+              >
+                <strong>View Honors & Awards on LinkedIn</strong>
+              </a>{' '}
+              for more details.
+            </p>
 
             <strong>Key Responsibilities & Contributions:</strong>
             <ul style={{ listStyle: 'none', paddingLeft: 0 }}>
@@ -122,7 +145,7 @@ function WorkExperience(props) {
             <strong>Jun 2019 - Dec 2021</strong>
 
             <p>
-              Worked as a Software Engineer in the ESG Engineering Department. (Internal App Dev team)
+              Worked as a <strong>Software Engineer (Backend)</strong> in the ESG Engineering Department. (Internal App Dev team)
             </p>
 
             <p>
