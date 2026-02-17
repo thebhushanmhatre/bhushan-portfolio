@@ -55,14 +55,13 @@ function Certificate() {
 
   const pickValues = () => {
     return getCertis().map((item) =>
-      (({ href, name, issuer, professor, tech, target, inbuilt, src }) => ({
+      (({ href, name, issuer, professor, tech, target, src }) => ({
         href,
         name,
         issuer,
         professor,
         tech,
         target,
-        inbuilt,
         src,
       }))(item)
     );

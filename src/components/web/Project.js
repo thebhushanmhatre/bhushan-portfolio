@@ -33,12 +33,12 @@ function Project() {
 
   const pickValues = () => {
     return getProjects().map((item) =>
-      (({ href, name, tech, target, inbuilt, src }) => ({
+      (({ href, name, tech, target, tag, src }) => ({
         href,
         name,
         tech,
         target,
-        inbuilt,
+        tag,
         src,
       }))(item)
     );

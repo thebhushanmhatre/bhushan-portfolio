@@ -1,7 +1,7 @@
 export const projects = [
   {
     projectId: 22,
-    inbuilt: false,
+    tag: 'codesandbox',
     href: 'https://5rmdcm.csb.app/',
     src: 'assets/images/projects/radar.jpg',
     tech: ['React'],
@@ -11,7 +11,7 @@ export const projects = [
   },
   {
     projectId: 27,
-    inbuilt: false,
+    tag: 'codesandbox',
     href: 'https://sj5x54.csb.app/',
     src: 'assets/images/projects/radar.jpg',
     tech: ['React'],
@@ -21,7 +21,7 @@ export const projects = [
   },
   {
     projectId: 23,
-    inbuilt: false,
+    tag: 'codesandbox',
     href: 'https://7d5cnt.csb.app/',
     src: 'assets/images/projects/radar.jpg',
     tech: ['React'],
@@ -31,7 +31,7 @@ export const projects = [
   },
   {
     projectId: 24,
-    inbuilt: false,
+    tag: 'codesandbox',
     href: 'https://5ngqk6.csb.app/',
     src: 'assets/images/projects/radar.jpg',
     tech: ['React'],
@@ -41,7 +41,7 @@ export const projects = [
   },
   {
     projectId: 26,
-    inbuilt: false,
+    tag: 'codesandbox',
     href: 'https://j5hk6v.csb.app/',
     src: 'assets/images/projects/radar.jpg',
     tech: ['React'],
@@ -51,7 +51,7 @@ export const projects = [
   },
   {
     projectId: 25,
-    inbuilt: false,
+    tag: 'codesandbox',
     href: 'https://8np9gq.csb.app/',
     src: 'assets/images/projects/radar.jpg',
     tech: ['React', 'Javascript', 'Fetch API'],
@@ -61,7 +61,7 @@ export const projects = [
   },
   {
     projectId: 1,
-    inbuilt: true,
+    tag: 'inbuilt',
     href: '/recipes',
     src: 'assets/images/projects/recipe-app.jpg',
     tech: ['React', 'Javascript', 'Fetch API'],
@@ -71,7 +71,7 @@ export const projects = [
   },
   {
     projectId: 2,
-    inbuilt: true,
+    tag: 'inbuilt',
     href: '/quotes', //https://codepen.io/thebhushanmhatre/full/yZQmVw"
     src: 'assets/images/projects/quotes.jpg',
     tech: ['Javascript'],
@@ -81,7 +81,7 @@ export const projects = [
   },
   {
     projectId: 3,
-    inbuilt: true,
+    tag: 'inbuilt',
     href: '/todolist',
     src: 'assets/images/projects/todoapp.jpg',
     tech: ['React', 'Javascript'],
@@ -91,7 +91,7 @@ export const projects = [
   },
   {
     projectId: 4,
-    inbuilt: true,
+    tag: 'inbuilt',
     href: '/markdown',
     src: 'assets/images/projects/markdown.jpg',
     tech: ['Javascript'],
@@ -101,7 +101,7 @@ export const projects = [
   },
   {
     projectId: 5,
-    inbuilt: true,
+    tag: 'inbuilt',
     href: '/clock', //https://codepen.io/thebhushanmhatre/full/LaJqvy",
     src: 'assets/images/projects/clock.jpg',
     tech: ['Javascript'],
@@ -111,7 +111,7 @@ export const projects = [
   },
   {
     projectId: 7,
-    inbuilt: false,
+    tag: 'codepen',
     href: 'https://codepen.io/thebhushanmhatre/full/BbPrwa',
     src: 'assets/images/projects/calculator.jpg',
     tech: ['Javascript'],
@@ -121,7 +121,7 @@ export const projects = [
   },
   {
     projectId: 8,
-    inbuilt: false,
+    tag: 'codepen',
     href: 'https://codepen.io/thebhushanmhatre/full/QYeKBy',
     src: 'assets/images/projects/drum.jpg',
     tech: ['Javascript'],
@@ -131,7 +131,6 @@ export const projects = [
   },
   {
     projectId: 12,
-    inbuilt: false,
     href: '',
     src: 'assets/images/projects/senti.jpg',
     tech: ['Python', 'Machine Learning'],
@@ -141,7 +140,7 @@ export const projects = [
   },
   {
     projectId: 11,
-    inbuilt: false,
+    tag: 'kaggle',
     href: 'https://www.kaggle.com/thebhushanmhatre/my-firsttry-on-kaggle/',
     src: 'assets/images/projects/titanic.jpg',
     tech: ['Python', 'Machine Learning'],
@@ -151,7 +150,6 @@ export const projects = [
   },
   {
     projectId: 13,
-    inbuilt: false,
     href: '',
     src: 'assets/images/projects/radar.jpg',
     tech: ['Electronics'],
@@ -161,7 +159,6 @@ export const projects = [
   },
   {
     projectId: 14,
-    inbuilt: false,
     href: '',
     src: 'assets/images/projects/robarm.jpg',
     tech: ['Electronics'],
@@ -171,7 +168,7 @@ export const projects = [
   },
   {
     projectId: 17,
-    inbuilt: false,
+    tag: 'github',
     href: 'https://github.com/thebhushanmhatre/Tetris',
     src: 'assets/images/projects/tetris_js.jpg',
     tech: ['JavaScript', 'Game'],
@@ -181,7 +178,6 @@ export const projects = [
   },
   {
     projectId: 15,
-    inbuilt: false,
     href: 'assets/notebooks/WebScraping.html',
     src: 'assets/images/projects/web_scrapping.jpg',
     tech: ['Python', 'Web Scrapping'],
@@ -191,7 +187,6 @@ export const projects = [
   },
   {
     projectId: 16,
-    inbuilt: false,
     href: 'assets/notebooks/Handwashing.html',
     src: 'assets/images/projects/hand_washing.jpg',
     tech: ['Python', 'Data Analysis'],
@@ -201,7 +196,7 @@ export const projects = [
   },
   {
     projectId: 18,
-    inbuilt: false,
+    tag: 'github',
     href: 'https://github.com/thebhushanmhatre/url-shortener',
     src: 'assets/images/projects/url_shortener.jpg',
     tech: ['Python'],
@@ -211,7 +206,7 @@ export const projects = [
   },
   {
     projectId: 20,
-    inbuilt: false,
+    tag: 'github',
     href: 'https://github.com/thebhushanmhatre/JSProjects',
     src: 'assets/images/projects/js_apps.jpg',
     tech: ['Javascript'],
@@ -221,7 +216,7 @@ export const projects = [
   },
   {
     projectId: 21,
-    inbuilt: true,
+    tag: 'inbuilt',
     href: '/card-game',
     src: 'assets/images/projects/cardgame.jpg',
     tech: ['React', 'Javascript'],
