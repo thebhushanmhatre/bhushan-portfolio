@@ -8,12 +8,14 @@ import {
   NavbarToggler,
   Collapse,
 } from 'reactstrap';
+import { useTheme } from '../contexts/ThemeContext';
 
 function Navigation(props) {
   const [isNavOpen, toggleNav] = useState(false);
+  const { darkMode, toggleTheme } = useTheme();
 
   return (
-    <Navbar id="navbar" className="container mb-3" expand="lg">
+    <Navbar id="navbar" className={`container mb-3 ${darkMode ? 'dark' : ''}`} expand="lg" dark={darkMode}>
       <NavbarBrand className="mr-auto" href="/">
         <img
           id="logo"
@@ -28,21 +30,19 @@ function Navigation(props) {
         </span>
       </NavbarBrand>
       <NavItem
-        onClick={() => props.toggleTheme()}
-        style={{ listStyleType: 'none' }}
+        onClick={() => toggleTheme()}
+        style={{ listStyleType: 'none', cursor: 'pointer' }}
       >
-        {props.darkMode === false ? (
+        {darkMode === false ? (
           <span
             className="fas fa-sun-o fa-lg"
             style={{ color: 'orange' }}
-            href="#"
             id="darkmmodeicon"
           />
         ) : (
           <span
             className="fas fa-moon-o fa-lg"
             style={{ color: '#007bff' }}
-            href="#"
             id="darkmmodeicon"
           />
         )}

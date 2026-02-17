@@ -1,45 +1,48 @@
-# [Bhushan's Portfolio](https://thebhushanmhatre.herokuapp.com/)
+# Bhushan Mhatre: Software Engineer (Full-Stack Developer)
 
-### Technology Stack used:
+[![Portfolio](https://img.shields.io/badge/Live-Portfolio-blue?style=for-the-badge&logo=react)](https://thebhushanmhatre.netlify.app/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/bhushanmhatre/)
 
-1. HTML/CSS
-1. Javascript (React/Redux)
+Welcome to the source code of Bhushan Mhatre's digital portfolio.
 
-### JS Libraries Used:
+## 🛠️ Technology Stack
 
-**For App Generator**: create-react-app
+| Category | technologies |
+| :--- | :--- |
+| **Engine** | React 18, Javascript (ES6+) |
+| **State** | Redux, React-Redux |
+| **Styling** | CSS3, Bootstrap 5, Reactstrap |
+| **Icons & Fonts** | Font-Awesome, Google Fonts |
+| **Routing** | React Router Dom v6 |
 
-**For Styling**: bootstrap, reactstrap, react-popper, bootstrap-social
+## ⚙️ Deployment & Local Setup
 
-**For Fonts and Icons**: font-awesome, react-router-dom
+To run a local instance of this portfolio for audit or development purposes:
 
-**For Storing Data**: redux, react-redux
+1. **Clone the Source**:
+   ```bash
+   git clone https://github.com/thebhushanmhatre/bhushan-portfolio.git
+   ```
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+3. **Execute Engine**:
+   ```bash
+   npm start
+   ```
+   *The instance will be available at [http://localhost:3000](http://localhost:3000)*.
 
-**For Markdown Previewer Project**: marked
+## 📖 Mentorship & Community
 
-### Steps to Run this app locally:
+Bhushan is committed to giving back to the developer community. If you are new to programming, explore his curated roadmap:
+👉 **[FREE Getting Started with Programming Guide](./GUIDE.md)**
 
-1. Fork the repo and Clone the app to your local machine.
-1. Install the packages using `yarn install` command
-1. Start the app using `yarn start` command
-   Runs the app in the development mode.<br />
+---
 
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 📩 Connect with the Developer
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Ready to integrate Bhushan's expertise into your next mission-critical project?
 
-## Projects Included
-
-This repo also Includes following Projects:
-
-1. [Random Quote Machine](https://thebhushanmhatre.herokuapp.com/quotes)
-1. [To Do List](https://thebhushanmhatre.herokuapp.com/todolist)
-1. [Markdown Previewer](https://thebhushanmhatre.herokuapp.com/markdown)
-1. [Pomodoro Clock](https://thebhushanmhatre.herokuapp.com/clock)
-
-## Contact me on [Linkedin](https://www.linkedin.com/in/bhushanmhatre/)
-
-## New to Programming?
-
-Check my Free Guide to [Getting Started to Programming](https://github.com/thebhushanmhatre/bhushan-portfolio/blob/master/GUIDE.md)
+- **LinkedIn**: [Bhushan Mhatre](https://www.linkedin.com/in/bhushanmhatre/)
+- **Live Build**: [thebhushanmhatre.netlify.app](https://thebhushanmhatre.netlify.app/)

@@ -1,116 +1,123 @@
 import React, { useContext, useState } from 'react';
-import { Container, Row, Button } from 'reactstrap';
-import RenderCards from './RenderCards';
-import RenderCarousel from './RenderCarousel';
+import { Container } from 'reactstrap';
 import RenderTable from './RenderTable';
 import { DataContext } from '../../App';
+import FilterDropdown from './FilterDropdown';
 
 function Certificate() {
-  const [filterBy, setFilterBy] = useState(false);
-  const [filterOn, setFilterOn] = useState(false);
-  const [iconName, toggleIcon] = useState('fas fa-film fa-lg');
+  const [selectedTech, setSelectedTech] = useState([]);
+  const [selectedIssuer, setSelectedIssuer] = useState([]);
   const certificatesData = useContext(DataContext).certificates;
 
-  const setFilter = (filter, on) => {
-    if (filterBy === filter) {
-      setFilterBy(false);
+  const handleTechSelect = (option) => {
+    if (selectedTech.some(f => f.value === option.value)) {
+      setSelectedTech(selectedTech.filter(f => f.value !== option.value));
     } else {
-      setFilterBy(filter);
-      setFilterOn(on);
+      setSelectedTech([...selectedTech, option]);
     }
+  };
+
+  const handleTechRemove = (option) => {
+    setSelectedTech(selectedTech.filter(f => f.value !== option.value));
+  };
+
+  const handleIssuerSelect = (option) => {
+    if (selectedIssuer.some(f => f.value === option.value)) {
+      setSelectedIssuer(selectedIssuer.filter(f => f.value !== option.value));
+    } else {
+      setSelectedIssuer([...selectedIssuer, option]);
+    }
+  };
+
+  const handleIssuerRemove = (option) => {
+    setSelectedIssuer(selectedIssuer.filter(f => f.value !== option.value));
   };
 
   const getCertis = () => {
     let certificates = certificatesData.filter((item) => item.visible);
-    if (filterBy) {
+    
+    if (selectedTech.length > 0) {
+      const techValues = selectedTech.map(f => f.value);
       certificates = certificates.filter(
-        (item) => item[filterOn].indexOf(filterBy) !== -1
+        (item) => techValues.some(tech => item.tech.includes(tech))
       );
     }
+
+    if (selectedIssuer.length > 0) {
+      const issuerValues = selectedIssuer.map(f => f.value);
+      certificates = certificates.filter((item) =>
+        issuerValues.some((val) => item.issuer && item.issuer.includes(val))
+      );
+    }
+    
     return certificates;
   };
 
   const pickValues = () => {
     return getCertis().map((item) =>
-      (({ href, name, issuer, professor, tech, target, inbuilt, src }) => ({
+      (({ href, name, issuer, professor, tech, target, src }) => ({
         href,
         name,
         issuer,
         professor,
         tech,
         target,
-        inbuilt,
         src,
       }))(item)
     );
   };
 
-  const filters = ['Javascript', 'Python', 'SQL'].map((item) => (
-    <Button key={item} className="m-1" onClick={() => setFilter(item, 'tech')}>
-      {item}{' '}
-    </Button>
-  ));
+  const techOptions = [
+    { label: 'Javascript', value: 'Javascript' },
+    { label: 'Python', value: 'Python' },
+    { label: 'SQL', value: 'SQL' }
+  ];
 
-  ['Coursera', 'freeCodeCamp', 'Linkedin'].forEach((item) =>
-    filters.push(
-      <Button
-        key={item}
-        className="m-1"
-        onClick={() => setFilter(item, 'issuer')}
-      >
-        {item}{' '}
-      </Button>
-    )
-  );
+  const issuerOptions = [
+    { label: 'Coursera', value: 'Coursera' },
+    { label: 'freeCodeCamp', value: 'freeCodeCamp' },
+    { label: 'Linkedin', value: 'Linkedin' }
+  ];
 
-  const renderCards = <RenderCards items={getCertis()} type={'Certificate'} />;
+  const certList = pickValues();
+  let renderTable;
 
-  const renderTable = (
-    <RenderTable
-      className="m-4 pb-4"
-      items={pickValues()}
-      type={'Certificate'}
-    />
-  );
-
-  const renderFilm = <RenderCarousel certis={getCertis()} />;
-
-  // table -> slider -> cards
-  // table -> film   -> th
-
-  // click on table, then icon changes to slider and table is displayed, film && table
-  // click on slider, then icon changes to cards and slider/film is displayed, cards && slider
-  // click on cards, then icon changes to table and cards is displayed, table && cards/th
-
-  const changeIcon = () => {
-    if (iconName == 'fa fa-table fa-lg') {
-      toggleIcon('fas fa-film fa-lg');
-    } else if (iconName == 'fas fa-film fa-lg') {
-      toggleIcon('fa fa-th fa-lg');
-    } else {
-      toggleIcon('fa fa-table fa-lg');
-    }
-    return '';
-  };
-
-  const iconBtn = (
-    <span
-      onClick={changeIcon}
-      className={iconName}
-      style={{ float: 'right' }}
-    />
-  );
+  if (certList.length > 0) {
+    renderTable = (
+      <RenderTable
+        className="m-4 pb-4"
+        items={certList}
+        type={'Certificate'}
+      />
+    );
+  } else {
+    renderTable = (
+      <h3 className="text-danger">
+        No Certificates Found
+      </h3>
+    );
+  }
 
   return (
-    <Container>
-      <p className="text-lg">
-        {filterBy ? filterBy : 'My'} Certificates {filters} {iconBtn}
-      </p>
-      <Row className="d-flex justify-content-around text-center mb-3">
-        {iconName == 'fa fa-th fa-lg' && renderFilm}
-        {iconName == 'fas fa-film fa-lg' && renderTable}
-        {iconName == 'fa fa-table fa-lg' && renderCards}
-      </Row>
+    <Container className="pb-5">
+      <div className="d-flex align-items-center mb-4 flex-wrap">
+        <h3 className="mb-0 me-3">My Certificates</h3>
+        <FilterDropdown 
+          title="Filter by Tech" 
+          options={techOptions} 
+          selected={selectedTech} 
+          onSelect={handleTechSelect} 
+          onRemove={handleTechRemove} 
+        />
+        <FilterDropdown 
+          title="Filter by Issuer" 
+          options={issuerOptions} 
+          selected={selectedIssuer} 
+          onSelect={handleIssuerSelect} 
+          onRemove={handleIssuerRemove} 
+        />
+      </div>
+      {renderTable}
     </Container>
   );
 }

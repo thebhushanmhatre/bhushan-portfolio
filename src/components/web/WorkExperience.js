@@ -26,40 +26,63 @@ const MedalIcon = ({ type }) => {
   return null;
 };
 
+const FireIcon = () => (
+  <span role="img" aria-label="fire" style={{ marginRight: '5px' }}>
+    🔥
+  </span>
+);
+
+const CheckIcon = () => (
+  <span role="img" aria-label="check" style={{ marginRight: '5px', color: 'green' }}>
+    ✔
+  </span>
+);
+
 function WorkExperience(props) {
   return (
     <>
       <Container className="text-center p-3">
         <div className="m-3">
           <h1>MSCI Inc.</h1>
-          <h4>ESG Climate & Sustainability Department</h4>
+          <h4>ESG Sustainability & Climate Department</h4>
         </div>
 
         <i style={{ fontSize: '1.12em' }}>
           <strong>Software Engineer II</strong>
         </i>
         <br />
-        <i style={{ fontSize: '1.12em' }}>June 2019 to Present</i>
+        <i style={{ fontSize: '1.12em' }}>June 2019 to January 2026 (6 years and 8 months)</i>
 
         <div className="pb-5">
           <div
             className="text-start mt-4 mb-5"
             style={{ maxWidth: '700px', margin: '0 auto' }}
           >
-            <h5>Associate:</h5>
-            <strong>Jan 2022 - Present</strong>
+            <h4>Associate:</h4>
+            <strong>Jan 2022 - Jan 2026</strong>
             <p>
-              Working as a Software Engineer in the ESG Engineering
-              Department.(Client Facing App Dev team)
+              Worked as a <strong>Senior Software Engineer (FullStack with Frontend Heavy)</strong> in the ESG S&C Engineering Department. (Client Facing App Dev team)
             </p>
-
             <p>
               <strong>Tech Stack:</strong>
               <br />
-              TypeScript (Fluent UI, React-Redux-Saga, NestJS), JavaScript
-              (VueJS, Express), SQL (Oracle DB).
+              TypeScript (Fluent UI, React, Redux, Saga, Zustand, React-Query,
+              NestJS), JavaScript (VueJS, Express), SQL (Oracle DB).
               <br />
               Azure (App Service, AKS, and related services)
+            </p>
+            
+
+            <p>
+              Check all tech stacks I'm familiar with:{' '}
+              <a
+                href="https://github.com/thebhushanmhatre#-tech-stack"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View full Tech Stack on GitHub"
+              >
+                <strong>View full Tech Stack on GitHub</strong>
+              </a>
             </p>
 
             <strong>Awards:</strong>
@@ -67,29 +90,50 @@ function WorkExperience(props) {
             <ul style={{ listStyle: 'none', paddingLeft: 0 }}>
               <li>
                 <TrophyIcon />
-                "Star of the Month" Individual Award for Query Transformation
-                Project in Dec 2022.
+                "Star of the Month" Team Award for building on Demand Solutions UI in Sept 2025.
               </li>
               <li>
                 <TrophyIcon />
-                "Star of the Month" Team Award for contributing to Issuer
-                feedback workflow upgrade in Feb 2023.
+                "Star of the Month" Team Award for contributing to Issuer feedback workflow upgrade in Feb 2023.
               </li>
               <li>
                 <TrophyIcon />
-                "Star of the Month" Team Award for contribution to Climate
-                Targets Data Collection on Issuer Communication Portal in Mar
-                2022.
+                "Star of the Month" Individual Award for Query Transformation Project in Dec 2022.
               </li>
+              <li>
+                <TrophyIcon />
+                "Star of the Month" Team Award for contribution to Climate Targets Data Collection on Issuer Communication Portal in Mar 2022
+              </li>
+              <br />
               <li>
                 <MedalIcon type="silver" />
-                MSCI Global T&D AI Hackathon 2024 - Certificate of Achievement
-                (Finalist)
+                MSCI Global T&D AI Hackathon 2024 - Certificate of Achievement (Finalist)
               </li>
               <li>
                 <MedalIcon type="bronze" />
-                MSCI India Hackathon 2022 – 3rd Place
+                MSCI India Hackathon 2022 - 3rd Place
               </li>
+            </ul>
+
+            <p>
+              <a
+                href="https://www.linkedin.com/in/bhushanmhatre/details/honors"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Honors and Awards on LinkedIn"
+              >
+                <strong>View Honors & Awards on LinkedIn</strong>
+              </a>{' '}
+              for more details.
+            </p>
+
+            <strong>Key Responsibilities & Contributions:</strong>
+            <ul style={{ listStyle: 'none', paddingLeft: 0 }}>
+               <li><CheckIcon />Built a library of reusable components to streamline application development across teams.</li>
+               <li><CheckIcon />Built entire UI for MSCI One's Document Store distribution platform and internal Documents Acquisition & Quality Check platform, supporting efficient document management and data validation across functions.</li>
+               <li><CheckIcon />Served as the engineering lead and point of contact for the Issuer Communication Portal (ICP) for 2 years, and for the Legacy ESG Document Store UI for 1 year, ensuring consistent feature delivery and platform reliability throughout.</li>
+               <li><CheckIcon />Refactored a legacy Vue.js application into a modular MVCS architecture; optimized SQL performance and enhanced scalability.</li>
+               <li><CheckIcon />Proposed and developed a transparency feature to elevate issuer engagement, transforming them into alternative data contributors.</li>
             </ul>
           </div>
 
@@ -97,12 +141,11 @@ function WorkExperience(props) {
             className="text-start mt-4"
             style={{ maxWidth: '700px', margin: '0 auto' }}
           >
-            <h5>Analyst:</h5>
+            <h4>Analyst:</h4>
             <strong>Jun 2019 - Dec 2021</strong>
 
             <p>
-              Worked as a Software Engineer in the ESG Engineering Department.
-              (Internal App Dev team)
+              Worked as a <strong>Software Engineer (Backend)</strong> in the ESG Engineering Department. (Internal App Dev team)
             </p>
 
             <p>
@@ -120,6 +163,27 @@ function WorkExperience(props) {
                 rating model enhancement project in Q4-2020.
               </li>
             </ul>
+
+            <strong>Key Responsibilities:</strong>
+            <ul style={{ listStyle: 'none', paddingLeft: 0 }}>
+              <li><FireIcon /> Point of Contact from the Developers Team for Production Issues. (During the March and April monthly release sprint, 2021)</li>
+              <li><FireIcon /> Deployments of multiple apps for March and April releases.</li>
+            </ul>
+            
+            <strong>Key projects:</strong>
+            <ul style={{ listStyle: 'none', paddingLeft: 0 }}>
+                <li><CheckIcon />Release Automation and DevOps Suite (2021)</li>
+                <li><CheckIcon />Rating Model Enhancement (RME) - Corporate Behavior and Governance Pillar (2020-21) <TrophyIcon /></li>
+                <li><CheckIcon />Key Issue Smart Texts (2019-20)</li>
+                <li><CheckIcon />IVA and Data Metrics Reports Decommissioning (2020)</li>
+                <li><CheckIcon />Multilevel Dependencies Extraction Tool for Impact Analysis (2020)</li>
+            </ul>
+
+            <p>
+              Played an active role in Documenting Workflow/Processes and Best Practices.
+              <br/>
+              Organized Game Sessions to beat WFH blues and get new team members involved.
+            </p>
           </div>
         </div>
 

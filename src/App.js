@@ -20,6 +20,7 @@ import CardGame from './components/projects/CardGame.js';
 import MobileHome from './components/mobile/MobileHome';
 // utitlities
 import isMobile from './utilities/isMobile.js';
+import { ThemeProvider } from './contexts/ThemeContext';
 
 import { QUOTES } from './shared/quotes.js';
 import { DATA } from './shared/data.js';
@@ -92,7 +93,9 @@ const router = createBrowserRouter([
 function App() {
   return (
     <DataContext.Provider value={initialState}>
-      <RouterProvider router={router} />
+      <ThemeProvider>
+        <RouterProvider router={router} />
+      </ThemeProvider>
     </DataContext.Provider>
   );
 }
