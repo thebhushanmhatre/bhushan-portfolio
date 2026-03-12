@@ -97,11 +97,35 @@ body.dark .dropdown-item:focus {
 }
 
 /* Ensure links in tables are visible in dark mode */
-body.dark .table a {
-  color: #6ea8fe; 
+body.dark .table a,
+body.dark a {
+  color: skyblue; 
+}
+
+body.dark a:hover {
+  color: #0dcaf0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  height: 1.1em;
+  background-color: #0d6efd; /* Use a nice blue color by default */
+  margin-left: 4px;
+  vertical-align: middle;
+  animation: blink 1s step-end infinite;
+}
+
+body.dark .cursor {
+  background-color: #0dcaf0; /* Brighter blue for dark mode */
+}
+
+@keyframes blink {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
 }

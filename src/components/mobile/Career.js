@@ -23,7 +23,7 @@ export default function Projects() {
           />
           <CardBody>
             <CardTitle tag="h5">My Work Experience</CardTitle>
-            <a href="/workexp">
+            <a href="/experience">
               <Button color="primary">View my Career Timeline</Button>
             </a>
           </CardBody>
