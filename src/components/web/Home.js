@@ -1,9 +1,19 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container } from 'reactstrap';
 import Contact from './Contact';
+import TypingEffect from '../common/TypingEffect';
 
 function Home() {
-  let myName = <div className="myname">Bhushan Mhatre: Software Engineer</div>;
+  const typingTexts = [
+    'Namaskar 🙏',
+    'My name is Bhushan Mhatre 🖐️',
+    'I am a Software Engineer 💻',
+  ];
+  let myName = (
+    <span className="myname">
+      <TypingEffect defaultValue="" texts={typingTexts} />
+    </span>
+  );
 
   let pic_style;
   if (window.innerWidth >= 1445) {
@@ -56,7 +66,7 @@ function Home() {
         </Container>
         <Contact />
       </div>
-      
+
       <p className="text-center py-4 mb-0 mt-auto">
         Made in{' '}
         <img

@@ -56,13 +56,10 @@ a:hover {
 .myname {
   font-style: italic;
   font-family: 'Segoe UI';
-  cursor: pointer;
-  background-image: linear-gradient(to right, white, skyblue, skyblue, white);
 }
 
 body.dark .myname {
-  background-image: linear-gradient(to right, #333, orange, orange, #333);
-  color: black;
+  color: white;
 }
 
 .todoListMain .header input {

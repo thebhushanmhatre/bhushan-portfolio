@@ -42,7 +42,10 @@ function RenderTable(props) {
           <i className="fa fa-link" aria-hidden="true">
             <span
               className="inbuilt"
-              style={{ fontSize: 'x-small', color: 'green' }}
+              style={{ 
+                fontSize: 'x-small', 
+                color: darkMode ? '#90ee90' : 'green' 
+              }}
             >
               {' '}
               inbuilt
@@ -53,7 +56,10 @@ function RenderTable(props) {
         return (
           <i className="fas fa-code" aria-hidden="true">
             <span
-              style={{ fontSize: 'x-small', color: 'purple' }}
+              style={{ 
+                fontSize: 'x-small', 
+                color: darkMode ? '#bb86fc' : 'purple' 
+              }}
             >
               {' '}
               codesandbox
@@ -64,7 +70,10 @@ function RenderTable(props) {
         return (
           <i className="fa fa-codepen" aria-hidden="true">
             <span
-              style={{ fontSize: 'x-small', color: 'black' }}
+              style={{ 
+                fontSize: 'x-small', 
+                color: darkMode ? 'white' : 'black' 
+              }}
             >
               {' '}
               codepen
@@ -75,7 +84,10 @@ function RenderTable(props) {
         return (
           <i className="fa fa-github" aria-hidden="true">
             <span
-              style={{ fontSize: 'x-small', color: 'black' }}
+              style={{ 
+                fontSize: 'x-small', 
+                color: darkMode ? 'white' : 'black' 
+              }}
             >
               {' '}
               github
