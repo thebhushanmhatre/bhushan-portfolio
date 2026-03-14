@@ -6,18 +6,18 @@ export const DATA = {
   certificates,
   contacts: [
     {
-      contId: 2,
-      href: 'https://github.com/thebhushanmhatre',
-      name: 'github',
-      icon: 'fa fa-github fa-lg',
-      color: 'black',
-    },
-    {
       contId: 1,
       href: 'https://www.linkedin.com/in/bhushanmhatre',
       name: 'linkedin',
       icon: 'fa fa-linkedin fa-lg',
       color: '#2977c9',
+    },
+    {
+      contId: 2,
+      href: 'https://github.com/thebhushanmhatre',
+      name: 'github',
+      icon: 'fa fa-github fa-lg',
+      color: 'black',
     },
     {
       contId: 3,
