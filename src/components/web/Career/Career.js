@@ -2,7 +2,7 @@ import React from 'react';
 import Education from './Education';
 import WorkExperience from './WorkExperience';
 
-function Experience(props) {
+function Career(props) {
   return (
     <>
       <WorkExperience />
@@ -11,4 +11,4 @@ function Experience(props) {
   );
 }
 
-export default Experience;
+export default Career;

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Col, Container, Row } from 'reactstrap';
-import { DataContext } from '../../App';
+import { DataContext } from '../../../App';
 
 function RenderInstitute({ item }) {
   return (

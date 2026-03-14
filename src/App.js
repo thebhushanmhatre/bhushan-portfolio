@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ErrorPage from './components/web/Error';
 // web pages
 import Home from './components/web/Home';
-import Experience from './components/web/Experience.js';
+import Career from './components/web/Career/Career';
 import Certificate from './components/web/Certificate';
 import RenderCertificate from './components/web/RenderCertificate';
 import Project from './components/web/Project';
@@ -47,7 +47,7 @@ const CertificateWithId = ({ match }) => {
     <RenderCertificate
       certificate={
         props.certificates.filter(
-          (item) => item.certId === parseInt(match.params.certId, 10)
+          (item) => item.certId === parseInt(match.params.certId, 10),
         )[0]
       }
     />
@@ -68,7 +68,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/experience',
-        element: <Experience />,
+        element: <Career />,
       },
       { path: 'certificates', element: <Certificate /> },
       { path: 'certificate/:certId', element: <CertificateWithId /> },
