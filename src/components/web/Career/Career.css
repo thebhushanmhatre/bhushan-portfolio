@@ -1,0 +1,213 @@
+.timeline-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.timeline-nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 40px 10px 50px 10px;
+  margin-bottom: 2rem;
+}
+
+.timeline-node {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  transition: transform 0.2s;
+  min-width: 66px; 
+}
+
+.timeline-node:hover {
+  transform: scale(1.05);
+}
+
+.timeline-circle {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background-color: white;
+  border: 3px solid #dee2e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.timeline-circle span {
+  font-weight: 700;
+  font-size: 0.9em;
+  color: #495057;
+}
+
+body.dark .timeline-circle {
+  background-color: #222;
+  border-color: #495057;
+}
+
+body.dark .timeline-circle span {
+  color: #adb5bd;
+}
+
+.timeline-label {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  text-align: center;
+  white-space: normal;
+  font-weight: 500;
+  font-size: 0.85em;
+  color: #6c757d;
+  transition: color 0.3s, font-weight 0.3s;
+}
+
+body.dark .timeline-label {
+  color: #adb5bd;
+}
+
+.timeline-line {
+  flex: 1;
+  height: 4px;
+  background: #dee2e6;
+  position: relative;
+  cursor: pointer;
+  margin: 0 -2px; 
+  transition: background 0.3s, height 0.3s;
+  z-index: 1;
+}
+
+body.dark .timeline-line {
+  background: #495057;
+}
+
+.timeline-line-text {
+  position: absolute;
+  bottom: calc(100% + 25px);
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #6c757d;
+  white-space: nowrap;
+  transition: color 0.3s;
+}
+
+body.dark .timeline-line-text {
+  color: #adb5bd;
+}
+
+/* ACTIVE STATES */
+.timeline-node.active .timeline-circle {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 5px rgba(13, 110, 253, 0.15);
+}
+
+.timeline-node.active .timeline-circle span {
+  color: #0d6efd;
+}
+
+body.dark .timeline-node.active .timeline-circle {
+  border-color: #6ea8fe;
+  box-shadow: 0 0 0 5px rgba(110, 168, 254, 0.15);
+}
+
+body.dark .timeline-node.active .timeline-circle span {
+  color: #6ea8fe;
+}
+
+.timeline-node.active .timeline-label {
+  color: #0d6efd;
+  font-weight: 700;
+}
+
+body.dark .timeline-node.active .timeline-label {
+  color: #6ea8fe;
+}
+
+.timeline-line.active {
+  background: #0d6efd;
+  height: 6px;
+}
+
+body.dark .timeline-line.active {
+  background: #6ea8fe;
+}
+
+.timeline-line.active .timeline-line-text {
+  color: #0d6efd;
+  font-weight: 700;
+}
+
+body.dark .timeline-line.active .timeline-line-text {
+  color: #6ea8fe;
+}
+
+/* Content Box Area */
+.timeline-content-box {
+  padding: 1rem 1rem;
+  background-color: transparent;
+  min-height: 300px;
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .timeline-nav-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .timeline-node {
+    flex-direction: row; 
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 0; 
+  }
+  .timeline-label {
+    position: static; 
+    margin-left: 15px; 
+    white-space: normal;
+    width: auto;
+    text-align: left;
+    transform: none;
+  }
+  .timeline-line {
+    width: 4px;
+    height: 50px; 
+    flex: none; 
+    margin: -2px 0 -2px 31px; 
+  }
+  .timeline-line.active {
+    width: 6px;
+    height: 50px;
+    margin-left: 30px; 
+  }
+  .timeline-line-text {
+    position: absolute;
+    bottom: auto;
+    left: 25px; 
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

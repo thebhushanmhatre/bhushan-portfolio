@@ -2,9 +2,9 @@ import React, { useContext } from 'react';
 import { Col, Container, Row } from 'reactstrap';
 import { DataContext } from '../../../App';
 
-function RenderInstitute({ item }) {
+export function RenderInstitute({ item }) {
   return (
-    <Col md="4" className="text-center">
+    <Col md="12" className="text-center">
       <a href={item.href} target="_blank" rel="noopener noreferrer">
         <img
           className="eduimage"

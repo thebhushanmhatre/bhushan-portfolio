@@ -25,9 +25,7 @@ function WorkExperience(props) {
           <MsciAnalyst />
         </div>
 
-        <div className="offset-md-1 mb-2 mt-5 pt-2 myname">
-          <p className="fa fa-institution fa-lg"> Education</p>
-        </div>
+
       </Container>
     </>
   );
