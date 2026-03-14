@@ -3,52 +3,19 @@ import { Row, Container } from 'reactstrap';
 import { RenderInstitute } from './Education';
 import { MsciAnalyst } from './MsciAnalyst';
 import { MsciAssociate } from './MsciAssociate';
+import { CompanyHeader } from './Helpers';
 import { DataContext } from '../../../App';
 import './Career.css';
 
-const timelineData = [
-  { id: 'born', year: '1997', label: 'Born', lineText: null },
-  { id: 'school', year: '2013', label: 'Completed School', lineText: null },
-  { id: 'patkar', year: '2015', label: 'Patkar College', lineText: null },
-  {
-    id: 'vjti',
-    year: '2019',
-    label: 'Graduated from VJTI🎓',
-    lineText: null,
-  },
-  {
-    id: 'analyst',
-    year: '2022',
-    label: 'Promotion✨',
-    lineText: 'Analyst @ MSCI',
-  },
-  {
-    id: 'associate',
-    year: '2026',
-    label: 'Joined JP Morgan Chase🎉',
-    lineText: 'Associate @ MSCI',
-  },
-  { id: 'present', year: 'Present', label: '', lineText: null },
-];
+
 
 function Career() {
   const [activeTab, setActiveTab] = useState('associate');
-  const educationData = useContext(DataContext).education || [];
+  const careerData = useContext(DataContext).career || [];
 
-  const schoolData = educationData.find(
-    (item) => item.shortname === 'S.F.H.S.',
-  );
-  const patkarData = educationData.find(
-    (item) => item.shortname === 'Patkar College',
-  );
-  const vjtiData = educationData.find((item) => item.shortname === 'V.J.T.I.');
-
-  const companyHeader = (
-    <div className="text-center mb-4">
-      <h1>MSCI Inc.</h1>
-      <h4>ESG Sustainability & Climate Department</h4>
-    </div>
-  );
+  const schoolData = careerData.find((item) => item.id === 'school');
+  const patkarData = careerData.find((item) => item.id === 'patkar');
+  const vjtiData = careerData.find((item) => item.id === 'vjti');
 
   const renderContent = () => {
     switch (activeTab) {
@@ -83,14 +50,20 @@ function Career() {
       case 'analyst':
         return (
           <div className="fade-in">
-            {companyHeader}
+            <CompanyHeader
+              company="MSCI Inc."
+              department="ESG Sustainability & Climate Department"
+            />
             <MsciAnalyst />
           </div>
         );
       case 'associate':
         return (
           <div className="fade-in">
-            {companyHeader}
+            <CompanyHeader
+              company="MSCI Inc."
+              department="ESG Sustainability & Climate Department"
+            />
             <MsciAssociate />
           </div>
         );
@@ -112,7 +85,7 @@ function Career() {
     <Container className="pt-5">
       <div className="timeline-container mt-3 mb-5">
         <div className="timeline-nav-wrapper">
-          {timelineData.map((step, i) => (
+          {careerData.map((step, i) => (
             <React.Fragment key={step.id}>
               {/* Render connector line BEFORE node for i > 0 */}
               {i > 0 && (

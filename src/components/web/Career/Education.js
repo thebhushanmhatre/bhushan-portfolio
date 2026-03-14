@@ -9,11 +9,11 @@ export function RenderInstitute({ item }) {
         <img
           className="eduimage"
           src={item.src}
-          alt={item.shortname}
+          alt={item.name}
           width="150px"
         ></img>
       </a>
-      <h3>{item.shortname}</h3>
+      <h3>{item.name}</h3>
       <h5>({item.year})</h5>
       <p>{item.degree}</p>
     </Col>
@@ -21,7 +21,8 @@ export function RenderInstitute({ item }) {
 }
 
 function Education() {
-  const educationData = useContext(DataContext).education;
+  const careerData = useContext(DataContext).career || [];
+  const educationData = careerData.filter(item => item.type === 'education');
   const institutes = educationData.map((item) => (
     <RenderInstitute key={item.year} item={item} />
   ));

@@ -16,10 +16,7 @@ import MarkdownPreviewer from './components/projects/MarkdownPreviewer';
 import ToDoList from './components/projects/ToDoList';
 import Recipes from './components/projects/Recipes';
 import CardGame from './components/projects/CardGame.js';
-// mobile pages
-import MobileHome from './components/mobile/MobileHome';
-// utitlities
-import isMobile from './utilities/isMobile.js';
+
 import { ThemeProvider } from './contexts/ThemeContext';
 
 import { QUOTES } from './shared/quotes.js';
@@ -35,7 +32,7 @@ export const initialState = {
   certificates: DATA.certificates,
   contacts: DATA.contacts,
   projects: DATA.projects,
-  education: DATA.education,
+  career: DATA.career,
   quotes: QUOTES,
   filters: filters,
 };
@@ -54,7 +51,7 @@ const CertificateWithId = ({ match }) => {
   );
 };
 
-const DefaultPage = () => (isMobile() ? <MobileHome /> : <Home />);
+const DefaultPage = () => <Home />;
 
 const router = createBrowserRouter([
   {

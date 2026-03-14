@@ -1,29 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Container } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import Contact from './Contact';
 
 function Home() {
-  let myName = (
-    <div className="myname">
-      Hi, I am a Software Engineer with over 6 years of experience
-    </div>
-  );
-
-  let pic_style;
-  if (window.innerWidth >= 1445) {
-    pic_style = {};
-  } else if (window.innerWidth >= 500) {
-    pic_style = {
-      width: (window.innerWidth * 0.4).toString(),
-      height: (window.innerWidth * 0.4).toString(),
-    };
-  } else {
-    pic_style = {
-      width: (window.innerWidth - 100).toString(),
-      height: (window.innerWidth - 100).toString(),
-    };
-  }
-
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
@@ -40,28 +19,75 @@ function Home() {
 
   return (
     <div className="d-flex flex-column flex-grow-1">
-      <div className="flex-grow-1 d-flex flex-column justify-content-center">
-        <Container className="text-center py-3" id="picturebox">
-          <img
-            id="picture"
-            className="mb-4"
-            src={
-              isDark
-                ? '/assets/images/onclouds.jpg'
-                : '/assets/images/professional.jpg'
-            }
-            alt="Bhushan Mhatre"
-            width={300}
-            height={300}
-          />
-        </Container>
-        <Container className="text-center py-3 mb-5">
-          <h1>{myName}</h1>
-        </Container>
-        <Contact />
-      </div>
+      <Container className="flex-grow-1 d-flex flex-column justify-content-center py-5">
+        <Row className="align-items-center flex-column flex-md-row">
+          <Col
+            md="5"
+            className="text-center mb-5 mb-md-0 d-flex justify-content-center pe-md-3"
+          >
+            <img
+              src={
+                isDark
+                  ? '/assets/images/onclouds.jpg'
+                  : '/assets/images/professional.jpg'
+              }
+              alt="Bhushan Mhatre"
+              className="img-fluid home-profile-img"
+              style={{
+                borderRadius: '50%',
+                boxShadow: isDark
+                  ? 'none'
+                  : '0 20px 40px rgba(0, 0, 0, 0.15)',
+                maxWidth: '100%',
+                objectFit: 'cover',
+              }}
+            />
+          </Col>
 
-      <p className="text-center py-4 mb-0 mt-auto">
+          <Col md="7" className="text-center text-md-start mb-4 mb-md-0">
+            <h1 className="fw-bold mb-3" style={{ fontSize: '3rem' }}>
+              Namaskar🙏🏼, I am Bhushan
+            </h1>
+
+            <h4
+              className="mb-4"
+              style={{ fontStyle: 'italic', fontWeight: '500' }}
+            >
+              I like Engineering, Financial freedom & wandering through nature's
+              code.
+            </h4>
+
+            <div
+              className="mb-4 text-muted"
+              style={{ fontSize: '1.1rem', lineHeight: '1.8' }}
+            >
+              <p>
+                I am a software engineer with over 6 years of experience
+                passionate about developing high-performance web applications
+                and working on scalable systems. I have a strong background in
+                developing robust backend architectures and creating intuitive,
+                dynamic frontend experiences.
+              </p>
+              <p>
+                Currently, I am expanding my horizons in system architecture and
+                independent research. My areas of interest include modern web
+                frameworks, performant robust backend architectures, and
+                exploring alternative data visualizations in finance.
+              </p>
+              <p>
+                As I continue to dive deep into engineering details, I plan to
+                share my learnings via technical blogs soon!
+              </p>
+            </div>
+
+            <div className="mt-4">
+              <Contact />
+            </div>
+          </Col>
+        </Row>
+      </Container>
+
+      {/* <p className="text-center py-4 mb-0 mt-auto">
         Made in{' '}
         <img
           src="assets/images/indian_flag.svg"
@@ -75,7 +101,7 @@ function Home() {
           aria-hidden="true"
           style={{ color: 'red' }}
         ></i>
-      </p>
+      </p> */}
     </div>
   );
 }

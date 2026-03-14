@@ -15,7 +15,12 @@ function Navigation(props) {
   const { darkMode, toggleTheme } = useTheme();
 
   return (
-    <Navbar id="navbar" className={`container mb-3 ${darkMode ? 'dark' : ''}`} expand="lg" dark={darkMode}>
+    <Navbar
+      id="navbar"
+      className={`container mb-3 ${darkMode ? 'dark' : ''}`}
+      expand="lg"
+      dark={darkMode}
+    >
       <NavbarBrand className="mr-auto" href="/">
         <img
           id="logo"
@@ -29,24 +34,26 @@ function Navigation(props) {
           <strong> Bhushan Mhatre </strong>
         </span>
       </NavbarBrand>
-      <NavItem
-        onClick={() => toggleTheme()}
-        style={{ listStyleType: 'none', cursor: 'pointer' }}
-      >
-        {darkMode === false ? (
-          <span
-            className="fas fa-sun-o fa-lg"
-            style={{ color: 'orange' }}
-            id="darkmmodeicon"
-          />
-        ) : (
-          <span
-            className="fas fa-moon-o fa-lg"
-            style={{ color: '#007bff' }}
-            id="darkmmodeicon"
-          />
-        )}
-      </NavItem>
+      <Nav>
+        <NavItem
+          onClick={() => toggleTheme()}
+          style={{ listStyleType: 'none', cursor: 'pointer' }}
+        >
+          {darkMode === false ? (
+            <span
+              className="fas fa-sun-o fa-lg"
+              style={{ color: '#B45309' }}
+              id="darkmmodeicon"
+            />
+          ) : (
+            <span
+              className="fas fa-moon-o fa-lg"
+              style={{ color: '#007bff' }}
+              id="darkmmodeicon"
+            />
+          )}
+        </NavItem>
+      </Nav>
       <NavbarToggler onClick={() => toggleNav(!isNavOpen)}>
         {isNavOpen ? (
           <span className="fa fa-angle-double-up fa-lg" />

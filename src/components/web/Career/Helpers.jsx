@@ -39,3 +39,10 @@ export const CheckIcon = () => (
     ✔
   </span>
 );
+
+export const CompanyHeader = ({ company, department }) => (
+  <div className="text-center mb-4">
+    <h1>{company}</h1>
+    <h4>{department}</h4>
+  </div>
+);
