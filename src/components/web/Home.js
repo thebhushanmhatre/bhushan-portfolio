@@ -1,18 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Container } from 'reactstrap';
 import Contact from './Contact';
-import TypingEffect from '../common/TypingEffect';
 
 function Home() {
-  const typingTexts = [
-    'Namaskar 🙏',
-    'My name is Bhushan Mhatre 🖐️',
-    'I am a Software Engineer 💻',
-  ];
   let myName = (
-    <span className="myname">
-      <TypingEffect defaultValue="" texts={typingTexts} />
-    </span>
+    <div className="myname">
+      Hi, I am a Software Engineer with over 6 years of experience
+    </div>
   );
 
   let pic_style;
