@@ -10,7 +10,8 @@ export const DATA = {
       href: 'https://www.linkedin.com/in/bhushanmhatre',
       name: 'linkedin',
       icon: 'fa fa-linkedin fa-lg',
-      color: '#2977c9',
+      color: '#0072b1',
+      darkColor: '#70b5f9',
     },
     {
       contId: 2,
@@ -18,6 +19,7 @@ export const DATA = {
       name: 'github',
       icon: 'fa fa-github fa-lg',
       color: 'black',
+      darkColor: 'white',
     },
     {
       contId: 3,
@@ -25,6 +27,7 @@ export const DATA = {
       name: 'freeCodeCamp',
       icon: 'fa fa-free-code-camp fa-lg',
       color: 'green',
+      darkColor: '#39e09b',
     },
     {
       contId: 7,
@@ -32,6 +35,7 @@ export const DATA = {
       name: 'leetcode',
       icon: 'fas fa-code fa-lg',
       color: '#B45309',
+      darkColor: '#ffa116',
     },
     {
       contId: 8,
@@ -39,6 +43,7 @@ export const DATA = {
       name: 'codeSandbox',
       icon: 'fas fa-code fa-lg',
       color: 'purple',
+      darkColor: '#bb86fc',
     },
     {
       contId: 5,
@@ -46,6 +51,7 @@ export const DATA = {
       name: 'hackerrank',
       icon: 'fab fa-hackerrank fa-lg',
       color: 'green',
+      darkColor: '#2ec866',
     },
     {
       contId: 6,
@@ -53,6 +59,7 @@ export const DATA = {
       name: 'kaggle',
       icon: 'fab fa-kaggle fa-lg',
       color: '#2977c9',
+      darkColor: '#20beff',
     },
     {
       contId: 4,
@@ -60,6 +67,7 @@ export const DATA = {
       name: 'codepen',
       icon: 'fa fa-codepen fa-lg',
       color: 'black',
+      darkColor: 'white',
     },
   ],
   career: [

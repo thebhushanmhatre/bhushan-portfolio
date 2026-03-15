@@ -35,27 +35,35 @@ function Home() {
               className="img-fluid home-profile-img"
               style={{
                 borderRadius: '50%',
-                boxShadow: isDark
-                  ? 'none'
-                  : '0 20px 40px rgba(0, 0, 0, 0.15)',
+                boxShadow: isDark ? 'none' : '0 20px 40px rgba(0, 0, 0, 0.15)',
                 maxWidth: '100%',
                 objectFit: 'cover',
               }}
             />
           </Col>
 
-          <Col md="7" className="text-center text-md-start mb-4 mb-md-0">
+          <Col
+            md="7"
+            className="text-center text-md-start mb-4 mb-md-0"
+            role="main"
+          >
             <h1 className="fw-bold mb-3" style={{ fontSize: '3rem' }}>
-              Namaskar🙏🏼, I am Bhushan
+              <span
+                style={{
+                  color: isDark ? '#FF9933' : 'inherit',
+                }}
+              >
+                {isDark ? 'नमस्कार' : 'Hello'}
+              </span>
+              , I am Bhushan🙏🏼
             </h1>
 
-            <h4
-              className="mb-4"
+            <h2
+              className="h4 mb-4"
               style={{ fontStyle: 'italic', fontWeight: '500' }}
             >
-              I like Engineering, Financial freedom & wandering through nature's
-              code.
-            </h4>
+              I like Engineering, Finance & wandering through nature's code.
+            </h2>
 
             <div
               className="mb-4 text-muted"
@@ -63,20 +71,33 @@ function Home() {
             >
               <p>
                 I am a software engineer with over 6 years of experience
-                passionate about developing high-performance web applications
-                and working on scalable systems. I have a strong background in
-                developing robust backend architectures and creating intuitive,
-                dynamic frontend experiences.
+                building and improving web applications. Throughout my journey,
+                I have had the opportunity to learn from and collaborate with
+                incredibly talented people—first as a student and later as a
+                professional.
               </p>
               <p>
-                Currently, I am expanding my horizons in system architecture and
-                independent research. My areas of interest include modern web
-                frameworks, performant robust backend architectures, and
-                exploring alternative data visualizations in finance.
+                My experience spans a wide range of projects and stages of the
+                software lifecycle. I have worked on large monolithic
+                applications, contributed to modernizing legacy frontends by
+                rewriting them in React, and built applications from scratch
+                using React.
               </p>
               <p>
-                As I continue to dive deep into engineering details, I plan to
-                share my learnings via technical blogs soon!
+                I have also had the opportunity to build applications from
+                scratch using React. This involved working across the entire
+                development lifecycle—gathering requirements, collaborating with
+                UX on design decisions, defining API contracts with backend
+                teams, and then implementing, testing, and deploying the final
+                product. Being part of the process from idea to production has
+                been one of the most rewarding aspects of my work.
+              </p>
+              <p>
+                Currently, I am expanding my horizons in system architecture. My
+                areas of interest include modern web frameworks, performant and
+                secure system architectures. As I continue to dive deep into
+                engineering details, I plan to share my learnings via technical
+                blogs soon!
               </p>
             </div>
 

@@ -9,12 +9,7 @@ export default function Contact() {
   return (
     <div className="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start">
       {contactsData.map((item) => {
-        const color =
-          darkMode && (item.color === 'black' || item.color === 'purple')
-            ? item.color === 'black'
-              ? 'white'
-              : '#bb86fc'
-            : item.color;
+        const color = darkMode && item.darkColor ? item.darkColor : item.color;
 
         return (
           <a

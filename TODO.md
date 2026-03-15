@@ -4,6 +4,9 @@
 
 1. For local machine only, Create a admin page, to edit metdata that goes into the Certificates and Projects Tab, Update metadata and save it in the file
 
+1. Remove all the childish projects like markdown preview, etc, You are a Senior Engineer now
+   Fun projects can go in codepen or codesandbox
+
 Check performance on https://pagespeed.web.dev/analysis/https-thebhushanmhatre-netlify-app/xwg9ldaeai?form_factor=desktop
 
 Long Term Goal - If possible, Migrate to Vite + SSG
