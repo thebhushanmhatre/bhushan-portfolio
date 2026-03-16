@@ -9,6 +9,7 @@ import Career from './components/web/Career/Career';
 import Certificate from './components/web/Certificate';
 import RenderCertificate from './components/web/RenderCertificate';
 import Project from './components/web/Project';
+import { Blogs } from './components/blogs/Blogs.js';
 // projects
 import RandomQuoteMachine from './components/projects/RandomQuoteMachine';
 import PomodoroClock from './components/projects/PomodoroClock';
@@ -68,6 +69,7 @@ const router = createBrowserRouter([
         element: <Career />,
       },
       { path: 'certificates', element: <Certificate /> },
+      { path: 'blogs', element: <Blogs /> },
       { path: 'certificate/:certId', element: <CertificateWithId /> },
       { path: 'projects', element: <Project /> },
       { path: 'quotes', element: <RandomQuoteMachine /> },

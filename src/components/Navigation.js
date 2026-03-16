@@ -78,6 +78,11 @@ function Navigation(props) {
               <span className="fa fa-trophy fa-lg"> Certificates</span>
             </NavLink>
           </NavItem>
+          <NavItem>
+            <NavLink href="/blogs">
+              <span className="fa fa-lightbulb fa-lg"> Content </span>
+            </NavLink>
+          </NavItem>
         </Nav>
       </Collapse>
     </Navbar>

@@ -122,7 +122,7 @@ function Project() {
 
   return (
     <Container className="pb-5">
-      <div className="d-flex align-items-center mb-4">
+      <div className="d-flex align-items-center mb-4 flex-wrap">
         <h3 className="mb-0 me-3">My Projects</h3>
         <FilterDropdown
           title="Filter by Tech"
