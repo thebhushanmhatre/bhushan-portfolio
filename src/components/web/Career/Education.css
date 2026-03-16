@@ -1,0 +1,113 @@
+
+.edu-img-wrapper {
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  line-height: 0;
+}
+
+body.dark .edu-img-wrapper {
+  background: #333;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.edu-img-wrapper:hover {
+  transform: scale(1.05) rotate(2deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.edu-image {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+}
+
+.edu-title {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.edu-link {
+  text-decoration: none;
+  background: linear-gradient(45deg, #2c3e50, #000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.edu-link:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+body.dark .edu-link {
+  background: linear-gradient(45deg, #fff, #bdc3c7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.edu-year {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+
+.edu-degree {
+  font-size: 1rem;
+  color: #495057;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+body.dark .edu-degree {
+  color: #adb5bd;
+}
+
+.edu-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+body.dark .edu-description {
+  color: #ced4da;
+}
+
+@media (max-width: 768px) {
+  .edu-card-wrapper {
+    text-align: center !important;
+  }
+  .edu-img-container {
+      margin-bottom: 1.5rem;
+  }
+}
+
+/* Image Modal Styles */
+.image-modal .modal-content {
+  border-radius: 20px;
+  border: none;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+body.dark .image-modal .modal-content {
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
+
+.image-modal .modal-header {
+  padding: 1.5rem 1.5rem 0.5rem;
+}
+
+body.dark .image-modal .btn-close {
+  filter: invert(1) grayscale(100) brightness(200);
+}
+

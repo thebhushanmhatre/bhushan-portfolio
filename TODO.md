@@ -1,15 +1,14 @@
 # List of planned Improvements
 
-1. Improve on Responsiveness - I expect more people to see this portfolio on their Mobile
-
-1. Keep Improving Dark Mode - Improve views on Project/Certificates page
-
-1. Convert Work Experience Page into Timeline
-
 1. Download Resume Button
 
-1. Option to Download the list of Certificates/Projects (Just for Fun)
-
-1. Add some Cool things if you improve Animation/Styling in Future
-
 1. For local machine only, Create a admin page, to edit metdata that goes into the Certificates and Projects Tab, Update metadata and save it in the file
+
+1. Remove all the childish projects like markdown preview, etc, You are a Senior Engineer now
+   Fun projects can go in codepen or codesandbox
+
+Check performance on https://pagespeed.web.dev/analysis/https-thebhushanmhatre-netlify-app/xwg9ldaeai?form_factor=desktop
+
+Long Term Goal - If possible, Migrate to Vite + SSG
+
+Add multi language support - Atleast Marathi and Japanese for fun.
