@@ -86,8 +86,10 @@ export const DATA = {
       type: 'education',
       href: 'https://en.wikipedia.org/wiki/Saint_Francis_D%27Assisi_High_School',
       name: "St. Francis D'Assisi High School",
-      src: 'assets/images/sfhs_logo.jpg',
+      src: 'https://upload.wikimedia.org/wikipedia/commons/c/c1/Sfhs1.jpg',
       degree: 'School',
+      description:
+        "Completed my schooling at St. Francis D'Assisi High School (SFHS), passing SSC exams in 2013 with 90% (145/150 in Mathematics, 97/100 in Science).",
     },
     {
       id: 'patkar',
@@ -97,8 +99,10 @@ export const DATA = {
       type: 'education',
       href: 'https://www.patkarvardecollege.edu.in/',
       name: 'Patkar College of Science',
-      src: 'assets/images/patkar_logo.jpg',
+      src: 'https://content.jdmagicbox.com/v2/comp/mumbai/m5/022pxx22.xx22.210903125653.m6m5/catalogue/chikitsak-samuha-s-patkar-varde-college-goregaon-west-mumbai-colleges-0vvrqdhisj.jpg',
       degree: 'Junior College (Science)',
+      description:
+        'Completed junior college from Patkar College of Science with specialization in Electronics and Psychology elective.',
     },
     {
       id: 'vjti',
@@ -108,8 +112,13 @@ export const DATA = {
       type: 'education',
       href: 'https://vjti.ac.in/',
       name: 'Veermata Jijabai Techological Institute',
-      src: 'assets/images/vjti_logo.jpg',
+      src: 'https://upload.wikimedia.org/wikipedia/commons/b/b4/VJTI_Quadrangle.jpg',
       degree: 'B.Tech.',
+      description: [
+        `I graduated with a Bachelor of Technology (B.Tech.) in Electronics and Telecommunication Engineering from the prestigious Veermata Jijabai Technological Institute (VJTI), one of India's premier engineering institutes. My academic journey provided me with a strong foundation in both theoretical concepts and practical engineering applications, particularly in communication systems, signal processing, and embedded technologies.`,
+        `During my undergraduate studies, I explored a wide range of subjects, including Digital Signal Processing, Digital Image Processing, Data Compression, Computer Communication Networks, Antenna Design, VLSI Design, Pattern Recognition, Microprocessor and Microcontroller Systems, and Embedded Systems. I also built strong programming and systems knowledge through courses such as Computer Programming (C/C++), Java, and Data Structures & Algorithms, which helped pave my way toward a career in software engineering.`,
+        `For my Final Year Project, I worked on "Wireless Transmission using Low Density Parity Check (LDPC) Codes." The project focused on implementing data encryption, error correction, and wireless transmission between two Raspberry Pi devices, utilizing LDPC codes and a Python-based Tkinter GUI.`,
+      ],
     },
     {
       id: 'analyst',
@@ -121,7 +130,8 @@ export const DATA = {
     {
       id: 'associate',
       year: '2026',
-      label: 'Joined JP Morgan Chase🎉',
+      // label: 'Joined JP Morgan Chase🎉',
+      label: 'Left MSCI',
       lineText: 'Associate @ MSCI',
       type: 'work',
     },
@@ -129,7 +139,7 @@ export const DATA = {
       id: 'present',
       year: 'Present',
       label: '',
-      lineText: null,
+      lineText: 'Upskilling...',
       type: 'present',
     },
   ],

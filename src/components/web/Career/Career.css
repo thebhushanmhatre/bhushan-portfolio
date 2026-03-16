@@ -211,3 +211,49 @@ body.dark .timeline-line.active .timeline-line-text {
     transform: translateY(-50%);
   }
 }
+
+/* Career Card Styles */
+.career-card {
+  padding: 2rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+  transition: all 0.3s ease;
+  margin: 1rem 0;
+}
+
+body.dark .career-card {
+  background: rgba(45, 45, 45, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+.career-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.12);
+}
+
+@media (max-width: 768px) {
+  .career-card {
+    padding: 1.5rem;
+    margin: 0.5rem 0;
+  }
+}
+
+.career-year {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Optional: if we want a common highlight color */
+.text-highlight {
+  color: #0d6efd;
+}
+
+body.dark .text-highlight {
+  color: #6ea8fe;
+}

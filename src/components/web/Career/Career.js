@@ -3,11 +3,9 @@ import { Row, Container } from 'reactstrap';
 import { RenderInstitute } from './Education';
 import { MsciAnalyst } from './MsciAnalyst';
 import { MsciAssociate } from './MsciAssociate';
-import { CompanyHeader } from './Helpers';
+import { CompanyHeader, CareerCard } from './Helpers';
 import { DataContext } from '../../../App';
 import './Career.css';
-
-
 
 function Career() {
   const [activeTab, setActiveTab] = useState('associate');
@@ -31,41 +29,43 @@ function Career() {
         );
       case 'school':
         return (
-          <Row className="pt-3 align-items-center justify-content-center">
+          <div className="pt-3">
             {schoolData && <RenderInstitute item={schoolData} />}
-          </Row>
+          </div>
         );
       case 'patkar':
         return (
-          <Row className="pt-3 align-items-center justify-content-center">
-            {patkarData && <RenderInstitute item={patkarData} />}
-          </Row>
+          <div className="pt-3">
+            {patkarData && (
+              <RenderInstitute item={patkarData} imageRight={true} />
+            )}
+          </div>
         );
       case 'vjti':
         return (
-          <Row className="pt-3 align-items-center justify-content-center">
+          <div className="pt-3">
             {vjtiData && <RenderInstitute item={vjtiData} />}
-          </Row>
+          </div>
         );
       case 'analyst':
         return (
-          <div className="fade-in">
+          <CareerCard>
             <CompanyHeader
               company="MSCI Inc."
               department="ESG Sustainability & Climate Department"
             />
             <MsciAnalyst />
-          </div>
+          </CareerCard>
         );
       case 'associate':
         return (
-          <div className="fade-in">
+          <CareerCard>
             <CompanyHeader
               company="MSCI Inc."
               department="ESG Sustainability & Climate Department"
             />
             <MsciAssociate />
-          </div>
+          </CareerCard>
         );
       case 'present':
       default:
@@ -75,7 +75,9 @@ function Career() {
             style={{ minHeight: '200px' }}
           >
             <h2>🚀 Coming Soon...</h2>
-            <p className="text-muted mt-3">To be Updated</p>
+            <p className="text-muted mt-3">
+              Something exciting is happening here! 🌟
+            </p>
           </div>
         );
     }

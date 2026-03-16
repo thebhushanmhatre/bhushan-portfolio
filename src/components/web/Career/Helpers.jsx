@@ -1,3 +1,6 @@
+import React, { useState } from 'react';
+import { Modal, ModalBody, ModalHeader } from 'reactstrap';
+
 // Trophy and Medal Icon Components
 
 export const TrophyIcon = () => (
@@ -42,7 +45,46 @@ export const CheckIcon = () => (
 
 export const CompanyHeader = ({ company, department }) => (
   <div className="text-center mb-4">
-    <h1>{company}</h1>
-    <h4>{department}</h4>
+    <h1 className="edu-title">{company}</h1>
+    <h4 className="text-muted">{department}</h4>
   </div>
 );
+
+export const CareerCard = ({ children }) => (
+  <div className="career-card fade-in">{children}</div>
+);
+
+export const ImageModal = ({ isOpen, toggle, src, alt }) => (
+  <Modal isOpen={isOpen} toggle={toggle} size="lg" centered fade className="image-modal">
+    <ModalHeader toggle={toggle} className="border-0 pb-0">{alt}</ModalHeader>
+    <ModalBody className="p-0 text-center bg-transparent">
+      <div className="p-3">
+        <img
+          src={src}
+          alt={alt}
+          className="img-fluid rounded shadow-lg"
+          style={{ maxHeight: '80vh', objectFit: 'contain' }}
+        />
+      </div>
+    </ModalBody>
+  </Modal>
+);
+
+export const ClickableImage = ({ src, alt, wrapperClass = "edu-img-wrapper" }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
+
+  return (
+    <>
+      <div 
+        className={wrapperClass} 
+        onClick={toggle} 
+        style={{ cursor: 'zoom-in' }}
+        title="Click to enlarge"
+      >
+        <img className="edu-image" src={src} alt={alt} />
+      </div>
+      <ImageModal isOpen={isOpen} toggle={toggle} src={src} alt={alt} />
+    </>
+  );
+};

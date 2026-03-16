@@ -62,7 +62,7 @@ function Home() {
               className="h4 mb-4"
               style={{ fontStyle: 'italic', fontWeight: '500' }}
             >
-              I like Engineering, Finance & wandering through nature's code.
+              I like engineering, finance and wandering through nature's code.
             </h2>
 
             <div
