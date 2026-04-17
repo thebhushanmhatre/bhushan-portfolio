@@ -1,0 +1,99 @@
+import React, { useState } from 'react';
+import { Row, Col, Container, Input } from 'reactstrap';
+import { marked } from 'marked';
+import ProjectBreadCrumb from '../../common/ProjectBreadcrumb';
+
+const defaultText = `# Welcome to my Markdown Previewer!
+
+## This is a sub-heading...
+### And here's some other cool stuff:
+
+Heres some code, \`<div></div>\`, between 2 backticks.
+
+\`\`\`
+// this is multi-line code:
+
+function anotherExample(firstLine, lastLine) {
+  if (firstLine == '\`\`\`' && lastLine == '\`\`\`') {
+    return multiLineCode;
+  }
+}
+\`\`\`
+
+You can also make text **bold**... whoa!
+Or _italic_.
+Or... wait for it... **_both!_**
+And feel free to go crazy ~~crossing stuff out~~.
+
+There's also [links](https://www.freecodecamp.org), and
+> Block Quotes!
+
+And if you want to get really crazy, even tables:
+
+Wild Header | Crazy Header | Another Header?
+------------ | ------------- | -------------
+Your content can | be here, and it | can be here....
+And here. | Okay. | I think we get it.
+
+- And of course there are lists.
+  - Some are bulleted.
+     - With different indentation levels.
+        - That look like this.
+
+
+1. And there are numbered lists too.
+1. Use just 1s if you want!
+1. And last but not least, let's not forget embedded images:
+
+`;
+
+const MarkdownPreviewer = () => {
+  const [markdown, setMarkdown] = useState(defaultText);
+
+  const handleChange = (e) => {
+    setMarkdown(e.target.value);
+  };
+
+  return (
+    <Container className="mt-2">
+      <ProjectBreadCrumb projectName={'Markdown Previewer'} />
+
+      <Row style={{ backgroundColor: 'white' }}>
+        <Col sm="12" md="6">
+          <h4 className="text-center">
+            <i>
+              <u> Editor </u>
+            </i>
+          </h4>
+          <Input
+            type="textarea"
+            id="editor"
+            value={markdown}
+            onChange={handleChange}
+            style={{ minHeight: '70vh' }}
+          >
+            {defaultText}
+          </Input>
+        </Col>
+
+        <Col sm="12" md="6">
+          <h4 className="text-center">
+            <i>
+              <u> Previewer </u>
+            </i>
+          </h4>
+          <div
+            style={{ minHeight: '70vh' }}
+            className="border p-2"
+            id="preview"
+            dangerouslySetInnerHTML={{
+              __html: marked.parse(markdown),
+            }}
+          ></div>
+        </Col>
+      </Row>
+    </Container>
+  );
+};
+
+export { MarkdownPreviewer };

@@ -80,16 +80,6 @@ export const projects = [
     target: '',
   },
   {
-    projectId: 3,
-    tag: 'inbuilt',
-    href: '/todolist',
-    src: 'assets/images/projects/todoapp.jpg',
-    tech: ['React', 'Javascript'],
-    name: 'To Do List App',
-    visible: true,
-    target: '',
-  },
-  {
     projectId: 4,
     tag: 'inbuilt',
     href: '/markdown',
@@ -213,15 +203,5 @@ export const projects = [
     name: 'Vanilla Javascript based Apps (for Fun)',
     visible: true,
     target: '_blank',
-  },
-  {
-    projectId: 21,
-    tag: 'inbuilt',
-    href: '/card-game',
-    src: 'assets/images/projects/cardgame.jpg',
-    tech: ['React', 'Javascript'],
-    name: 'Card Game',
-    visible: true,
-    target: '',
   },
 ];

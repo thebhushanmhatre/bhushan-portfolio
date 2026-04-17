@@ -11,12 +11,12 @@ import RenderCertificate from './components/web/RenderCertificate';
 import Project from './components/web/Project';
 import { Blogs } from './components/blogs/Blogs.js';
 // projects
-import RandomQuoteMachine from './components/projects/RandomQuoteMachine';
-import PomodoroClock from './components/projects/PomodoroClock';
-import MarkdownPreviewer from './components/projects/MarkdownPreviewer';
-import ToDoList from './components/projects/ToDoList';
-import Recipes from './components/projects/Recipes';
-import CardGame from './components/projects/CardGame.js';
+import {
+  RandomQuoteMachine,
+  PomodoroClock,
+  MarkdownPreviewer,
+  Recipes,
+} from './components/projects';
 
 import { ThemeProvider } from './contexts/ThemeContext';
 
@@ -74,13 +74,8 @@ const router = createBrowserRouter([
       { path: 'projects', element: <Project /> },
       { path: 'quotes', element: <RandomQuoteMachine /> },
       { path: 'clock', element: <PomodoroClock /> },
-      {
-        path: 'todolist',
-        element: <ToDoList style={{ background: 'skyblue' }} />,
-      },
       { path: 'markdown', element: <MarkdownPreviewer /> },
       { path: 'recipes', element: <Recipes /> },
-      { path: 'card-game', element: <CardGame /> },
       {
         path: '*',
         element: <DefaultPage />,

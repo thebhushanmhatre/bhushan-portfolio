@@ -13,7 +13,7 @@ import {
   Col,
   Alert,
 } from 'reactstrap';
-import ProjectBreadCrumb from '../common/ProjectBreadcrumb';
+import ProjectBreadCrumb from '../../common/ProjectBreadcrumb';
 
 // InputForm
 function InputForm(props) {
@@ -250,7 +250,7 @@ function PopularItems(props) {
           {item}{' '}
         </Button>
       );
-    }
+    },
   );
 
   return (
@@ -326,4 +326,4 @@ function Recipes() {
   );
 }
 
-export default Recipes;
+export { Recipes };
