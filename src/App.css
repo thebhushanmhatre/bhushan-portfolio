@@ -1,224 +1,223 @@
 a {
-  color: black;
+	color: black;
 }
 
 a:hover {
-  color: purple;
-  text-decoration: none;
+	color: purple;
+	text-decoration: none;
 }
 
 #logo {
-  border: 1px solid black;
-  border-radius: 50px;
+	border: 1px solid black;
+	border-radius: 50px;
 }
 
 #navbar {
-  border-bottom: 1px solid black;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: white;
+	border-bottom: 1px solid black;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	background-color: white;
 }
 
 #navbar.dark {
-  border-bottom: 1px solid white;
-  background-color: #333;
+	border-bottom: 1px solid white;
+	background-color: #333;
 }
 
 #navbar .nav-link span {
-  vertical-align: middle;
+	vertical-align: middle;
 }
 
 #picturebox {
-  perspective: 500px;
-  height: 55vh;
-  min-height: 250px;
-  max-height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	perspective: 500px;
+	height: 55vh;
+	min-height: 250px;
+	max-height: 70vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 #picture {
-  transform-style: preserve-3d;
-  border-radius: 50%;
-  box-shadow:
-    0 20px 20px rgba(0, 0, 0, 0.2),
-    0px 0px 50px rgba(0, 0, 0, 0.2);
-  object-fit: cover;
-  height: 90%;
-  width: auto;
-  max-height: 500px;
-  max-width: 500px;
-  min-height: 180px;
-  min-width: 180px;
+	transform-style: preserve-3d;
+	border-radius: 50%;
+	box-shadow:
+		0 20px 20px rgba(0, 0, 0, 0.2),
+		0px 0px 50px rgba(0, 0, 0, 0.2);
+	object-fit: cover;
+	height: 90%;
+	width: auto;
+	max-height: 500px;
+	max-width: 500px;
+	min-height: 180px;
+	min-width: 180px;
 }
 
 #picture:hover {
-  box-shadow:
-    0 20px 20px rgba(30, 30, 60, 0.4),
-    0px 0px 50px rgba(30, 30, 60, 0.4);
+	box-shadow:
+		0 20px 20px rgba(30, 30, 60, 0.4),
+		0px 0px 50px rgba(30, 30, 60, 0.4);
 }
 
 .dark #picture:hover {
-  box-shadow:
-    0 20px 40px rgba(120, 180, 255, 0.5),
-    0px 0px 80px rgba(255, 255, 255, 0.3);
+	box-shadow:
+		0 20px 40px rgba(120, 180, 255, 0.5),
+		0px 0px 80px rgba(255, 255, 255, 0.3);
 }
 
 .myname {
-  font-style: italic;
-  font-family: 'Segoe UI';
+	font-style: italic;
+	font-family: "Segoe UI";
 }
 
 body.dark .myname {
-  color: white;
+	color: white;
 }
 
 .todoListMain .header input {
-  padding: 10px;
-  font-size: 16px;
-  border: 2px solid white;
+	padding: 10px;
+	font-size: 16px;
+	border: 2px solid white;
 }
 
 .todoListMain .header button {
-  padding: 10px;
-  font-size: 16px;
-  margin-left: 10px;
-  border: 2px solid #06f;
-  background-color: #06f;
-  color: white;
+	padding: 10px;
+	font-size: 16px;
+	margin-left: 10px;
+	border: 2px solid #06f;
+	background-color: #06f;
+	color: white;
 }
 
 .todoListMain .header button:hover {
-  font-weight: bold;
-  border: 2px solid #039;
-  background-color: #039;
-  cursor: pointer;
+	font-weight: bold;
+	border: 2px solid #039;
+	background-color: #039;
+	cursor: pointer;
 }
 
 .todoListMain .theList li {
-  list-style: none;
-  color: #333;
-  background-color: lightblue;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 5px;
-  transition: background-color 0.2s ease-out;
+	list-style: none;
+	color: #333;
+	background-color: lightblue;
+	padding: 15px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	transition: background-color 0.2s ease-out;
 }
 
 .todoListMain .theList li:hover {
-  background-color: pink;
-  cursor: pointer;
+	background-color: pink;
+	cursor: pointer;
 }
 
 ul.theList {
-  padding: 0px;
+	padding: 0px;
 }
 
 .certificateLink:hover {
-  text-decoration: none;
-  color: black;
+	text-decoration: none;
+	color: black;
 }
 
 .certificateLink:visited {
-  color: gray;
-  text-decoration: none;
+	color: gray;
+	text-decoration: none;
 }
 
 .renderItemCard:hover {
-  background-color: lightcyan;
+	background-color: lightcyan;
 }
 
 .verifyButton:hover {
-  border: 5px solid skyblue;
+	border: 5px solid skyblue;
 }
 
 .contact-icon:hover {
-  text-shadow: 3px 3px red;
+	text-shadow: 3px 3px red;
 }
-
 
 .carousel-control-prev,
 .carousel-control-next {
-  background-color: rgba(102, 177, 247, 0.2);
+	background-color: rgba(102, 177, 247, 0.2);
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  filter: invert(100%);
+	filter: invert(100%);
 }
 
 .carousel-caption p {
-  display: inline-flex;
-  background-color: white;
+	display: inline-flex;
+	background-color: white;
 }
 
 .carousel-indicators {
-  filter: invert(100%);
+	filter: invert(100%);
 }
 
 .carousel {
-  margin: auto;
+	margin: auto;
 }
 
 #darkmmodeicon {
-  font-size: 22px;
-  vertical-align: middle;
-  margin-left: 6px;
+	font-size: 22px;
+	vertical-align: middle;
+	margin-left: 6px;
 }
 
 .render-card-img {
-  width: 300px;
-  height: 250px;
-  margin: 5px 5px 0px 5px;
+	width: 300px;
+	height: 250px;
+	margin: 5px 5px 0px 5px;
 }
 
 .render-card {
-  width: 310px;
-  margin: 0 16px 16px 0;
-  padding: 0;
+	width: 310px;
+	margin: 0 16px 16px 0;
+	padding: 0;
 }
 
 .text-center.pt-3.pb-3 {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
 }
 
 .text-center.pt-1.pb-3 {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
 }
 
 .contact-chip {
-  transition: all 0.2s ease-in-out;
-  background-color: transparent;
+	transition: all 0.2s ease-in-out;
+	background-color: transparent;
 }
 .contact-chip:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	transform: translateY(-2px);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 body.dark .contact-chip:hover {
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.15);
+	box-shadow: 0 4px 10px rgba(255, 255, 255, 0.15);
 }
 
 body.dark .text-muted {
-  color: #adb5bd !important;
+	color: #adb5bd !important;
 }
 
 .home-profile-img {
-  width: 380px;
-  height: 380px;
-  max-width: 100%;
+	width: 380px;
+	height: 380px;
+	max-width: 100%;
 }
 
 @media (max-width: 768px) {
-  .home-profile-img {
-    width: 250px;
-    height: 250px;
-  }
+	.home-profile-img {
+		width: 250px;
+		height: 250px;
+	}
 }

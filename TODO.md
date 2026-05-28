@@ -9,6 +9,4 @@
 
 Check performance on https://pagespeed.web.dev/analysis/https-thebhushanmhatre-netlify-app/xwg9ldaeai?form_factor=desktop
 
-Long Term Goal - If possible, Migrate to Vite + SSG
-
 Add multi language support - Atleast Marathi and Japanese for fun.
