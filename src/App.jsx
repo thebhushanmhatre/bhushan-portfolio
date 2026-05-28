@@ -9,7 +9,7 @@ import Career from './components/web/Career/Career';
 import Certificate from './components/web/Certificate';
 import RenderCertificate from './components/web/RenderCertificate';
 import Project from './components/web/Project';
-import { Blogs } from './components/blogs/Blogs.js';
+import { Blogs } from './components/blogs/Blogs.jsx';
 // projects
 import {
   RandomQuoteMachine,
