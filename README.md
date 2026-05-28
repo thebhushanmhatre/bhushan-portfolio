@@ -7,13 +7,13 @@ Welcome to the source code of Bhushan Mhatre's digital portfolio.
 
 ## 🛠️ Technology Stack
 
-| Category | technologies |
-| :--- | :--- |
-| **Engine** | React 18, Javascript (ES6+) |
-| **State** | Redux, React-Redux |
-| **Styling** | CSS3, Bootstrap 5, Reactstrap |
-| **Icons & Fonts** | Font-Awesome, Google Fonts |
-| **Routing** | React Router Dom v6 |
+| Category          | technologies                  |
+| :---------------- | :---------------------------- |
+| **Engine**        | React 18, Javascript (ES6+)   |
+| **State**         | Redux, React-Redux            |
+| **Styling**       | CSS3, Bootstrap 5, Reactstrap |
+| **Icons & Fonts** | Font-Awesome, Google Fonts    |
+| **Routing**       | React Router Dom v6           |
 
 ## ⚙️ Deployment & Local Setup
 
@@ -31,7 +31,7 @@ To run a local instance of this portfolio for audit or development purposes:
    ```bash
    npm start
    ```
-   *The instance will be available at [http://localhost:3000](http://localhost:3000)*.
+   _The instance will be available at [http://localhost:3000](http://localhost:3000)_.
 
 ## 📖 Mentorship & Community
 

@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { Row, Col, Container, Input } from 'reactstrap';
-import { marked } from 'marked';
-import ProjectBreadCrumb from '../../common/ProjectBreadcrumb';
+import React, { useState } from "react";
+import { Row, Col, Container, Input } from "reactstrap";
+import { marked } from "marked";
+import ProjectBreadCrumb from "../../common/ProjectBreadcrumb";
 
 const defaultText = `# Welcome to my Markdown Previewer!
 
@@ -48,52 +48,52 @@ And here. | Okay. | I think we get it.
 `;
 
 const MarkdownPreviewer = () => {
-  const [markdown, setMarkdown] = useState(defaultText);
+	const [markdown, setMarkdown] = useState(defaultText);
 
-  const handleChange = (e) => {
-    setMarkdown(e.target.value);
-  };
+	const handleChange = (e) => {
+		setMarkdown(e.target.value);
+	};
 
-  return (
-    <Container className="mt-2">
-      <ProjectBreadCrumb projectName={'Markdown Previewer'} />
+	return (
+		<Container className="mt-2">
+			<ProjectBreadCrumb projectName={"Markdown Previewer"} />
 
-      <Row style={{ backgroundColor: 'white' }}>
-        <Col sm="12" md="6">
-          <h4 className="text-center">
-            <i>
-              <u> Editor </u>
-            </i>
-          </h4>
-          <Input
-            type="textarea"
-            id="editor"
-            value={markdown}
-            onChange={handleChange}
-            style={{ minHeight: '70vh' }}
-          >
-            {defaultText}
-          </Input>
-        </Col>
+			<Row style={{ backgroundColor: "white" }}>
+				<Col sm="12" md="6">
+					<h4 className="text-center">
+						<i>
+							<u> Editor </u>
+						</i>
+					</h4>
+					<Input
+						type="textarea"
+						id="editor"
+						value={markdown}
+						onChange={handleChange}
+						style={{ minHeight: "70vh" }}
+					>
+						{defaultText}
+					</Input>
+				</Col>
 
-        <Col sm="12" md="6">
-          <h4 className="text-center">
-            <i>
-              <u> Previewer </u>
-            </i>
-          </h4>
-          <div
-            style={{ minHeight: '70vh' }}
-            className="border p-2"
-            id="preview"
-            dangerouslySetInnerHTML={{
-              __html: marked.parse(markdown),
-            }}
-          ></div>
-        </Col>
-      </Row>
-    </Container>
-  );
+				<Col sm="12" md="6">
+					<h4 className="text-center">
+						<i>
+							<u> Previewer </u>
+						</i>
+					</h4>
+					<div
+						style={{ minHeight: "70vh" }}
+						className="border p-2"
+						id="preview"
+						dangerouslySetInnerHTML={{
+							__html: marked.parse(markdown),
+						}}
+					></div>
+				</Col>
+			</Row>
+		</Container>
+	);
 };
 
 export { MarkdownPreviewer };

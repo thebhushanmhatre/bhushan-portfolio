@@ -1,131 +1,145 @@
 html {
-  overflow-y: scroll;
+	overflow-y: scroll;
 }
 
 body {
-  --bg-light-color: white;
-  --text-light-color: black;
-  --bg-dark-color: #333;
-  --text-dark-color: white;
+	--bg-light-color: white;
+	--text-light-color: black;
+	--bg-dark-color: #333;
+	--text-dark-color: white;
 
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-repeat: no-repeat, repeat;
-  background-position: center;
-  background-attachment: fixed; 
-  height: 100vh;
+	margin: 0;
+	font-family:
+		-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+		"Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-repeat: no-repeat, repeat;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
 }
 
-body.dark, div.dark, span.dark, a.dark, th.dark, td.dark, h1.dark,
-h2.dark, h3.dark, i.dark {
-  background-color: var(--bg-dark-color);
-  color: var(--text-dark-color);
+body.dark,
+div.dark,
+span.dark,
+a.dark,
+th.dark,
+td.dark,
+h1.dark,
+h2.dark,
+h3.dark,
+i.dark {
+	background-color: var(--bg-dark-color);
+	color: var(--text-dark-color);
 }
 
 /* Navbar Dark Mode Fixes */
 .navbar.dark .navbar-brand,
 .navbar.dark .nav-link,
 .navbar.dark span {
-  color: var(--text-dark-color) !important;
+	color: var(--text-dark-color) !important;
 }
 
 .navbar.dark .nav-link:hover,
 .navbar.dark .navbar-brand:hover {
-  color: skyblue !important;
+	color: skyblue !important;
 }
 
 /* Subtle Dropdown Button Hover Effects */
 .btn-outline-dark:hover {
-  background-color: rgba(0, 0, 0, 0.1) !important;
-  color: #343a40 !important;
-  border-color: #343a40 !important;
+	background-color: rgba(0, 0, 0, 0.1) !important;
+	color: #343a40 !important;
+	border-color: #343a40 !important;
 }
 
 .btn-outline-light:hover {
-  background-color: rgba(255, 255, 255, 0.15) !important;
-  color: #f8f9fa !important;
-  border-color: #f8f9fa !important;
+	background-color: rgba(255, 255, 255, 0.15) !important;
+	color: #f8f9fa !important;
+	border-color: #f8f9fa !important;
 }
 
 /* Dark Mode Overrides for Tables */
 body.dark .table {
-  color: var(--text-dark-color);
-  background-color: var(--bg-dark-color);
+	color: var(--text-dark-color);
+	background-color: var(--bg-dark-color);
 }
 
 body.dark .table th,
 body.dark .table td,
 body.dark .table thead th {
-  border-color: #454d55;
-  color: var(--text-dark-color);
+	border-color: #454d55;
+	color: var(--text-dark-color);
 }
 
 body.dark .table-hover tbody tr:hover {
-  color: var(--text-dark-color);
-  background-color: rgba(255, 255, 255, 0.075);
+	color: var(--text-dark-color);
+	background-color: rgba(255, 255, 255, 0.075);
 }
 
 /* Dark Mode Overrides for Dropdowns & Buttons */
 body.dark .btn-outline-dark {
-  color: #fff;
-  border-color: #fff;
+	color: #fff;
+	border-color: #fff;
 }
 
 body.dark .btn-outline-dark:hover,
 body.dark .btn-outline-dark:active,
 body.dark .btn-outline-dark.active,
 body.dark .show > .btn-outline-dark.dropdown-toggle {
-  background-color: #fff;
-  color: #000;
+	background-color: #fff;
+	color: #000;
 }
 
 body.dark .dropdown-menu {
-  background-color: var(--bg-dark-color);
-  border: 1px solid #555;
+	background-color: var(--bg-dark-color);
+	border: 1px solid #555;
 }
 
 body.dark .dropdown-item {
-  color: var(--text-dark-color);
+	color: var(--text-dark-color);
 }
 
-body.dark .dropdown-item:hover, 
+body.dark .dropdown-item:hover,
 body.dark .dropdown-item:focus {
-  background-color: #444;
-  color: var(--text-dark-color);
+	background-color: #444;
+	color: var(--text-dark-color);
 }
 
 /* Ensure links in tables are visible in dark mode */
 body.dark .table a,
 body.dark a {
-  color: skyblue; 
+	color: skyblue;
 }
 
 body.dark a:hover {
-  color: #0dcaf0;
+	color: #0dcaf0;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 .cursor {
-  display: inline-block;
-  width: 3px;
-  height: 1.1em;
-  background-color: #0d6efd; /* Use a nice blue color by default */
-  margin-left: 4px;
-  vertical-align: middle;
-  animation: blink 1s step-end infinite;
+	display: inline-block;
+	width: 3px;
+	height: 1.1em;
+	background-color: #0d6efd; /* Use a nice blue color by default */
+	margin-left: 4px;
+	vertical-align: middle;
+	animation: blink 1s step-end infinite;
 }
 
 body.dark .cursor {
-  background-color: #0dcaf0; /* Brighter blue for dark mode */
+	background-color: #0dcaf0; /* Brighter blue for dark mode */
 }
 
 @keyframes blink {
-  from, to { opacity: 1; }
-  50% { opacity: 0; }
+	from,
+	to {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
 }

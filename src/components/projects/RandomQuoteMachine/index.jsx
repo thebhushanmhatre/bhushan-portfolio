@@ -1,1 +1,1 @@
-export * from './RandomQuoteMachine';
+export * from "./RandomQuoteMachine";
