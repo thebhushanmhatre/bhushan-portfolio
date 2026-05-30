@@ -2,8 +2,6 @@
 
 1. Download Resume Button
 
-1. For local machine only, Create a admin page, to edit metdata that goes into the Certificates and Projects Tab, Update metadata and save it in the file
-
 1. Remove all the childish projects like markdown preview, etc, You are a Senior Engineer now
    Fun projects can go in codepen or codesandbox
 
