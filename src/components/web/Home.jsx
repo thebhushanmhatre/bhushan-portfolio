@@ -3,7 +3,7 @@ import { Container, Row, Col } from "reactstrap";
 import Contact from "./Contact";
 
 function Home() {
-	const [isDark, setIsDark] = useState(false);
+	const [isDark, setIsDark] = useState(() => document.body.classList.contains("dark"));
 
 	useEffect(() => {
 		const observer = new MutationObserver(() => {
@@ -13,7 +13,6 @@ function Home() {
 			attributes: true,
 			attributeFilter: ["class"],
 		});
-		setIsDark(document.body.classList.contains("dark"));
 		return () => observer.disconnect();
 	}, []);
 

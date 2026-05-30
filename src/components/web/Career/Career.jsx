@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { Row, Container } from "reactstrap";
+import { Container } from "reactstrap";
 import { RenderInstitute } from "./Education";
 import { MsciAnalyst } from "./MsciAnalyst";
 import { MsciAssociate } from "./MsciAssociate";

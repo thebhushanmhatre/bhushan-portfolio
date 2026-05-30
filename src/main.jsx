@@ -20,16 +20,16 @@ if (picture && picturebox) {
 	});
 
 	//Animate In
-	picturebox.addEventListener("mouseenter", (e) => {
+	picturebox.addEventListener("mouseenter", () => {
 		picture.style.transition = "none";
 	});
 
 	//Animate Out
-	picturebox.addEventListener("mouseleave", (e) => {
+	picturebox.addEventListener("mouseleave", () => {
 		picture.style.transition = "all 0.5s ease";
 		picture.style.transform = `rotateY(0deg) rotateX(0deg)`;
 	});
-	picture.addEventListener("mouseover", (e) => {
+	picture.addEventListener("mouseover", () => {
 		picture.style.transform = `scale(1.1)`;
 	});
 }

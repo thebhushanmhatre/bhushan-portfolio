@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Navbar, NavbarBrand, Nav, NavItem, NavLink, NavbarToggler, Collapse } from "reactstrap";
 import { useTheme } from "../contexts/ThemeContext";
 
-function Navigation(props) {
+function Navigation() {
 	const [isNavOpen, toggleNav] = useState(false);
 	const { darkMode, toggleTheme } = useTheme();
 
