@@ -3,7 +3,7 @@ import { Container } from "reactstrap";
 import { MsciAnalyst } from "./MsciAnalyst";
 import { MsciAssociate } from "./MsciAssociate";
 
-function WorkExperience(props) {
+function WorkExperience() {
 	return (
 		<>
 			<Container className="text-center p-3">

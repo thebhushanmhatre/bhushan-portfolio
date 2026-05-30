@@ -5,7 +5,6 @@ import {
 	CardBody,
 	CardSubtitle,
 	Container,
-	Breadcrumb,
 	BreadcrumbItem,
 	Input,
 	Button,
@@ -235,7 +234,7 @@ function PopularItems(props) {
 				type="submit"
 				color="success"
 				className="m-1"
-				onClick={(i) => props.getPopularDish(item)}
+				onClick={() => props.getPopularDish(item)}
 			>
 				{" "}
 				{item}{" "}

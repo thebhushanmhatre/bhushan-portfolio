@@ -27,6 +27,7 @@
 		"start": "vite",
 		"dev": "vite",
 		"build": "vite build",
+		"fix": "npm run lint:fix && npm run format",
 		"format": "prettier --write .",
 		"format:check": "prettier --check .",
 		"lint": "eslint . --ext .js,.jsx",

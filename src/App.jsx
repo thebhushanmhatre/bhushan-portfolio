@@ -10,6 +10,7 @@ import Certificate from "./components/web/Certificate";
 import RenderCertificate from "./components/web/RenderCertificate";
 import Project from "./components/web/Project";
 import { Blogs } from "./components/blogs/Blogs.jsx";
+import Tools from "./tools/Tools";
 // projects
 import {
 	RandomQuoteMachine,
@@ -70,6 +71,7 @@ const router = createBrowserRouter([
 			{ path: "blogs", element: <Blogs /> },
 			{ path: "certificate/:certId", element: <CertificateWithId /> },
 			{ path: "projects", element: <Project /> },
+			{ path: "tools", element: <Tools /> },
 			{ path: "quotes", element: <RandomQuoteMachine /> },
 			{ path: "clock", element: <PomodoroClock /> },
 			{ path: "markdown", element: <MarkdownPreviewer /> },

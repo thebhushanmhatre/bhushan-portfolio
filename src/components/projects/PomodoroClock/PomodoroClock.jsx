@@ -1,56 +1,42 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Row, Col, Container } from "reactstrap";
+import { Container } from "reactstrap";
 import ProjectBreadCrumb from "../../common/ProjectBreadcrumb";
 import "./PomodoroClock.css";
 
 const PomodoroClock = () => {
-	const [brlen, setBrlen] = useState(5); // in minutes
-	const [sesslen, setSesslen] = useState(25); // in minutes
+	const [breakLen, setBreakLen] = useState(5); // in minutes
+	const [sessionLen, setSessionLen] = useState(25); // in minutes
 	const [timeLeft, setTimeLeft] = useState(25 * 60); // in seconds
 	const [timerStatus, setTimerStatus] = useState("Session");
 	const [isRunning, setIsRunning] = useState(false);
 
 	const beepRef = useRef(null);
-	const timerRef = useRef(null);
-
-	// Synchronize timeLeft with session/break length if not running
-	useEffect(() => {
-		if (!isRunning) {
-			if (timerStatus === "Session") {
-				setTimeLeft(sesslen * 60);
-			} else {
-				setTimeLeft(brlen * 60);
-			}
-		}
-	}, [sesslen, brlen, isRunning, timerStatus]);
 
 	useEffect(() => {
 		let interval = null;
 		if (isRunning) {
 			interval = setInterval(() => {
-				setTimeLeft((prev) => prev - 1);
+				setTimeLeft((prevTimeLeft) => {
+					if (prevTimeLeft > 0) {
+						return prevTimeLeft - 1;
+					}
+
+					if (beepRef.current) {
+						beepRef.current.play();
+					}
+
+					if (timerStatus === "Session") {
+						setTimerStatus("Break");
+						return breakLen * 60;
+					}
+
+					setTimerStatus("Session");
+					return sessionLen * 60;
+				});
 			}, 1000);
-		} else {
-			clearInterval(interval);
 		}
 		return () => clearInterval(interval);
-	}, [isRunning]);
-
-	useEffect(() => {
-		if (timeLeft < 0) {
-			if (beepRef.current) {
-				beepRef.current.play();
-			}
-
-			if (timerStatus === "Session") {
-				setTimerStatus("Break");
-				setTimeLeft(brlen * 60);
-			} else {
-				setTimerStatus("Session");
-				setTimeLeft(sesslen * 60);
-			}
-		}
-	}, [timeLeft, timerStatus, brlen, sesslen]);
+	}, [isRunning, timerStatus, breakLen, sessionLen]);
 
 	const formatTime = (seconds) => {
 		const min = Math.floor(Math.max(0, seconds) / 60);
@@ -64,8 +50,8 @@ const PomodoroClock = () => {
 
 	const handleReset = () => {
 		setIsRunning(false);
-		setBrlen(5);
-		setSesslen(25);
+		setBreakLen(5);
+		setSessionLen(25);
 		setTimeLeft(25 * 60);
 		setTimerStatus("Session");
 		if (beepRef.current) {
@@ -78,15 +64,21 @@ const PomodoroClock = () => {
 		if (isRunning) return;
 
 		if (type === "break") {
-			setBrlen((prev) => {
-				const next = prev + amount;
-				return next > 0 && next <= 60 ? next : prev;
-			});
+			const next = breakLen + amount;
+			if (next > 0 && next <= 60) {
+				setBreakLen(next);
+				if (timerStatus === "Break") {
+					setTimeLeft(next * 60);
+				}
+			}
 		} else {
-			setSesslen((prev) => {
-				const next = prev + amount;
-				return next > 0 && next <= 60 ? next : prev;
-			});
+			const next = sessionLen + amount;
+			if (next > 0 && next <= 60) {
+				setSessionLen(next);
+				if (timerStatus === "Session") {
+					setTimeLeft(next * 60);
+				}
+			}
 		}
 	};
 
@@ -127,7 +119,7 @@ const PomodoroClock = () => {
 								<i className="fa fa-minus"></i>
 							</button>
 							<span id="break-length" className="settings-value">
-								{brlen}
+								{breakLen}
 							</span>
 							<button
 								id="break-increment"
@@ -152,7 +144,7 @@ const PomodoroClock = () => {
 								<i className="fa fa-minus"></i>
 							</button>
 							<span id="session-length" className="settings-value">
-								{sesslen}
+								{sessionLen}
 							</span>
 							<button
 								id="session-increment"

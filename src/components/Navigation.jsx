@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import { Navbar, NavbarBrand, Nav, NavItem, NavLink, NavbarToggler, Collapse } from "reactstrap";
 import { useTheme } from "../contexts/ThemeContext";
 
-function Navigation(props) {
+function Navigation() {
 	const [isNavOpen, toggleNav] = useState(false);
 	const { darkMode, toggleTheme } = useTheme();
+	const isLocalhost =
+		typeof window !== "undefined" &&
+		(window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1");
 
 	return (
 		<Navbar
@@ -58,6 +61,13 @@ function Navigation(props) {
 							<span className="fa fa-lightbulb fa-lg"> Content </span>
 						</NavLink>
 					</NavItem>
+					{isLocalhost && (
+						<NavItem>
+							<NavLink href="/tools">
+								<span className="fa fa-wrench fa-lg"> Tools </span>
+							</NavLink>
+						</NavItem>
+					)}
 				</Nav>
 			</Collapse>
 		</Navbar>
