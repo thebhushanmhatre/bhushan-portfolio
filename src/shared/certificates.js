@@ -28,7 +28,6 @@ export const certificates = [
 	{
 		certId: 51,
 		href: "https://www.linkedin.com/learning/certificates/68ebf28b46fdfd6604b8511411421b83089d715218cf54a53c35292722548b45",
-		src: "/assets/images/certificates/ror_essential_linkedin.jpg",
 		name: "RAG and Fine-Tuning Explained",
 		issuer: "LinkedIn",
 		credentialID: "68ebf28b46fdfd6604b8511411421b83089d715218cf54a53c35292722548b45",
@@ -41,7 +40,6 @@ export const certificates = [
 	{
 		certId: 50,
 		href: "https://www.linkedin.com/learning/certificates/d3c21a348d32e3744894c8b32ae1339b35ec91c7898378197aca2fbb5c1d1e43",
-		src: "/assets/images/certificates/ror_essential_linkedin.jpg",
 		name: "Model Context Protocol (MCP): Hands-On with Agentic AI",
 		issuer: "LinkedIn",
 		credentialID: "d3c21a348d32e3744894c8b32ae1339b35ec91c7898378197aca2fbb5c1d1e43",
@@ -54,7 +52,6 @@ export const certificates = [
 	{
 		certId: 49,
 		href: "https://www.linkedin.com/learning/certificates/dc44304ab1414021ccaa2fe3f13b4da2cf3c12047aab8fa2278c4e485e2a5fa8",
-		src: "/assets/images/certificates/ror_essential_linkedin.jpg",
 		name: "Advanced Prompt Engineering Techniques",
 		issuer: "LinkedIn",
 		credentialID: "dc44304ab1414021ccaa2fe3f13b4da2cf3c12047aab8fa2278c4e485e2a5fa8",
@@ -67,7 +64,6 @@ export const certificates = [
 	{
 		certId: 48,
 		href: "https://www.linkedin.com/learning/certificates/b124a8076e6cd22641eb43437916738c36faf0503f701fa79a5736a6943ecabb",
-		src: "/assets/images/certificates/ror_essential_linkedin.jpg",
 		name: "Advanced Node.js",
 		issuer: "LinkedIn",
 		credentialID: "b124a8076e6cd22641eb43437916738c36faf0503f701fa79a5736a6943ecabb",
@@ -80,7 +76,6 @@ export const certificates = [
 	{
 		certId: 47,
 		href: "https://www.linkedin.com/learning/certificates/8dc9781c41c42022db887fc62e929636d3142b1cf6443a7570021489af5a40fb",
-		src: "/assets/images/certificates/ror_essential_linkedin.jpg",
 		name: "Advanced Node.js: Scaling Applications",
 		issuer: "LinkedIn",
 		credentialID: "8dc9781c41c42022db887fc62e929636d3142b1cf6443a7570021489af5a40fb",
@@ -93,7 +88,6 @@ export const certificates = [
 	{
 		certId: 44,
 		href: "https://www.linkedin.com/learning/certificates/e1b8c718c5ca931bc34a61d9d216dfa5b0975cd8a4936ca90453bc97666b1995",
-		src: "/assets/images/certificates/ror_essential_linkedin.jpg",
 		name: "End-to-End JavaScript Testing with Cypress.io",
 		issuer: "LinkedIn",
 		credentialID: "",
@@ -106,7 +100,6 @@ export const certificates = [
 	{
 		certId: 46,
 		href: "https://www.linkedin.com/learning/certificates/7319b56b2221a2d0b351cb7d84887cb3d3a698045e0bd2a9b2d6b783785892d4",
-		src: "/assets/images/certificates/ror_essential_linkedin.jpg",
 		name: "Software Architecture Foundations",
 		issuer: "LinkedIn",
 		credentialID: "7319b56b2221a2d0b351cb7d84887cb3d3a698045e0bd2a9b2d6b783785892d4",
@@ -119,7 +112,6 @@ export const certificates = [
 	{
 		certId: 45,
 		href: "https://www.linkedin.com/learning/certificates/8c5661720ea0a3116209a9098332ffbbc2660fddad7359f7ca3c819bee80bd52",
-		src: "/assets/images/certificates/ror_essential_linkedin.jpg",
 		name: "Node.js: Design Patterns",
 		issuer: "LinkedIn",
 		credentialID: "8c5661720ea0a3116209a9098332ffbbc2660fddad7359f7ca3c819bee80bd52",
@@ -132,7 +124,6 @@ export const certificates = [
 	{
 		certId: 44,
 		href: "https://www.linkedin.com/learning/certificates/516bce0096008e995b517d140b040157490e8f9eaa5aae32762f5f280259e05f",
-		src: "/assets/images/certificates/ror_essential_linkedin.jpg",
 		name: "CSS Essential Training",
 		issuer: "LinkedIn",
 		credentialID: "516bce0096008e995b517d140b040157490e8f9eaa5aae32762f5f280259e05f",
@@ -145,7 +136,6 @@ export const certificates = [
 	{
 		certId: 43,
 		href: "https://www.coursera.org/account/accomplishments/specialization/4B8PD9D9RDL9",
-		src: "/assets/images/certificates/fin-mkt.jpg",
 		name: "Investment Management Specialization",
 		issuer: "University of Geneva (Coursera)",
 		institute: "University of Geneva",
@@ -159,7 +149,6 @@ export const certificates = [
 	{
 		certId: 1,
 		href: "https://www.coursera.org/account/accomplishments/certificate/VTHK4VHWBLLP",
-		src: "/assets/images/certificates/express_server_mongodb.jpg",
 		name: "Server-side Development with NodeJS, Express and MongoDB",
 		issuer: "Hong Kong University (Coursera)",
 		institute: "The Hong Kong University of Science and Technology",
@@ -172,7 +161,6 @@ export const certificates = [
 	{
 		certId: 2,
 		href: "https://www.coursera.org/account/accomplishments/certificate/B4LJHAVNG9B8",
-		src: "/assets/images/certificates/react_coursera_hongkong.jpg",
 		name: "Front-End Web Development with React",
 		issuer: "Hong Kong University (Coursera)",
 		institute: "The Hong Kong University of Science and Technology",
@@ -185,7 +173,6 @@ export const certificates = [
 	{
 		certId: 3,
 		href: "https://www.coursera.org/account/accomplishments/certificate/WXBNNV2ZFS9Y",
-		src: "/assets/images/certificates/bootstrap_coursera_hongkong.jpg",
 		name: "Front-End Web UI Frameworks and Tools: Bootstrap 4",
 		issuer: "Hong Kong University (Coursera)",
 		institute: "The Hong Kong University of Science and Technology",
@@ -198,7 +185,6 @@ export const certificates = [
 	{
 		certId: 4,
 		href: "https://www.coursera.org/account/accomplishments/certificate/C969LNUBGSZN",
-		src: "/assets/images/certificates/js_interactivity_coursera.jpg",
 		name: "Interactivity with JavaScript",
 		issuer: "Coursera",
 		institute: "University of Michigan",
@@ -211,7 +197,6 @@ export const certificates = [
 	{
 		certId: 5,
 		href: "https://www.coursera.org/account/accomplishments/certificate/V7JY5BJW7RZJ",
-		src: "/assets/images/certificates/ror_intro.jpg",
 		name: "Ruby on Rails: An Introduction",
 		issuer: "Johns Hopkins University (Coursera)",
 		institute: "Johns Hopkins University",
@@ -224,7 +209,6 @@ export const certificates = [
 	{
 		certId: 6,
 		href: "https://www.linkedin.com/learning/ruby-on-rails-5-essential-training",
-		src: "/assets/images/certificates/ror_essential_linkedin.jpg",
 		name: "Ruby on Rails 5 Essential Training",
 		issuer: "Linkedin",
 		credentialID: "AUqddA0VZOf6lu_OFzKJd8KzO_yY",
@@ -236,7 +220,6 @@ export const certificates = [
 	{
 		certId: 7,
 		href: "https://www.linkedin.com/learning/learning-sinatra",
-		src: "/assets/images/certificates/sinatra_linkedin.jpg",
 		name: "Learning Sinatra",
 		issuer: "Linkedin",
 		credentialID: "AYWshpZRNxq8xepn73WqI0ZaCknk",
@@ -248,7 +231,6 @@ export const certificates = [
 	{
 		certId: 8,
 		href: "https://www.linkedin.com/learning/learning-react-js-4",
-		src: "/assets/images/certificates/learning_reactJS_linkedin.jpg",
 		name: "Learning React.js",
 		issuer: "Linkedin",
 		credentialID: "AYDIRpKsx7KjJtlN2bd_1SiVG0ig",
@@ -260,7 +242,6 @@ export const certificates = [
 	{
 		certId: 9,
 		href: "http://www.linkedin.com/learning/designing-restful-apis",
-		src: "/assets/images/certificates/designing_RESTful_APIs_linkedin.jpg",
 		name: "Designing Restful APIs",
 		issuer: "Linkedin",
 		credentialID: "AQiG6w1sebYr-kVrCPo6Mr1_jW4K",
@@ -272,7 +253,6 @@ export const certificates = [
 	{
 		certId: 10,
 		href: "http://www.linkedin.com/learning/programming-foundations-databases-2",
-		src: "/assets/images/certificates/prog_foundations_database_linkedin.jpg",
 		name: "Programming Foundations Database",
 		issuer: "Linkedin",
 		credentialID: "AX1Rvv4OQN-3DHdrsLWeVHS2lF3r",
@@ -284,7 +264,6 @@ export const certificates = [
 	{
 		certId: 11,
 		href: "http://www.linkedin.com/learning/game-development-foundations-game-related-math",
-		src: "/assets/images/certificates/game_dev_found_linkedin.jpg",
 		name: "JS Game Development Foundations",
 		issuer: "Linkedin",
 		credentialID: "AUg_kiypn4Lx_og7oR7j384JhFju",
@@ -296,7 +275,6 @@ export const certificates = [
 	{
 		certId: 12,
 		href: "https://www.freecodecamp.org/certification/thebhushanmhatre/front-end-libraries",
-		src: "/assets/images/certificates/certi3fcc.jpg",
 		name: "Front End Libraries Developer Certification",
 		issuer: "freeCodeCamp",
 		credentialID: "",
@@ -308,7 +286,6 @@ export const certificates = [
 	{
 		certId: 13,
 		href: "https://www.freecodecamp.org/certification/thebhushanmhatre/javascript-algorithms-and-data-structures",
-		src: "/assets/images/certificates/certi2fcc.jpg",
 		name: "JavaScript Algorithms and Data Structures Developer Certification",
 		issuer: "freeCodeCamp",
 		credentialID: "",
@@ -320,7 +297,6 @@ export const certificates = [
 	{
 		certId: 14,
 		href: "https://www.freecodecamp.org/certification/thebhushanmhatre/responsive-web-design",
-		src: "/assets/images/certificates/certi1fcc.jpg",
 		name: "Responsive Web Design Developer Certification",
 		issuer: "freeCodeCamp",
 		credentialID: "",
@@ -332,7 +308,6 @@ export const certificates = [
 	{
 		certId: 15,
 		href: "https://courses.cognitiveclass.ai/certificates/e57bfb7f88a44359bee8b2f1fe82fd94",
-		src: "/assets/images/certificates/dltf.jpg",
 		name: "Deep Learning with TensorFlow",
 		institute: "Cognitive Class",
 		issuer: "IBM",
@@ -345,7 +320,6 @@ export const certificates = [
 	{
 		certId: 16,
 		href: "https://courses.cognitiveclass.ai/certificates/261026b4c71042f880a1415cb6eb92ff",
-		src: "/assets/images/certificates/dlfund.jpg",
 		name: "Deep Learning Fundamentals",
 		institute: "Cognitive Class",
 		issuer: "IBM",
@@ -358,7 +332,6 @@ export const certificates = [
 	{
 		certId: 17,
 		href: "https://courses.cognitiveclass.ai/certificates/04f14479b9c441248df1beced7644d83",
-		src: "/assets/images/certificates/da.jpg",
 		name: "Data Analysis with Python",
 		institute: "Cognitive Class",
 		issuer: "IBM",
@@ -371,7 +344,6 @@ export const certificates = [
 	{
 		certId: 18,
 		href: "https://courses.cognitiveclass.ai/certificates/8127fd9abca148c4bc8344c34c9d6438",
-		src: "/assets/images/certificates/dataviz.jpg",
 		name: "Data Visualization with Python",
 		institute: "Cognitive Class",
 		issuer: "IBM",
@@ -384,7 +356,6 @@ export const certificates = [
 	{
 		certId: 19,
 		href: "https://courses.cognitiveclass.ai/certificates/dc8e9f0115c945f6bd908b2376d6f43a",
-		src: "/assets/images/certificates/sql.jpg",
 		name: "SQL and Relational Databases",
 		institute: "Cognitive Class",
 		issuer: "IBM",
@@ -397,7 +368,6 @@ export const certificates = [
 	{
 		certId: 20,
 		href: "https://www.datacamp.com/statement-of-accomplishment/course/8668534e308738c8713ba0a1079a077958fe319d",
-		src: "/assets/images/certificates/git.jpg",
 		name: "Introduction to Git",
 		institute: "",
 		issuer: "DataCamp",
@@ -410,7 +380,6 @@ export const certificates = [
 	{
 		certId: 21,
 		href: "https://www.datacamp.com/statement-of-accomplishment/course/4ade713f3d70039debfe6c8c1a430f72c6d5649f",
-		src: "/assets/images/certificates/shell.jpg",
 		name: "Introduction to Shell",
 		institute: "",
 		issuer: "DataCamp",
@@ -423,7 +392,6 @@ export const certificates = [
 	{
 		certId: 22,
 		href: "https://www.datacamp.com/statement-of-accomplishment/course/e50869d51065721fca64b1821866f0044e244786",
-		src: "/assets/images/certificates/py.jpg",
 		name: "Introduction to Python",
 		issuer: "DataCamp",
 		credentialID: "#6798134",
@@ -435,7 +403,6 @@ export const certificates = [
 	{
 		certId: 23,
 		href: "https://du5jhqks4kn0y.cloudfront.net/5a74215418bd2c006c7aa953/certificates/5b7000499e2546006d40555d_cerf.pdf",
-		src: "/assets/images/certificates/ds.jpg",
 		name: "Data Structures",
 		issuer: "",
 		credentialID: "",
@@ -447,7 +414,6 @@ export const certificates = [
 	{
 		certId: 24,
 		href: "http://www.linkedin.com/learning/learning-ecmascript-6",
-		src: "/assets/images/certificates/ECMAScript6.jpg",
 		name: "Learning ECMAScript 6",
 		issuer: "Linkedin",
 		credentialID: "",
@@ -459,7 +425,6 @@ export const certificates = [
 	{
 		certId: 25,
 		href: "https://www.linkedin.com/learning/learning-react-native-2017",
-		src: "/assets/images/certificates/react_native.jpg",
 		name: "Learning React Native",
 		institute: "",
 		issuer: "Linkedin",
@@ -472,7 +437,6 @@ export const certificates = [
 	{
 		certId: 26,
 		href: "https://www.datacamp.com/statement-of-accomplishment/course/ca02b713af7854206b0be3561d5b5f4a3e39c89b",
-		src: "/assets/images/certificates/spreadsheets.jpg",
 		name: "Introduction to SQL",
 		issuer: "DataCamp",
 		credentialID: "#6804819",
@@ -484,7 +448,6 @@ export const certificates = [
 	{
 		certId: 27,
 		href: "https://drive.google.com/file/d/1rtbMqWYD-O8ljcDBf-5Lnl9F1pRBqHxS/view?usp:sharing",
-		src: "/assets/images/certificates/amcat.jpg",
 		name: "Amcat Report",
 		issuer: "Amcat",
 		credentialID: "",
@@ -496,7 +459,6 @@ export const certificates = [
 	{
 		certId: 28,
 		href: "https://www.datacamp.com/statement-of-accomplishment/course/92b8db3bcfdcc3e466f1ab170f46c1b76b37bbdd",
-		src: "/assets/images/certificates/spreadsheets.jpg",
 		name: "Introduction to Spreadsheets",
 		issuer: "DataCamp",
 		credentialID: "#6841333",
@@ -508,7 +470,6 @@ export const certificates = [
 	{
 		certId: 29,
 		href: "https://courses.cognitiveclass.ai/certificates/07f3f8eb298c478d974c38aa459ef1f8",
-		src: "/assets/images/certificates/blockchain.jpg",
 		name: "Blockchain Essentials",
 		institute: "Cognitive Class",
 		issuer: "IBM",
@@ -521,7 +482,6 @@ export const certificates = [
 	{
 		certId: 30,
 		href: "https://www.datacamp.com/statement-of-accomplishment/course/543dd80cf86a37eec1cd98342d449d43f847c37e",
-		src: "/assets/images/certificates/r.jpg",
 		name: "Introduction to R",
 		issuer: "DataCamp",
 		credentialID: "#8022686",
@@ -533,7 +493,6 @@ export const certificates = [
 	{
 		certId: 31,
 		href: "http://www.linkedin.com/learning/express-essential-training",
-		src: "/assets/images/certificates/express_essential.jpg",
 		name: "Express Essential Training",
 		institute: "",
 		issuer: "Linkedin",
@@ -546,7 +505,6 @@ export const certificates = [
 	{
 		certId: 32,
 		href: "http://www.linkedin.com/learning/docker-for-developers-2",
-		src: "/assets/images/certificates/docker_for_developers.jpg",
 		name: "Docker for Developers",
 		institute: "",
 		issuer: "Linkedin",
@@ -559,7 +517,6 @@ export const certificates = [
 	{
 		certId: 33,
 		href: "http://www.linkedin.com/learning/node-js-real-time-web-with-socket-io",
-		src: "/assets/images/certificates/socket.jpg",
 		name: "Node.js: Real-Time Web with Socket.IO",
 		institute: "",
 		issuer: "Linkedin",
@@ -572,7 +529,6 @@ export const certificates = [
 	{
 		certId: 34,
 		href: "http://www.linkedin.com/learning/advanced-sql-logical-query-processing",
-		src: "/assets/images/certificates/logical_sql.jpg",
 		name: "Advanced SQL – Logical Query Processing",
 		issuer: "Linkedin",
 		credentialID: "AZzwrTXRM4gUkgo1gtDnIcxgsApe",
@@ -584,7 +540,6 @@ export const certificates = [
 	{
 		certId: 35,
 		href: "http://www.linkedin.com/learning/oracle-database-12c-advanced-sql",
-		src: "/assets/images/certificates/adv_oracle_sql.jpg",
 		name: "Oracle Database 12c: Advanced SQL",
 		issuer: "Linkedin",
 		credentialID: "AewlhyesheTkt6M-Yrm-6As8TtCb",
@@ -596,7 +551,6 @@ export const certificates = [
 	{
 		certId: 36,
 		href: "https://www.freecodecamp.org/certification/thebhushanmhatre/scientific-computing-with-python-v7",
-		src: "/assets/images/certificates/scientific-computing-with-python.jpg",
 		name: "Scientific Computing With Python Developer Certification",
 		issuer: "freeCodeCamp",
 		credentialID: "",
@@ -608,7 +562,6 @@ export const certificates = [
 	{
 		certId: 37,
 		href: "http://www.linkedin.com/learning/flask-essential-training",
-		src: "/assets/images/certificates/essential-flask.jpg",
 		name: "Flask Essential Training",
 		issuer: "Linkedin",
 		credentialID: "",
@@ -620,7 +573,6 @@ export const certificates = [
 	{
 		certId: 38,
 		href: "http://www.linkedin.com/learning/full-stack-web-development-with-flask",
-		src: "/assets/images/certificates/fullstack-flask.jpg",
 		name: "Full Stack Web Development with Flask",
 		issuer: "Linkedin",
 		credentialID: "",
@@ -632,7 +584,6 @@ export const certificates = [
 	{
 		certId: 39,
 		href: "http://www.linkedin.com/learning/python-decorators",
-		src: "/assets/images/certificates/python-decorators.jpg",
 		name: "Python Decorators",
 		issuer: "Linkedin",
 		credentialID: "",
@@ -644,7 +595,6 @@ export const certificates = [
 	{
 		certId: 40,
 		href: "https://www.coursera.org/account/accomplishments/certificate/EGYCA575BPZD",
-		src: "/assets/images/certificates/project-flask.jpg",
 		name: "Create Your First Web App with Python and Flask",
 		issuer: "Coursera",
 		credentialID: "EGYCA575BPZD",
@@ -656,7 +606,6 @@ export const certificates = [
 	{
 		certId: 42,
 		href: "http://www.linkedin.com/learning/learning-django-2",
-		src: "/assets/images/certificates/learning_django.jpg",
 		name: "Learning Django",
 		issuer: "Linkedin",
 		credentialID: "",
