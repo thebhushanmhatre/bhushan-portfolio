@@ -1,7 +1,7 @@
 import React, { createContext } from "react";
 import "./App.css";
 import Main from "./components/Main";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, useParams } from "react-router-dom";
 import ErrorPage from "./components/web/Error";
 // web pages
 import Home from "./components/web/Home";
@@ -41,14 +41,11 @@ export const initialState = {
 
 export const DataContext = createContext(null);
 
-const CertificateWithId = ({ match }) => {
-	return (
-		<RenderCertificate
-			certificate={
-				DATA.certificates.filter((item) => item.certId === parseInt(match.params.certId, 10))[0]
-			}
-		/>
-	);
+const CertificateWithId = () => {
+	const { certId } = useParams();
+	const certificate = DATA.certificates.find((item) => item.certId === parseInt(certId, 10));
+
+	return <RenderCertificate certificate={certificate} />;
 };
 
 const DefaultPage = () => <Home />;
