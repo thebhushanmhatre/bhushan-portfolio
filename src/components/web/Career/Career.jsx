@@ -8,12 +8,13 @@ import { DataContext } from "../../../App";
 import "./Career.css";
 
 function Career() {
-	const [activeTab, setActiveTab] = useState("associate");
+	const [activeTab, setActiveTab] = useState("swe3");
 	const careerData = useContext(DataContext).career || [];
 
 	const schoolData = careerData.find((item) => item.id === "school");
 	const patkarData = careerData.find((item) => item.id === "patkar");
 	const vjtiData = careerData.find((item) => item.id === "vjti");
+	const sde3Data = careerData.find((item) => item.id === "swe3");
 
 	const renderContent = () => {
 		switch (activeTab) {
@@ -54,6 +55,8 @@ function Career() {
 						<MsciAssociate />
 					</CareerCard>
 				);
+			case "swe3":
+				return <div className="pt-3">{sde3Data && <RenderInstitute item={sde3Data} />}</div>;
 			case "present":
 			default:
 				return (

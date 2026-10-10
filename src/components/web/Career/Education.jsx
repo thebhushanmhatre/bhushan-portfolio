@@ -11,7 +11,7 @@ export function RenderInstitute({ item, imageRight = false }) {
 					{item.name}
 				</a>
 			</h3>
-			<div className="edu-year">({item.year})</div>
+			<div className="edu-year">({item.date || item.year})</div>
 			<div className="edu-degree">{item.degree}</div>
 			{item.description &&
 				(Array.isArray(item.description) ? (
